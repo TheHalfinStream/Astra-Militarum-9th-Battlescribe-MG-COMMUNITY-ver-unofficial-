@@ -18081,31 +18081,14 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5c9-9c6d-e903-4361" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="a8b0-cb08-1100-ff1c" name="Augur array" publicationId="53e9d88f--pubN189241" page="129" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf0-8554-756a-0bf2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="7559-0cb9-587e-679f" name="Augur array" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, in the Shooting phase, you can re-roll a single failed hit roll for a vehicle with an augur array. </characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="81f8-333a-d22b-41ea" name="Dozer blade" publicationId="53e9d88f--pubN189241" page="129" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="81f8-333a-d22b-41ea" name="Dozer blade" publicationId="e831-8627-fbc7-5b35" page="82" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3269-7e8f-5536-b374" type="max"/>
           </constraints>
           <profiles>
             <profile id="ebbe-ae16-c9a3-e50a" name="Dozer blade" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If a vehicle with a dozer blade charges in the Charge phase, add 1 to all hit rolls made for it until the end of the ensuing Fight phase.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the DOZER BLADE keyword, and can ignore any or all modifiers to its Move characteristic, Advance rolls, and Charge rolls.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18115,14 +18098,14 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="943c-8344-a018-1213" name="Track guards" publicationId="53e9d88f--pubN189241" page="129" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="943c-8344-a018-1213" name="Armoured Tracks" publicationId="e831-8627-fbc7-5b35" page="82" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db9f-b507-4c11-7db2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b83d-0e90-d6f5-34c6" name="Track guards" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+            <profile id="b83d-0e90-d6f5-34c6" name="Armoured Tracks" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A vehicle with track guards always counts as having its starting number of Wounds when determining its Move characteristic (i.e., its Move characteristic does not decrease as it suffers wounds). </characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the ARMOURED keyword, and each time a ranged attack with a Damage characteristic of 1 is allocated to the bearer, add 1 to the armour saving throw made against that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18301,20 +18284,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="58e0-805c-f866-99f3" name="WT (Cadia): Superior Tactical Training" hidden="false" collective="false" import="true" targetId="8d6d-9c06-8025-de58" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef96-6f0e-04be-8b2c" type="equalTo"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e01-e6cf-1353-96f4" type="notInstanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink id="58e0-805c-f866-99f3" name="WT: Superior Tactical Training" hidden="false" collective="false" import="true" targetId="8d6d-9c06-8025-de58" type="selectionEntry"/>
             <entryLink id="db6d-26db-318f-7e08" name="WT (Tallarn): Swift Attacker" hidden="false" collective="false" import="true" targetId="99fd-53f3-33b1-7445" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -18482,7 +18452,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <entryLink id="a0de-19f3-5675-6257" name="WT: Grand Strategist" hidden="false" collective="false" import="true" targetId="9f7a-4c34-8d0c-e3c7" type="selectionEntry"/>
             <entryLink id="55e1-ce4a-202a-b8a0" name="WT: Implacable Determination" hidden="false" collective="false" import="true" targetId="75b8-5f2d-9f0c-fbb5" type="selectionEntry"/>
             <entryLink id="be2b-ae93-c886-91b4" name="WT: Master of Command" hidden="false" collective="false" import="true" targetId="4a25-7a1d-4442-3728" type="selectionEntry"/>
-            <entryLink id="729a-9ba0-7448-bfae" name="WT: Bellowing Voice" hidden="false" collective="false" import="true" targetId="2b95-ca70-0ccd-7118" type="selectionEntry"/>
+            <entryLink id="729a-9ba0-7448-bfae" name="WT: Master Tactician" hidden="false" collective="false" import="true" targetId="2b95-ca70-0ccd-7118" type="selectionEntry"/>
             <entryLink id="af38-d09b-eda1-57d9" name="WT: Old Grudges" hidden="false" collective="false" import="true" targetId="43d2-fba4-4e96-a8d3" type="selectionEntry"/>
             <entryLink id="f23a-6dcb-3418-531b" name="WT (Cadia): Gifted Commander" hidden="false" collective="false" import="true" targetId="cea4-ff99-972d-81fa" type="selectionEntry">
               <modifiers>
@@ -20148,8 +20118,8 @@ Each time a &lt;Regiment&gt; unit with the Voice of Command ability issues one o
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Roll two dice when inflicting damage with this weapon and discard the lowest result.</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack with this weapon is made against an AIRCRAFT unit, add 1 to that attack&apos;s hit roll. Each time an attack with this weapon is allocated to an AIRCRAFT model, that attack has a Damage characteristic of D3+3.</characteristic>
       </characteristics>
     </profile>
     <profile id="3287-e0de-5e63-b84e" name="Tactical Bombs" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
