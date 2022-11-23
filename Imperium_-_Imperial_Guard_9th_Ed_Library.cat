@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="101" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="103" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum"/>
     <publication id="53e9d88f--pubN183884" name="GW Datasheet"/>
@@ -180,7 +180,6 @@
     <categoryEntry id="3620-3173-81e8-fde6" name="Medusa" hidden="false"/>
     <categoryEntry id="fac9-80d5-a022-1805" name="Faction: Astra Telepathica" hidden="false"/>
     <categoryEntry id="e33e-8d7c-5155-72e9" name="Faction: Scholastica Psykana" hidden="false"/>
-    <categoryEntry id="bfe3-76c4-d9dd-688c" name="Astropath" hidden="false"/>
     <categoryEntry id="75a7-e5c7-78de-739b" name="Primaris Psyker" hidden="false"/>
     <categoryEntry id="39c1-fdc2-b915-1f78" name="Wyrdvane Psykers" hidden="false"/>
     <categoryEntry id="2009-635c-b08f-f825" name="Faction: Adeptus Ministorum" hidden="false"/>
@@ -199,7 +198,7 @@
     <categoryEntry id="8a40-4cea-e8d3-d23e" name="Raus" hidden="false"/>
     <categoryEntry id="f701-d2b7-c0d7-42ab" name="Tempestus Drop Force" hidden="false"/>
     <categoryEntry id="fc42-b246-2f5e-1e22" name="Severina Raine" hidden="false"/>
-    <categoryEntry id="9b5a-80ba-627c-0787" name="Aradia Madellan [Legends]" hidden="false"/>
+    <categoryEntry id="9b5a-80ba-627c-0787" name="Aradia Madellan" hidden="false"/>
     <categoryEntry id="3337-ea0e-68ae-0ae9" name="Ecclesiarchy Battle Conclave" hidden="false"/>
     <categoryEntry id="4fff-e2dd-ec8b-86a9" name="Crusader" hidden="false"/>
     <categoryEntry id="9473-29de-f2a8-7aba" name="Gotfret de Montbard" hidden="false"/>
@@ -6060,16 +6059,15 @@ Designer’s Note: MILITARUM TEMPESTUS units will benefit from this rule if they
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8d6d-9c06-8025-de58" name="WT: Superior Tactical Training" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8d6d-9c06-8025-de58" name="WT (Cadia): Superior Tactical Training" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f94a-1d92-78a3-2de6" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a934-58b9-d7ed-00cc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="afb3-61c4-1abe-19f6" name="Superior Tactical Training" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="afb3-61c4-1abe-19f6" name="Superior Tactical Training" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When you select this Warlord Trait, select one type of Orders (Regimental, Prefectus, or Mechanised) that this WARLORD does not know.
-This WARLORD knows those Orders in addition to any others it knows.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Roll a dice each time your Warlord issues an order or tank order. On a 4+ that order can affect an additional CADIAN unit of the same type as the original target (INFANTRY or LEMAN RUSS) within 6&quot; of the Warlord.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7263,16 +7261,15 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="43d2-fba4-4e96-a8d3" name="WT: Old Grudges" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="43d2-fba4-4e96-a8d3" name="WT: Old Grudges" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98b0-d5e6-afa6-e10c" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f900-5700-fe5b-22ab" type="max"/>
       </constraints>
       <profiles>
-        <profile id="f788-b04e-7721-6bb2" name="Old Grudges" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="f788-b04e-7721-6bb2" name="Old Grudges" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the first battle round, select one enemy unit. Until the end of the battle, this WARLORD gains the following ability:
-Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is within 6&quot; of this WARLORD, each time a model in that friendly unit makes an attack against that enemy unit, add 1 to the wound roll.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After deployment, but before the first battle round begins, choose a unit in your opponent’s army. You can re-roll failed wound rolls for ASTRA MILITARUM units from your army that target the unit you chose whilst they are within 6&quot; of your Warlord.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7300,15 +7297,15 @@ Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is wit
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="75b8-5f2d-9f0c-fbb5" name="WT: Lead By Example" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="75b8-5f2d-9f0c-fbb5" name="WT: Implacable Determination" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc0f-c871-c583-d851" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e775-b66a-4ee0-75c1" type="max"/>
       </constraints>
       <profiles>
-        <profile id="4dbf-67a4-ddc0-4398" name="Lead By Example" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="4dbf-67a4-ddc0-4398" name="Implacable Determination" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This WARLORD can issue Orders to its own unit, even though you cannot normally select OFFICER units when issuing Orders.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When your Warlord and a single friendly unit within 3&quot; of them Advances, they may both add 6&quot; to their Move characteristic for that Movement phase instead of rolling a dice</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7318,15 +7315,15 @@ Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is wit
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9f7a-4c34-8d0c-e3c7" name="WT: Grand Strategist" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9f7a-4c34-8d0c-e3c7" name="WT: Grand Strategist" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e165-9f8e-cf45-fbe3" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc2-b2ce-503b-ce3d" type="max"/>
       </constraints>
       <profiles>
-        <profile id="5592-c8d2-3288-10be" name="Grand Strategist" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="5592-c8d2-3288-10be" name="Grand Strategist" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While this WARLORD is on the battlefield, each time you spend a Command point to use a Stratagem, roll one D6: on a 5+, that Command point is refunded.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Whilst your Warlord is alive, you can re-roll a single hit roll, wound roll or saving throw per battle. In addition, if your army is Battle-forged and this Warlord is on the battlefield, roll a D6 for each Command Point you spend to use a Stratagem; on a 5+ that Command Point is immediately refunded.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7336,17 +7333,15 @@ Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is wit
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4935-363e-6a5d-adb7" name="WT: Frontline Combatant" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4935-363e-6a5d-adb7" name="WT: Draconian Disciplinarian" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3240-6a2f-a56d-1f72" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34e5-532e-f167-cee0" type="max"/>
       </constraints>
       <profiles>
-        <profile id="cd3c-5d13-88a9-3013" name="Frontline Combatant" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="cd3c-5d13-88a9-3013" name="Draconian Disciplinarian" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this WARLORD makes a melee attack:
-An unmodified hit roll of 6 scores 2 additional hits.
-Add 1 to that attack&apos;s wound roll.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll failed Morale tests for friendly ASTRA MILITARUM INFANTRY units within 6&quot; of your Warlord in the Morale phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7356,17 +7351,15 @@ Add 1 to that attack&apos;s wound roll.</characteristic>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b95-ca70-0ccd-7118" name="WT: Master Tactician" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2b95-ca70-0ccd-7118" name="WT: Bellowing Voice" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1962-14cb-49c5-20e2" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6071-14b3-ffcb-b11a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ba36-2422-5743-968d" name="Master Tactician" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="ba36-2422-5743-968d" name="Bellowing Voice" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the battle round, you can select up to three friendly ASTRA MILITARUM units (excluding TITANIC units).
-Remove those units from the battlefield, then set them up anywhere on the battlefield that is wholly within your deployment zone.
-If the mission you are playing uses the Strategic Reserves rules, you can place any of those units into Strategic Reserves instead.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 3&quot; to the range of any abilities on your Warlord’s datasheet (such as Aura of Discipline or Voice of Command).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7985,80 +7978,6 @@ If the mission you are playing uses the Strategic Reserves rules, you can place 
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
         <cost name="pts" typeId="points" value="85.0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2f6d-033d-665f-6ca4" name="Astropath" publicationId="53e9d88f--pubN88319" page="102" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="0e53-9cdf-a66e-be2e" name="Psyker" hidden="false" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker">
-          <characteristics>
-            <characteristic name="Cast" typeId="5afb-9914-904b-d3b3">1</characteristic>
-            <characteristic name="Deny" typeId="b5ac-9c20-5d5a-6f9b">1</characteristic>
-            <characteristic name="Powers Known" typeId="69d7-b45e-00a2-7e46">Smite &amp; 1 Psykana</characteristic>
-            <characteristic name="Other" typeId="c2e2-f115-0003-5d7b"/>
-          </characteristics>
-        </profile>
-        <profile id="3eb6-a009-0cf6-93d4" name="Astral Divination" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of your Shooting phase, pick and enemy unit within 18&quot; of this model. For the duration of the phase, the unit you picked gains no bonus to their saving throws for being in cover when it is targeted by attacks made by friendly ASTRA MILITARUM units within 6&quot; of this model.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="0f05-8038-4303-b73e" name="Telepathic Assault" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time you take a Psychic test for this unit when it attempts to manifest Smite, roll 1D6 instead of 2D6.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4a3b-d108-deb5-32e6" name="Astropath" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="36ef-8e3a-7b76-3dad" name="Astropath" hidden="false" targetId="bfe3-76c4-d9dd-688c" primary="false"/>
-        <categoryLink id="315f-472b-8c8c-8953" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="a0e8-c4d2-365f-375c" name="Faction: Astra Telepathica" hidden="false" targetId="fac9-80d5-a022-1805" primary="false"/>
-        <categoryLink id="57b6-3304-1162-67e0" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
-        <categoryLink id="6b18-cf8a-8d51-26be" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink id="b407-a70d-a73b-87b1" name="Faction: Scholastica Psykana" hidden="false" targetId="e33e-8d7c-5155-72e9" primary="false"/>
-        <categoryLink id="e9b6-5473-9adc-7b67" name="Psyker" hidden="false" targetId="e691-aad7-d21c-1023" primary="false"/>
-        <categoryLink id="89e4-bb84-4ea1-c426" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b16d-c336-9751-548e" name="Telepathica Stave" hidden="false" collective="false" import="true" defaultSelectionEntryId="50cf-1816-fc6b-35e8">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9f5-1bf6-5fb8-3d8a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a9-eec7-b2f7-8758" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="50cf-1816-fc6b-35e8" name="Telepathica Stave" hidden="false" collective="false" import="true" targetId="65fc-6606-7a15-7771" type="selectionEntry"/>
-            <entryLink id="054d-03b8-9387-490c" name="Laspistol" hidden="false" collective="false" import="true" targetId="c10b-e1a4-c913-ae15" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="da82-c73c-81dc-969c" name="Psykana Discipline" hidden="false" collective="false" import="true" targetId="13fd-f96b-049d-7216" type="selectionEntryGroup">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96f0-724e-3daf-7e85" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1b54-b03d-b41e-8452" name="Heirlooms of Conquest" hidden="false" collective="false" import="true" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup"/>
-        <entryLink id="0fa4-4246-b779-ddf1" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry"/>
-        <entryLink id="9c72-28ae-ed86-6e00" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup"/>
-        <entryLink id="8409-6aa7-2e94-7c52" name="Field Commander" hidden="false" collective="false" import="true" targetId="c7d5-e7b4-87d5-c29a" type="selectionEntry"/>
-        <entryLink id="301d-6e01-456b-72b5" name="Character Stratagems" hidden="false" collective="false" import="true" targetId="2527-4b0c-1e18-38b3" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -18081,14 +18000,14 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5c9-9c6d-e903-4361" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="81f8-333a-d22b-41ea" name="Dozer blade" publicationId="e831-8627-fbc7-5b35" page="82" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a8b0-cb08-1100-ff1c" name="Augur array" publicationId="53e9d88f--pubN189241" page="129" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3269-7e8f-5536-b374" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf0-8554-756a-0bf2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="ebbe-ae16-c9a3-e50a" name="Dozer blade" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+            <profile id="7559-0cb9-587e-679f" name="Augur array" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the DOZER BLADE keyword, and can ignore any or all modifiers to its Move characteristic, Advance rolls, and Charge rolls.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, in the Shooting phase, you can re-roll a single failed hit roll for a vehicle with an augur array. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18098,14 +18017,31 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="943c-8344-a018-1213" name="Armoured Tracks" publicationId="e831-8627-fbc7-5b35" page="82" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="81f8-333a-d22b-41ea" name="Dozer blade" publicationId="53e9d88f--pubN189241" page="129" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3269-7e8f-5536-b374" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ebbe-ae16-c9a3-e50a" name="Dozer blade" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If a vehicle with a dozer blade charges in the Charge phase, add 1 to all hit rolls made for it until the end of the ensuing Fight phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="943c-8344-a018-1213" name="Track guards" publicationId="53e9d88f--pubN189241" page="129" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db9f-b507-4c11-7db2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b83d-0e90-d6f5-34c6" name="Armoured Tracks" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+            <profile id="b83d-0e90-d6f5-34c6" name="Track guards" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the ARMOURED keyword, and each time a ranged attack with a Damage characteristic of 1 is allocated to the bearer, add 1 to the armour saving throw made against that attack.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A vehicle with track guards always counts as having its starting number of Wounds when determining its Move characteristic (i.e., its Move characteristic does not decrease as it suffers wounds). </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18284,7 +18220,20 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="58e0-805c-f866-99f3" name="WT: Superior Tactical Training" hidden="false" collective="false" import="true" targetId="8d6d-9c06-8025-de58" type="selectionEntry"/>
+            <entryLink id="58e0-805c-f866-99f3" name="WT (Cadia): Superior Tactical Training" hidden="false" collective="false" import="true" targetId="8d6d-9c06-8025-de58" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef96-6f0e-04be-8b2c" type="equalTo"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e01-e6cf-1353-96f4" type="notInstanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="db6d-26db-318f-7e08" name="WT (Tallarn): Swift Attacker" hidden="false" collective="false" import="true" targetId="99fd-53f3-33b1-7445" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -18452,7 +18401,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <entryLink id="a0de-19f3-5675-6257" name="WT: Grand Strategist" hidden="false" collective="false" import="true" targetId="9f7a-4c34-8d0c-e3c7" type="selectionEntry"/>
             <entryLink id="55e1-ce4a-202a-b8a0" name="WT: Implacable Determination" hidden="false" collective="false" import="true" targetId="75b8-5f2d-9f0c-fbb5" type="selectionEntry"/>
             <entryLink id="be2b-ae93-c886-91b4" name="WT: Master of Command" hidden="false" collective="false" import="true" targetId="4a25-7a1d-4442-3728" type="selectionEntry"/>
-            <entryLink id="729a-9ba0-7448-bfae" name="WT: Master Tactician" hidden="false" collective="false" import="true" targetId="2b95-ca70-0ccd-7118" type="selectionEntry"/>
+            <entryLink id="729a-9ba0-7448-bfae" name="WT: Bellowing Voice" hidden="false" collective="false" import="true" targetId="2b95-ca70-0ccd-7118" type="selectionEntry"/>
             <entryLink id="af38-d09b-eda1-57d9" name="WT: Old Grudges" hidden="false" collective="false" import="true" targetId="43d2-fba4-4e96-a8d3" type="selectionEntry"/>
             <entryLink id="f23a-6dcb-3418-531b" name="WT (Cadia): Gifted Commander" hidden="false" collective="false" import="true" targetId="cea4-ff99-972d-81fa" type="selectionEntry">
               <modifiers>
@@ -19927,6 +19876,12 @@ Spirit of the Martyr: One model in the unit recovers D3 lost wounds, or you can 
     <rule id="7f63-7184-02bb-aaed" name="Wall of Muscle" hidden="false">
       <description>Each time an attack is allocated to a model in this unit, subtract 1 from teh Damage characteristic of that attack (to a minimum of 1)</description>
     </rule>
+    <rule id="f71d-5101-5761-8e28" name="Regimental Tactics" hidden="false">
+      <description>If every model from your army (excluding &lt;AGENT OF THE IMPERIUM&gt; and &lt;UNALIGNED&gt; models) has the &lt;ASTRA MILITARUM&gt; keyword:
+
+Each time an &lt;OFFICER&gt; from your army issues a Regimental or Prefectus Order to a unit with this ability, you can select one or more other friendly &lt;PLATOON&gt; units within 6&quot; of that unit; those &lt;PLATOON&gt; units are also affected by that Order.
+Each Time an &lt;OFFICER&gt; from your army issues a Mechanised Order to a unit with this ability, you can select one or more other friendly &lt;SQUADRON&gt; units within 6&quot; of that unit; those &lt;SQUADRON&gt; units are also affected by that Order.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="9981-5fb9-57f6-7930" name="Firing Deck" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -20118,8 +20073,8 @@ Each time a &lt;Regiment&gt; unit with the Voice of Command ability issues one o
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack with this weapon is made against an AIRCRAFT unit, add 1 to that attack&apos;s hit roll. Each time an attack with this weapon is allocated to an AIRCRAFT model, that attack has a Damage characteristic of D3+3.</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Roll two dice when inflicting damage with this weapon and discard the lowest result.</characteristic>
       </characteristics>
     </profile>
     <profile id="3287-e0de-5e63-b84e" name="Tactical Bombs" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
