@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="315" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="316" battleScribeVersion="2.03" authorName="Denny &amp; Halfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="99a162d9-4854-cc3b-c35e-b0c3a3cc77d6" name="Commissar Yarrick" hidden="false" collective="false" import="true" targetId="5dac-1ff6-7352-3745" type="selectionEntry">
       <modifiers>
@@ -48,7 +48,7 @@
         <categoryLink id="c77a-3f8c-131d-1e7b" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3ef9-2a24-4dc5-7d5f" name="Company Commander" hidden="false" collective="false" import="true" targetId="716d-5866-fe42-6511" type="selectionEntry">
+    <entryLink id="3ef9-2a24-4dc5-7d5f" name="Cadian Command Squad" hidden="false" collective="false" import="true" targetId="716d-5866-fe42-6511" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="977f-d01e-2cbd-e3e8" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
@@ -78,11 +78,7 @@
     </entryLink>
     <entryLink id="abe9-0a7e-4b1e-b127" name="Nork Deddog" hidden="false" collective="false" import="true" targetId="132a-3d6b-4c15-25d6" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cff6-a8e7-27ea-0776" type="atLeast"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" field="hidden" value="true"/>
       </modifiers>
       <categoryLinks>
         <categoryLink id="d973-e903-08c6-b357" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
@@ -111,8 +107,6 @@
     <entryLink id="2a93-91c5-6840-11c1" name="Armoured Sentinels" hidden="false" collective="false" import="true" targetId="85c7-45a7-e283-2dba" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="29d4-7da8-4bfb-968f" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
-        <categoryLink id="36a5-dae5-7521-c66e" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
-        <categoryLink id="aa87-037c-9445-8490" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ed86-9c3f-9a9b-2823" name="Deathstrike" hidden="false" collective="false" import="true" targetId="2255-9de3-c6f8-838b" type="selectionEntry">
@@ -143,8 +137,6 @@
     <entryLink id="930d-7ed4-60a3-aab1" name="Scout Sentinels" hidden="false" collective="false" import="true" targetId="5d31-5e21-5ec2-7f79" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5ec7-b6ba-d831-2f76" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
-        <categoryLink id="d72c-bfa4-1f14-20b4" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
-        <categoryLink id="7a14-43de-1632-994c" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="08a6-d005-611b-51e7" name="Stormlord" hidden="false" collective="false" import="true" targetId="8e95-af10-b229-cd6d" type="selectionEntry">
@@ -264,6 +256,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="9f1d-61e3-bb7e-d23a" name="Astropath" hidden="false" collective="false" import="true" targetId="2f6d-033d-665f-6ca4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true"/>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="93f0-3b56-d56b-bf35" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -274,6 +269,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="d7a8-e61d-0f49-c556" name="Wyrdvane Psykers" hidden="false" collective="false" import="true" targetId="96e4-0a16-0d00-c15d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true"/>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="37a5-3fa3-4edb-e1ca" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -284,6 +282,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="57b0-241b-09a7-08a6" name="Crusaders" hidden="false" collective="false" import="true" targetId="ed99-a7df-1daa-4a73" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true"/>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="cd2d-07e4-ef8d-4e8e" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -299,6 +300,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="8f80-1e2a-268b-dddd" name="Ogryn Bodyguard" hidden="false" collective="false" import="true" targetId="a2f0-80d5-4134-8f0f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true"/>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="5828-8bcf-4183-42b1" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -318,11 +322,7 @@
     </entryLink>
     <entryLink id="fb6e-e7e9-92e1-5098" name="Rein and Raus" hidden="false" collective="false" import="true" targetId="c485-dfd6-e9c8-46d7" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cff6-a8e7-27ea-0776" type="atLeast"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" field="hidden" value="true"/>
       </modifiers>
     </entryLink>
     <entryLink id="7e37-5a06-9c7b-57a6" name="Commissar Severina Raine" hidden="false" collective="false" import="true" targetId="bcea-33ef-0e39-baf4" type="selectionEntry">
@@ -362,6 +362,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="7203-bda5-04c7-06b5" name="Master of Ordnance" hidden="false" collective="false" import="true" targetId="3d6b-fb42-442f-cd3f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true"/>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9e8b-cd23-7cd0-0d14" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -525,6 +528,9 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="552e-9b45-1045-176d" name="Officer of the Fleet" hidden="false" collective="false" import="true" targetId="2243-2f75-ea89-994a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true"/>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c006-ac0d-e9d0-df79" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -700,9 +706,22 @@
         <categoryLink id="ff88-623a-c86c-ad4d" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b676-9071-fce2-2054" name="Ursula Creed" hidden="false" collective="false" import="true" targetId="4530-30c2-e2b2-90a8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fd5c-6a63-0cb9-a048" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b8d7-def5-503f-56fd" name="Death Korps of Krieg (WIP)" hidden="true" collective="false" import="true" targetId="1cc1-1fa4-42f0-12bc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="13cc-49c8-3981-7bfa" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dcb74f5d-1308-fbaa-205f-3ad8fbde5b04" name="Lord Castellan Creed" publicationId="53e9d88f--pubN88319" page="56" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true"/>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
