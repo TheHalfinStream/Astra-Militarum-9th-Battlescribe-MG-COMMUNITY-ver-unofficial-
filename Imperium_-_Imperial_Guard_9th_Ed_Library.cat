@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="110" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="112" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum"/>
     <publication id="53e9d88f--pubN183884" name="GW Datasheet"/>
@@ -12906,6 +12906,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <categoryLink id="379e-6ab4-b728-9429" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="2b61-54d2-93ba-5cdd" name="Abhuman" hidden="false" targetId="356d-5e5f-3f62-cd4d" primary="false"/>
         <categoryLink id="2a62-43e4-82ba-88e9" name="Bodyguard" hidden="false" targetId="dfea-863e-a4a3-95f7" primary="false"/>
+        <categoryLink id="d6c1-5320-88f8-ea7f" name="Ogryns" hidden="false" targetId="295e-c5d9-428c-105d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="52d7-d937-80fb-72c8" name="Huge knife" hidden="false" collective="false" import="true" type="upgrade">
@@ -12981,6 +12982,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <categoryLink id="cbe2-5830-b573-d748" name="Ogryn Bodyguard" hidden="false" targetId="28fb-0206-d32a-1fea" primary="false"/>
         <categoryLink id="6616-6059-d421-40bf" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="8b71-fab9-e031-18f8" name="Abhuman" hidden="false" targetId="356d-5e5f-3f62-cd4d" primary="false"/>
+        <categoryLink id="7252-3e2c-fd7d-e031" name="Ogryns" hidden="false" targetId="295e-c5d9-428c-105d" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9bab-0d05-7411-b013" name="Ripper Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="165d-bb7b-fbec-ad59">
@@ -18805,7 +18807,7 @@ Note that this ability only affects the original target of that Order, and not a
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1cc1-1fa4-42f0-12bc" name="Death Korps of Krieg (WIP)" publicationId="e831-8627-fbc7-5b35" page="92" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1cc1-1fa4-42f0-12bc" name="Death Korps of Krieg" publicationId="e831-8627-fbc7-5b35" page="92" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="append" field="name" value="[Legends]">
           <conditionGroups>
@@ -18817,10 +18819,11 @@ Note that this ability only affects the original target of that Order, and not a
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="hidden" value="true"/>
       </modifiers>
       <infoLinks>
         <infoLink id="55cf-21ff-20fe-719c" name="Frag grenades" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile"/>
+        <infoLink id="780a-ef23-2ed4-2ea4" name="Death Korps" hidden="false" targetId="d87e-6f7f-5d78-6485" type="profile"/>
+        <infoLink id="953f-d716-d8a3-6937" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fc7c-d5ee-a61a-9611" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -18945,7 +18948,7 @@ Note that this ability only affects the original target of that Order, and not a
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="37cb-def8-ad0c-d824" name="Death Korps Troopers" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="37cb-def8-ad0c-d824" name="Death Korps Troopers" publicationId="e831-8627-fbc7-5b35" page="92" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c6d-7634-61b4-c684" type="min"/>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93ad-02cc-c192-380a" type="max"/>
@@ -18957,7 +18960,7 @@ Note that this ability only affects the original target of that Order, and not a
             <selectionEntry id="933a-1514-7965-2f72" name="Death Korps Trooper" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50ee-54c3-585f-8f5f" type="max"/>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20ce-db93-7a2d-1797" type="min"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20ce-db93-7a2d-1797" type="min"/>
               </constraints>
               <infoLinks>
                 <infoLink id="eb0c-1f3f-4b3a-fcb0" name="Guardsman" hidden="false" targetId="3635-257d-26f1-26e8" type="profile"/>
@@ -18977,7 +18980,7 @@ Note that this ability only affects the original target of that Order, and not a
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a0fc-1c36-f4ab-c109" name="Death Korps Trooper w/ Vox-Caster" page="0" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a0fc-1c36-f4ab-c109" name="Death Korps Trooper w/ Plasma Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1de0-2476-861b-3ecd" type="max"/>
               </constraints>
@@ -18992,6 +18995,10 @@ Note that this ability only affects the original target of that Order, and not a
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="cda6-6989-09ae-641c" name="Lasgun &amp; Vox-Caster" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Death Korps Trooper w/ Vox-Caster"/>
+                        <modifier type="add" field="category" value="086d-e3ba-a17b-01bd"/>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21d7-3b92-fdd0-cec1" type="max"/>
                       </constraints>
@@ -19019,6 +19026,9 @@ Note that this ability only affects the original target of that Order, and not a
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="8b81-5824-1978-34da" name="Plasma Gun" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Death Korps Trooper w/ Plasma Gun"/>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de7e-6b95-633b-b576" type="max"/>
                       </constraints>
@@ -19053,6 +19063,53 @@ Note that this ability only affects the original target of that Order, and not a
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="2a8c-d7b9-324c-0ff7" name="Death Korps Trooper w/ Medi-pack" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bf9-9c9a-56b7-eff0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c6e2-85e3-a8de-33e1" name="Guardsman" hidden="false" targetId="3635-257d-26f1-26e8" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="ee77-bcc5-b4f8-2c0f" name="Lasgun &amp; Medi-pack" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="add" field="category" value="f89d-fb99-97ed-bc39"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcde-a226-294c-9b89" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4e73-cd97-10e9-e3c5" name="Death Korps Medi-Pack" hidden="false" targetId="d663-6c38-9745-c8ad" type="profile"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="5a4c-2082-95a0-16aa" name="Lasgun" hidden="false" collective="false" import="true" targetId="fd87-854b-d284-184a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6410-d7c7-166c-8127" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a180-60e5-4297-102c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="d57f-5552-5037-d21f" name="Frag grenades" hidden="false" collective="false" import="true" targetId="f68e-9984-71fe-6bca" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a8f-19de-a503-0b45" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8be0-b9ef-c5ce-5567" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="5645-aa37-bdd3-c282" name="Death Korps Trooper with Special Weapon" hidden="false" collective="false" import="true">
@@ -19069,33 +19126,6 @@ Note that this ability only affects the original target of that Order, and not a
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90c3-d88c-9c6b-ae06" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37b4-8e0b-867a-25dd" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9275-1520-73fa-3fbc" name="Trooper w/ Plasma Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c51a-6c58-249b-7043" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="7db4-5ec4-f02a-89fc" name="Guardsman" hidden="false" targetId="3635-257d-26f1-26e8" type="profile"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="ce0c-23ee-c89d-819d" name="Plasma gun" hidden="false" collective="false" import="true" targetId="8c14-22cc-93ce-b85a" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e1-4f16-defb-1acd" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3cf6-302f-dbc0-b6b7" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="22f1-d86b-ba2f-3b9a" name="Frag grenades" hidden="false" collective="false" import="true" targetId="f68e-9984-71fe-6bca" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e153-ca42-ac25-1fd5" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98cf-035f-8de6-0c29" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -22497,7 +22527,7 @@ attack is considered to have been made with an unmodified wound roll of 6.</char
     </profile>
     <profile id="35e4-3da6-9121-c3b4" name="Point-blank Barrage" publicationId="e831-8627-fbc7-5b35" page="89" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model can make attacks with its ripper gun even while its unit is within engagement range of enemy units, but it can only make such attacks against enemy units that its unit is within engagemtn range of. In such circumstances, this model can target an enemy unit even if other friendly units are within engagement range of that enemy unit.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model can make attacks with its ripper gun even while its unit is within engagement range of enemy units, but it can only make such attacks against enemy units that its unit is within engagement range of. In such circumstances, this model can target an enemy unit even if other friendly units are within engagement range of that enemy unit.</characteristic>
       </characteristics>
     </profile>
     <profile id="c0c3-e65f-b8bf-d64d" name="Big Target" publicationId="e831-8627-fbc7-5b35" page="89" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -22520,7 +22550,12 @@ attack is considered to have been made with an unmodified wound roll of 6.</char
     </profile>
     <profile id="d663-6c38-9745-c8ad" name="Death Korps Medi-Pack" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the MEDIC keyword. Once per turn, the first time a saving throw is failed for a model in the bearer&apos;s unit, cahnge the Damage characteristic of that attack to 0</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the MEDIC keyword. Once per turn, the first time a saving throw is failed for a model in the bearer&apos;s unit, cahnge the Damage characteristic of that attack to 0.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d87e-6f7f-5d78-6485" name="Death Korps" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack is made against this unit, an unmodified wound roll of 1-2 for that attack fails, irrespective of any abilities that the weapon or the model making the attack may have.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
