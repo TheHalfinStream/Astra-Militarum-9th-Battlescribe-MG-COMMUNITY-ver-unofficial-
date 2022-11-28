@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="113" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="114" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum"/>
     <publication id="53e9d88f--pubN183884" name="GW Datasheet"/>
@@ -183,7 +184,7 @@
     <categoryEntry id="75a7-e5c7-78de-739b" name="Primaris Psyker" hidden="false"/>
     <categoryEntry id="39c1-fdc2-b915-1f78" name="Wyrdvane Psykers" hidden="false"/>
     <categoryEntry id="2009-635c-b08f-f825" name="Faction: Adeptus Ministorum" hidden="false"/>
-    <categoryEntry id="8eaa-7ae8-6d29-0db9" name="Ministorum Priest" hidden="false"/>
+    <categoryEntry id="8eaa-7ae8-6d29-0db9" name="Regimental Preacher" hidden="false"/>
     <categoryEntry id="c46c-38fc-a485-e1c5" name="Crusaders" hidden="false"/>
     <categoryEntry id="107e-7049-a707-a021" name="Faction: &lt;FORGEWORLD&gt;" hidden="false"/>
     <categoryEntry id="a794-f43a-87e6-1693" name="Faction: Adeptus Mechanicus" hidden="false"/>
@@ -243,6 +244,8 @@
     <categoryEntry id="152f-4a16-468d-f82b" name="Colonel-Commissar Ibram Gaunt" publicationId="e831-8627-fbc7-5b35" page="86" hidden="false"/>
     <categoryEntry id="52db-ccdc-8458-8dd8" name="Jungle Fighters" hidden="false"/>
     <categoryEntry id="c8d7-b9d1-f5ee-c98e" name="Tempestus Scions" hidden="false"/>
+    <categoryEntry id="1436-fc28-06a8-1d8f" name="Melta Mine" hidden="false"/>
+    <categoryEntry id="87c8-7328-8ca9-5e2c" name="Kasrkin" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="431d-d055-dd6e-d714" name="Defenders of Humanity" hidden="false">
@@ -8167,7 +8170,6 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c5b7-cf00-7c5c-c77b" name="Bullgryns" publicationId="e831-8627-fbc7-5b35" page="98" hidden="false" collective="false" import="true" type="unit">
@@ -8293,7 +8295,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="b3f1-6e6b-615d-24bc" name="Frag Bombs" hidden="false" collective="false" import="true" targetId="f4b7-92ed-2e1c-f7e5" type="selectionEntry"/>
+            <entryLink id="b3f1-6e6b-615d-24bc" name="Frag bombs" hidden="false" collective="false" import="true" targetId="f4b7-92ed-2e1c-f7e5" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
@@ -9547,7 +9549,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6ea3-ca90-2382-3846" name="Commissar" publicationId="53e9d88f--pubN88319" page="33" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6ea3-ca90-2382-3846" name="Commissar" publicationId="e831-8627-fbc7-5b35" page="97" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="append" field="name" value="[Legends]">
           <conditionGroups>
@@ -9568,25 +9570,28 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f7b5-5932-ec97-8f66" name="Voice of Command" publicationId="e831-8627-fbc7-5b35" page="79" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Commanding Authority: This model knows Prefectus Orders. In your Command phase, it can issue one Order. In addition to the normal units that can be selected for Prefectus Orders, this model can issue Prefectus Orders to friendly INFANTRY OFFICER and ABHUMAN units, but when doing so, the Regimental Tactics ability (pg 75) does not apply.
+
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0621-c06e-58de-4fc9" name="Political Overwatch" publicationId="e831-8627-fbc7-5b35" page="97" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">For each COMMANDANT and COMMAND SQUAD unit included in a Detachment, one COMMISSAR model can be included in that Detachment without taking up a Battlefield Role slot.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="cd56-3cb0-2177-9a59" name="Aura of Discipline" hidden="false" targetId="74b0-e2c2-29bf-2997" type="profile"/>
         <infoLink id="4f26-9caa-8b72-2b1b" name="Summary Execution" hidden="false" targetId="f5f1-324f-5ba1-c4ae" type="profile"/>
-        <infoLink id="16bf-c5d6-3462-e4bd" name="Voice of Command" hidden="false" targetId="2ff26b94-8048-d15d-c541-fd4da0f49571" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="6ea3-ca90-2382-3846" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4a25-7a1d-4442-3728" type="lessThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="89bc-a0f8-389d-914d" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
@@ -9599,10 +9604,10 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
       <selectionEntryGroups>
         <selectionEntryGroup id="7a72-561b-f5fe-10ed" name="Melee Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f60-543d-ea0b-b90d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f60-543d-ea0b-b90d" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6064-7155-3f94-96dd" name="Astra Militarum Melee Weapons" hidden="false" collective="false" import="true" targetId="7622-e68e-c5e5-c8e7" type="selectionEntryGroup"/>
+            <entryLink id="6064-7155-3f94-96dd" name="Power maul" hidden="false" collective="false" import="true" targetId="6ea7-1195-7144-438e" type="selectionEntry"/>
             <entryLink id="736a-b961-adcd-6ff8" name="Power axe" hidden="false" collective="false" import="true" targetId="3292-34e6-f679-d5b9" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2f0-ae80-f726-a9f5" type="max"/>
@@ -9611,12 +9616,9 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="8fbb-d3b0-3e75-e0e4" name="Power maul" hidden="false" collective="false" import="true" targetId="6ea7-1195-7144-438e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7e9-4c2b-6c5a-7a47" type="max"/>
-              </constraints>
+            <entryLink id="0c55-85b5-e8b7-cc67" name="Power sword" hidden="false" collective="false" import="true" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
               <costs>
-                <cost name="pts" typeId="points" value="4.0"/>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -9635,11 +9637,6 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff49-dcfb-f896-d491" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="49a1-3290-f432-27ea" name="Boltgun" hidden="false" collective="false" import="true" targetId="b61f-a3c1-827d-c5b6" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7c3-6a43-7f43-654b" type="max"/>
-              </constraints>
-            </entryLink>
             <entryLink id="4a98-1f11-db09-bdcd" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="5"/>
@@ -9647,6 +9644,9 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65af-8528-f4ca-5be1" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9654,7 +9654,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
       <entryLinks>
         <entryLink id="e206-e53e-7e9c-8fc0" name="Heirlooms of Conquest" hidden="false" collective="false" import="true" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup"/>
         <entryLink id="5bfa-d2e3-a59e-f6c3" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry"/>
-        <entryLink id="d7e5-8d92-763b-f8ed" name="Display Astra Militarum Orders" hidden="true" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry">
+        <entryLink id="d7e5-8d92-763b-f8ed" name="Display Regimental Orders" hidden="true" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -9664,13 +9664,12 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
           </modifiers>
         </entryLink>
         <entryLink id="5396-6bdc-6560-6d2c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup"/>
-        <entryLink id="d10c-77e2-e50a-1022" name="Field Commander" hidden="false" collective="false" import="true" targetId="c7d5-e7b4-87d5-c29a" type="selectionEntry"/>
         <entryLink id="8699-47e8-0c80-2ea4" name="Character Stratagems" hidden="false" collective="false" import="true" targetId="2527-4b0c-1e18-38b3" type="selectionEntryGroup"/>
         <entryLink id="3d01-5e13-ad96-ab2a" name="Bodyguard" hidden="false" collective="false" import="true" targetId="3cd9-53fc-5ffb-5f60" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="25.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
+        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -12776,9 +12775,9 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bcc5-dce5-11ef-7d79" name="Ministorum Priest" publicationId="53e9d88f--pubN88319" page="99" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="bcc5-dce5-11ef-7d79" name="Regimental Preacher" publicationId="e831-8627-fbc7-5b35" page="95" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="9724-cf72-e87d-ebe4" name="Ministorum Priest" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="9724-cf72-e87d-ebe4" name="Regimental Preacher" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
@@ -12787,7 +12786,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">6+</characteristic>
           </characteristics>
         </profile>
@@ -12796,22 +12795,24 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile id="58db-151e-d0ef-b661" name="War Hymns" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="58db-151e-d0ef-b661" name="Righteous Rhetoric" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can add 1 to the Attacks characteristic of all models in an ADEPTUS MINISTORUM INFANTRY and ASTRA MILITARUM INFANTRY units that within 6&quot; of any friendly MINISTORUM PRIESTS.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, select one friendly ASTRA MILITARUM CORE or ASTRA MILITARUM INFANTRY CHARACTER unit within 6&quot; of this model and roll one D6. On a 3+, select one of the following:
+• Until the start of your next Command phase, add 1 to charge rolls made for that unit, and each time a model in that unit makes a melee attack, you can re-roll the hit roll.
+• Until the start of your next Command phase, models in that unit have a 6+ invulnerable save, and cannot be affected by Malediction psychic powers (if they are currently being affected by any Malediction powers, the effects of those powers immediately cease to apply to models in that unit).</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8859-e789-85e7-0b74" name="Zealot" hidden="false" targetId="017f-29b9-fbf3-10e8" type="profile"/>
+        <infoLink id="8859-e789-85e7-0b74" name="Warrior Zealot" hidden="false" targetId="017f-29b9-fbf3-10e8" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9e1f-eaf4-4295-f84f" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink id="b93e-9159-304a-0ed8" name="Faction: Adeptus Ministorum" hidden="false" targetId="2009-635c-b08f-f825" primary="false"/>
         <categoryLink id="62c5-fcfd-044e-e3f8" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
         <categoryLink id="d806-1f47-419b-d487" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
         <categoryLink id="a749-0590-90f2-be91" name="Ministorum Priest" hidden="false" targetId="8eaa-7ae8-6d29-0db9" primary="false"/>
         <categoryLink id="7950-238f-d47f-2192" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="0fe1-c5e2-99fb-f233" name="Militarum Auxilla" hidden="false" targetId="fabd-67cb-befb-8f75" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c49b-bcdc-cc59-d79f" name="Laspistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -12830,22 +12831,107 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="01b6-aa79-010c-6f94" name="May Take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="01b6-aa79-010c-6f94" name="May Take:" hidden="false" collective="false" import="true" defaultSelectionEntryId="bbe5-f67f-7460-5536">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="884f-facb-9b5b-53f0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="884f-facb-9b5b-53f0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="014a-3dab-da57-78df" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="67a6-4d6b-befa-7448" name="Autogun" hidden="false" collective="false" import="true" targetId="5752-d165-5e03-d38c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db20-0ca9-8ff7-af0e" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="bb65-0f5b-bcbb-9a87" name="Chainsword" hidden="false" collective="false" import="true" targetId="0dd1-2e2b-7dd1-5495" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="617d-77c5-f086-6ac7" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="bbe5-f67f-7460-5536" name="Autopistol, Servo Stubber and Power Maul" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="4a34-b74f-d6a8-3bbc" name="Servo-Stubber" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdcf-fb72-6382-54f3" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb1d-bbfc-1516-952d" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="09c4-8392-8e0c-e1cd" name="Servo-Stubber" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 3</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="7a99-3f16-2974-3897" name="Power maul" hidden="false" collective="false" import="true" targetId="6ea7-1195-7144-438e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0de6-4ee8-c28a-efd3" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="311e-e826-debe-91d5" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="a2ca-31f9-08fe-1c38" name="Autopistol" hidden="false" collective="false" import="true" targetId="0507-a97d-4f7f-83b4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbdc-3736-61f8-42d9" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b22-6c89-46ea-651b" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="d383-2606-2fd6-2e8b" name="Bolt Pistol, Preacher Shotgun and Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="cb6a-7eca-f776-9dd3" name="Preacher Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69bd-6475-b389-55da" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c64f-287d-27d6-723f" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e2e3-09d7-b45b-5075" name="Preacher Shotgun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="1c64-9baa-301a-6a84" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379b-3579-29f3-5f32" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d6-9023-2dd8-a3a4" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4ae1-35ef-fc5c-e4d2" name="Chainsword" hidden="false" collective="false" import="true" targetId="0dd1-2e2b-7dd1-5495" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b7a-2299-7ef5-0bda" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f29-5a41-c75d-ba59" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="c23d-bb7f-9ea4-ca12" name="Autogun, Autopistol and Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b9d2-6a4a-2577-d4e8" name="Autogun" hidden="false" collective="false" import="true" targetId="5752-d165-5e03-d38c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5079-40ba-b0f9-cd77" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15e3-176f-4b1d-3668" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="75c1-eba4-5405-1941" name="Chainsword" hidden="false" collective="false" import="true" targetId="0dd1-2e2b-7dd1-5495" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bde-1f55-0f29-ca27" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60cb-af2d-9ea5-0bbb" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="50fe-64a1-5c08-b635" name="Autopistol" hidden="false" collective="false" import="true" targetId="0507-a97d-4f7f-83b4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aed5-7de0-302d-6f1f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ec-6c90-afc4-5a67" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -12858,7 +12944,6 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <entryLink id="de93-2a97-b020-52e0" name="Heirlooms of Conquest" hidden="false" collective="false" import="true" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup"/>
         <entryLink id="8798-4757-3dc8-b0d8" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup"/>
         <entryLink id="416e-3580-1e28-5e50" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry"/>
-        <entryLink id="b941-cf1f-6c64-03f3" name="Field Commander" hidden="false" collective="false" import="true" targetId="c7d5-e7b4-87d5-c29a" type="selectionEntry"/>
         <entryLink id="2593-e697-c428-bc38" name="Character Stratagems" hidden="false" collective="false" import="true" targetId="2527-4b0c-1e18-38b3" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -14368,17 +14453,14 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ec52-2db0-03fc-7786" name="Servitors" publicationId="53e9d88f--pubN88319" page="100" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ec52-2db0-03fc-7786" name="Munitorum Servitors" publicationId="e831-8627-fbc7-5b35" page="96" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="493a-6f52-fba0-aeb9" name="Mindlock" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Servitors improve both their Weapon Skill and Ballistic Skill to 4+, and their Leadership to 9, whilst they are within 6&quot; of any friendly TECH-PRIESTS.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While this unit is within 6&quot; of any friendly ASTRA MILITARUM ENGINSEER models, models in this unit have a Weapon Skill and Ballistic Skill characteristic of 4+ and a Leadership characteristic of 8. In addition, if your army is Battle-forged, then for each ASTRA MILITARUM ENGINSEER model included in a Detachment, one MUNITORUM SERVITORS unit can be included in that Detachment without taking up a Battlefield Role slot.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="6c14-0eb2-4dc3-88c8" name="Designer&apos;s Note (forgeworld)" hidden="false" targetId="713b-e29c-6e24-c095" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="9f05-6e07-3156-b7ed" name="Faction: &lt;FORGEWORLD&gt;" hidden="false" targetId="107e-7049-a707-a021" primary="false"/>
         <categoryLink id="a92f-208d-af86-9142" name="Faction: Adeptus Mechanicus" hidden="false" targetId="a794-f43a-87e6-1693" primary="false"/>
@@ -14507,12 +14589,12 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3b3d-7797-fca2-f8b3" name="Unit has battle honors?" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-        <entryLink id="84b8-1055-47f8-6062" name="Battle Honors" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
+        <entryLink id="3b3d-7797-fca2-f8b3" name="Has Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
+        <entryLink id="84b8-1055-47f8-6062" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="pts" typeId="points" value="40.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -17374,10 +17456,21 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
       </costs>
     </selectionEntry>
     <selectionEntry id="0609-08fb-cd8a-8b1e" name="Kasrkin" page="0" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1786-9def-1400-548b" name="Warrior Elites" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When you add this unit to your army, you can select one doctrine from pages 60-601 that no other unit from your army has. This unit has that doctrine in addition to any others it has</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="431c-3750-bbb6-8db1" name="Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="1a58-7c34-dbe7-8ff7" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
         <categoryLink id="a27f-ee25-80ca-ff4e" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink id="bfa7-2a84-39a0-1d49" name="Faction: Cadian" hidden="false" targetId="b332-b046-7171-5059" primary="false"/>
+        <categoryLink id="63fe-a391-6305-701e" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink id="b771-2c61-1fdf-887a" name="Platoon" hidden="false" targetId="717a-8f8b-caee-189d" primary="false"/>
+        <categoryLink id="0060-8b68-525c-6fe5" name="Regimental" hidden="false" targetId="54e0-767a-ea48-e51c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8d55-4c9d-ac32-8437" name="Kasrkin Sergeant" page="0" hidden="false" collective="false" import="true" type="model">
@@ -17401,7 +17494,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="060c-f138-a9ce-a8d4" name="Bolt Pistol" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="060c-f138-a9ce-a8d4" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="054f-9a15-46ad-1251">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f0c-61b6-eb07-e9be" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f7-d258-9832-1b5a" type="min"/>
@@ -17421,6 +17514,9 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                   </constraints>
                 </entryLink>
                 <entryLink id="d9fe-8a93-3f79-47df" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="5.0"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e53-55e0-9182-2858" type="max"/>
                   </constraints>
@@ -17430,7 +17526,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="8060-9b31-a04a-2766" name="Melee Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="8060-9b31-a04a-2766" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3be6-e818-7397-3824">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="157e-85d4-8e1c-7308" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0713-6504-c5ae-ed8b" type="min"/>
@@ -17441,7 +17537,10 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6670-1e21-e6d1-430f" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="fe02-d03c-e9da-5471" name="Power Sword" hidden="false" collective="false" import="true" targetId="ad4c-ce33-2822-331b" type="selectionEntry">
+                <entryLink id="fe02-d03c-e9da-5471" name="Power sword" hidden="false" collective="false" import="true" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="5.0"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="152f-7835-da8b-34ba" type="max"/>
                   </constraints>
@@ -17461,17 +17560,16 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4bb1-898a-83c4-6597" name="Kasrkin Trooper" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="4bb1-898a-83c4-6597" name="Kasrkin Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="2ec2-27de-727f-990f">
           <constraints>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0098-452a-9e59-b0e2" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9911-91fb-6a2d-c64c" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9911-91fb-6a2d-c64c" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="4b02-603c-5df5-4c0a" name="Kasrkin Trooper with Special Weapon" page="0" hidden="false" collective="false" import="true" type="model">
@@ -17494,7 +17592,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="5ba9-c153-ed40-d891" name="Special Weapon" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="5ba9-c153-ed40-d891" name="Special Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0772-9b43-0b56-40ec">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee77-752e-0a60-6dfe" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="347f-439b-e445-7133" type="min"/>
@@ -17502,7 +17600,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                   <selectionEntries>
                     <selectionEntry id="0772-9b43-0b56-40ec" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b72e-c0e4-483e-1bbd" type="max"/>
+                        <constraint field="selections" scope="0609-08fb-cd8a-8b1e" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f0-ef53-5b6b-fbb7" type="max"/>
                       </constraints>
                       <profiles>
                         <profile id="1968-e31c-5ea8-ae49" name="Grenade Launcher (Frag)" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -17528,40 +17626,32 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                       </profiles>
                       <costs>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                        <cost name="pts" typeId="points" value="5.0"/>
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
                     <entryLink id="a602-73f4-0db5-d4c0" name="Plasma gun" hidden="false" collective="false" import="true" targetId="8c14-22cc-93ce-b85a" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" field="points" value="10.0"/>
-                      </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2098-6687-2783-4e19" type="max"/>
+                        <constraint field="selections" scope="0609-08fb-cd8a-8b1e" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2098-6687-2783-4e19" type="max"/>
                       </constraints>
                     </entryLink>
                     <entryLink id="6e9b-0b85-dace-3b96" name="Meltagun" hidden="false" collective="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" field="points" value="10.0"/>
-                      </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bce1-9b49-18ae-5875" type="max"/>
+                        <constraint field="selections" scope="0609-08fb-cd8a-8b1e" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d64b-75f2-c494-e661" type="max"/>
                       </constraints>
                     </entryLink>
                     <entryLink id="fb37-db28-e398-9b5d" name="Flamer" hidden="false" collective="false" import="true" targetId="fd22-6743-2d4c-dd62" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3410-9c7f-0fad-fc22" type="max"/>
-                        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37d7-cd12-8d77-0aae" type="max"/>
+                        <constraint field="selections" scope="0609-08fb-cd8a-8b1e" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b91b-3d18-5922-8d1b" type="max"/>
                       </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="5.0"/>
-                      </costs>
                     </entryLink>
                     <entryLink id="7156-41db-cf25-871f" name="Hot-shot Volley Gun" hidden="false" collective="false" import="true" targetId="5d8d-f53d-1a4c-fabb" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="points" value="0.0"/>
+                      </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63c8-bbca-7f5b-316f" type="max"/>
+                        <constraint field="selections" scope="0609-08fb-cd8a-8b1e" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3068-60c0-ffc7-52e3" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -17576,7 +17666,6 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
               </costs>
@@ -17615,7 +17704,6 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
               </costs>
@@ -17639,6 +17727,9 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="1790-bed2-0027-c02f" name="Vox-Caster" hidden="false" targetId="086d-e3ba-a17b-01bd" primary="false"/>
+              </categoryLinks>
               <entryLinks>
                 <entryLink id="b8e0-a37f-2342-63e3" name="Vox-caster" hidden="false" collective="false" import="true" targetId="9ce2-5815-93dd-2918" type="selectionEntry">
                   <modifiers>
@@ -17650,16 +17741,13 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                   </constraints>
                 </entryLink>
                 <entryLink id="7baa-db23-f825-8b9c" name="Hot-Shot Lasgun" hidden="false" collective="false" import="true" targetId="5188-4b26-73ac-1160" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="points" value="0"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8558-5d17-7c7b-8326" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8b3-4a04-a102-2e2a" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
               </costs>
@@ -17683,11 +17771,76 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="c75b-b069-f486-03c8" name="Melta Mine" hidden="false" targetId="1436-fc28-06a8-1d8f" primary="false"/>
+              </categoryLinks>
               <entryLinks>
-                <entryLink id="bcd5-f359-87f2-2144" name="Hot-Shot Laspistol" hidden="false" collective="false" import="true" targetId="be4e-87d9-3bb2-4ecd" type="selectionEntry"/>
+                <entryLink id="bcd5-f359-87f2-2144" name="Hot-shot Laspistol" hidden="false" collective="false" import="true" targetId="be4e-87d9-3bb2-4ecd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="112e-2cc9-02ef-2c6e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6ee-7e31-0d94-1b9c" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d278-bd5b-2521-1cba" name="Kasrkin Trooper w/ Hot-Shot Marksman Rifle" page="0" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8547-d74f-be4e-67fb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8510-f73c-3702-c063" name="Kasrkin Trooper" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="107d-8379-3765-bc07" name="Vox-Caster" hidden="false" targetId="086d-e3ba-a17b-01bd" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="1fa4-0966-6340-262c" name="Hot-Shot Marksman Rifle" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14cf-0b06-e2af-049b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a69-bf56-5a5e-1843" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="f954-5e05-94f1-c6b2" name="Hot-Shot Marksman Rifle" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select a target for this weapon, you can ignore the Look Out, Sire rule. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="ffbd-f98b-7aa2-883a" name="Vox-caster" hidden="false" collective="false" import="true" targetId="9ce2-5815-93dd-2918" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="0.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6495-c45a-fb0c-69d1" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f0e-0b8c-20e3-6f3a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
               </costs>
@@ -17706,7 +17859,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="100.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -18276,6 +18429,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         <categoryLink id="278a-f16d-25ae-0cc2" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="7c9e-6340-b1bc-83e6" name="Regimental" hidden="false" targetId="54e0-767a-ea48-e51c" primary="false"/>
         <categoryLink id="ed9a-eddc-b18d-639f" name="Faction: Cadian" hidden="false" targetId="b332-b046-7171-5059" primary="false"/>
+        <categoryLink id="fe0c-2dd3-e999-9970" name="Commandant" hidden="false" targetId="b0a3-c8e2-b036-6794" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="658c-6e52-d60e-bae5" name="Chainsword" hidden="false" collective="false" import="true">
@@ -19466,6 +19620,262 @@ Note that this ability only affects the original target of that Order, and not a
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="pts" typeId="points" value="70.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a87f-a7c6-a511-fe8a" name="Taurox Prime" publicationId="53e9d88f--pubN88319" page="41" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="9026-8827-2f32-a142" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f67e-c223-b6fe-940f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1f64-1ce0-19ac-6c18" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9026-8827-2f32-a142" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9312-af27-a9d7-0e19" name="Transport: Taurox Prime" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model has a transport capacity of 10 MILITARUM TEMPESTUS INFANTRY, OFFICIO PREFECTUS INFANTRY OF MILITARUM AUXILLA models (it can only transport MILITARUM AUXILLA models that have been attached to a MILITARUM TEMPESTUS or OFFICIO PREFECTUS unit-see Regimental Attaches and Bodyguards, pages 87-89). Each OGRYNS model takes up the space of 3 models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e21b-5ef1-be59-fa90" name="Taurox Prime" publicationId="53e9d88f--pubN88319" page="41" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">*</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">*</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">10</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">*</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c764-35f4-8523-d309" name="Munitorum Restrictions" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Munitorum Restrictions: If your army is Battle-forged, then for each Detachment in your army, you cannot include more TAUROX PRIME models in that Detachment than there are MILITARUM TEMPESTUS INFANTRY Units in that Detachment.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="68ac-6b6a-1d9c-ce8d" name="Explodes (6+/6&quot;/D3)" hidden="false" targetId="9bde-7aa6-8e9a-0792" type="profile"/>
+        <infoLink id="8a91-a2b7-e059-15de" name="Armour of Contempt" hidden="false" targetId="ab12-fdad-19bf-29d7" type="rule"/>
+        <infoLink id="186e-a91b-9e21-c59a" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6331-ebf1-884b-3302" name="Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="aea3-d38c-d0fe-a738" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="afff-d76b-3854-e1b5" name="Faction: Militarum Tempestus" hidden="false" targetId="3984-854b-4603-be64" primary="false"/>
+        <categoryLink id="5f40-7738-6e78-151f" name="Taurox Prime" hidden="false" targetId="322c-0c77-d019-ef66" primary="false"/>
+        <categoryLink id="ed98-257e-9ba7-b5c4" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+        <categoryLink id="b955-7f50-d3f1-9ce7" name="Transport" hidden="false" targetId="6cc4-1b62-8e8a-05cd" primary="false"/>
+        <categoryLink id="b68c-3d91-1d7f-3c9e" name="Armoured" hidden="false" targetId="9401-e2e7-bd2c-b3cf" primary="false"/>
+        <categoryLink id="7a56-036c-67d5-5310" name="Squadron" hidden="false" targetId="eba3-3a9f-b907-d83a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6e3b-09f5-3422-eedd" name="Stat Damage (Taurox Prime)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a538-3369-b1d6-2fd8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a74-7aef-395c-e797" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6379-b564-00d3-9bda" name="Taurox 1" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
+              <characteristics>
+                <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">6-10+</characteristic>
+                <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">14&quot;</characteristic>
+                <characteristic name="BS" typeId="8010-b879-355a-c137">3+</characteristic>
+                <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="f498-0514-1f16-257e" name="Taurox 2" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
+              <characteristics>
+                <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">3-5</characteristic>
+                <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">10&quot;</characteristic>
+                <characteristic name="BS" typeId="8010-b879-355a-c137">4+</characteristic>
+                <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">D3</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2535-b97f-38f4-aa66" name="Taurox 3" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
+              <characteristics>
+                <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">1-2</characteristic>
+                <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">6&quot;</characteristic>
+                <characteristic name="BS" typeId="8010-b879-355a-c137">5+</characteristic>
+                <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2a5b-381c-1dc8-1f3f" name="Turret-mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3742-ca3b-5840-b93d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de2d-d715-4077-bdae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55f1-3532-4915-8682" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3742-ca3b-5840-b93d" name="Taurox Battle Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c7b-d006-b629-3c50" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="081f-199e-660c-b08a" name="Taurox Battle Cannon" publicationId="53e9d88f--pubN88319" page="41" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1b93-4283-b23a-581d" name="Taurox Gatling Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="072b-d752-1ec6-eb32" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e451-aa8a-0fb6-d2d1" name="Taurox Gatling Cannon" publicationId="53e9d88f--pubN88319" page="41" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6f0a-9e72-bda0-4bd8" name="Taurox Missile Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1616-6830-1ee2-7871" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3148-82cb-26d0-0be4" name="Taurox Missile Launcher (Frag)" publicationId="53e9d88f--pubN88319" page="41" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="47e5-fa45-fcdd-bc2e" name="Taurox Missile Launcher (Krak)" publicationId="53e9d88f--pubN88319" page="41" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="edfd-62ed-8f14-0b98" name="Hull-mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ff81-0fa3-419f-0a7d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5339-2638-825e-ec10" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="507b-f052-0364-ab38" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ff81-0fa3-419f-0a7d" name="Two Hot-shot Volley Guns" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="a15d-cc86-7669-3f40" name="Taurox Hot-Shot Volley Gun" hidden="false" targetId="748c-b15b-152a-382d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="81c1-62f9-b13f-4549" name="Two Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="567c-4d79-4ba7-b6e1" name="Autocannon" hidden="false" targetId="fa99-0671-b31a-22d7" type="profile"/>
+                <infoLink id="7637-2584-cafc-0be4" name="Autocannon" hidden="false" targetId="fa99-0671-b31a-22d7" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="29b2-d666-b274-f938" name="Unit has battle honors?" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
+        <entryLink id="4c5d-5179-8c4e-c14e" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
+        <entryLink id="317c-d8c9-6df4-5f02" name="Storm bolter" hidden="false" collective="false" import="true" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec95-0bd5-fd26-e403" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="d3aa-827c-bf30-66d2" name="Armoured Tracks" hidden="false" collective="false" import="true" targetId="1fd9-a5e2-ad93-3a21" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9846-ca7d-1856-a3e8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55a7-56bd-0329-715e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="105.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1fd9-a5e2-ad93-3a21" name="Armoured Tracks" publicationId="e831-8627-fbc7-5b35" page="82" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="9401-e2e7-bd2c-b3cf"/>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf47-5eb5-81ef-08a0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="da21-77d6-0515-6449" name="Armoured Tracks" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the ARMOURED keyword, and each time a ranged attack with a Damage characteristic of 1 is allocated to the bearer, add 1 to the armour saving throw made against that attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="5.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -22417,7 +22827,7 @@ Spirit of the Martyr: One model in the unit recovers D3 lost wounds, or you can 
     </profile>
     <profile id="f5f1-324f-5ba1-c4ae" name="Summary Execution" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The first time an Astra Militarum unit fails a Morale test during the Morale phase whilst it is within 6&quot; of any friendly Commissars, you can execute a model. If you do, one model of your choice in that unit is slain and the Morale test is re-rolled (do not include this slain model when re-rolling the Morale test).</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per turn, when a friendly ASTRA MILITARUM CORE unit within 6&quot; of this model fails a Morale test, this model can use this ability. If it does so, until the end of the phase, each time a Combat Attrition test is taken for that unit, it is automatically passed.</characteristic>
       </characteristics>
     </profile>
     <profile id="ed79-bdf5-75ca-f019" name="Vehicle Squadron" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -22642,9 +23052,9 @@ Spirit of the Martyr: One model in the unit recovers D3 lost wounds, or you can 
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The Leman Russ tank’s sturdy frame allows it to keep up a fearsome rate of fire even as it advances on the foe. If this model moves under half speed in its Movement phase (i.e. it moves a distance in inches less than half of its current Move characteristic) it can shoot its turret weapon twice in the following Shooting phase (the turret weapon must target the same unit both times). Furthermore, hit rolls for this model’s turret weapon do not suffer the penalty for moving and shooting a Heavy weapon. The following weapons are turret weapons: battle cannon, eradicator nova cannon, exterminator autocannon, vanquisher battle cannon, demolisher cannon, executioner plasma cannon and punisher gatling cannon.</characteristic>
       </characteristics>
     </profile>
-    <profile id="017f-29b9-fbf3-10e8" name="Zealot" publicationId="53e9d88f--pubN88319" page="99" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+    <profile id="017f-29b9-fbf3-10e8" name="Warrior Zealot" publicationId="e831-8627-fbc7-5b35" page="95" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll failed hit rolls for this unit in a turn in which it charged, made a heroic intervention, or was charged by an enemy unit.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a melee attack, if it made a charge move, was charged or performed a Heroic Intervention this turn, you can re-roll the hit roll.</characteristic>
       </characteristics>
     </profile>
     <profile id="12dd-ab65-2ad9-8ec0" name="Ecclesiarchy Battle Conclave" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -22784,6 +23194,16 @@ attack is considered to have been made with an unmodified wound roll of 6.</char
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">6</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="748c-b15b-152a-382d" name="Taurox Hot-Shot Volley Gun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire 3</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
