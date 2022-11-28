@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="114" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="118" battleScribeVersion="2.03" authorName="denny, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum"/>
@@ -98,7 +98,6 @@
     <categoryEntry id="cb37-8069-8985-01b7" name="Ratlings" hidden="false"/>
     <categoryEntry id="464f-0238-9365-4967" name="Attilan Rough Riders" hidden="false"/>
     <categoryEntry id="91ce-fd28-b4de-0951" name="Scout Sentinels" hidden="false"/>
-    <categoryEntry id="7014-e6c3-eb98-a590" name="Sergeant Harker" hidden="false"/>
     <categoryEntry id="bc6d-0e9c-cff7-e52f" name="Shadowsword" hidden="false"/>
     <categoryEntry id="4d2f-f735-2949-2b0a" name="Special Weapons Squad" hidden="false"/>
     <categoryEntry id="22bb-87ee-7637-e5cc" name="Stormlord" hidden="false"/>
@@ -246,6 +245,7 @@
     <categoryEntry id="c8d7-b9d1-f5ee-c98e" name="Tempestus Scions" hidden="false"/>
     <categoryEntry id="1436-fc28-06a8-1d8f" name="Melta Mine" hidden="false"/>
     <categoryEntry id="87c8-7328-8ca9-5e2c" name="Kasrkin" hidden="false"/>
+    <categoryEntry id="2aa8-ef0c-eae7-21bc" name="Sergeant Harker" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="431d-d055-dd6e-d714" name="Defenders of Humanity" hidden="false">
@@ -487,7 +487,7 @@ Designer’s Note: MILITARUM TEMPESTUS units will benefit from this rule if they
         <profile id="0231-9a03-0f43-82e5" name="Stat Damage (HS) 1" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
           <characteristics>
             <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">6-11+</characteristic>
-            <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">10&quot;</characteristic>
+            <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">12&quot;</characteristic>
             <characteristic name="BS" typeId="8010-b879-355a-c137">4+</characteristic>
             <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">3</characteristic>
           </characteristics>
@@ -495,7 +495,7 @@ Designer’s Note: MILITARUM TEMPESTUS units will benefit from this rule if they
         <profile id="0517-7889-4266-13b6" name="Stat Damage (HS) 2" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
           <characteristics>
             <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">3-5</characteristic>
-            <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">8&quot;</characteristic>
+            <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">10&quot;</characteristic>
             <characteristic name="BS" typeId="8010-b879-355a-c137">5+</characteristic>
             <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">D3</characteristic>
           </characteristics>
@@ -503,7 +503,7 @@ Designer’s Note: MILITARUM TEMPESTUS units will benefit from this rule if they
         <profile id="6429-35d0-d54a-fd21" name="Stat Damage (HS) 3" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
           <characteristics>
             <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">1-2</characteristic>
-            <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">6&quot;</characteristic>
+            <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">8&quot;</characteristic>
             <characteristic name="BS" typeId="8010-b879-355a-c137">6+</characteristic>
             <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">1</characteristic>
           </characteristics>
@@ -1123,229 +1123,6 @@ Designer’s Note: MILITARUM TEMPESTUS units will benefit from this rule if they
       <costs>
         <cost name="pts" typeId="points" value="430.0"/>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="27.0"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2985-edd1-a2d6-618d" name="Hellhounds" publicationId="53e9d88f--pubN88319" page="54" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="f638-c63c-2ebe-810e" name="Hellhound" hidden="false" targetId="740d-96f7-3ca7-c336" primary="false"/>
-        <categoryLink id="873e-a5e2-abcf-dbc8" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
-        <categoryLink id="e6be-2146-62b9-6ee7" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9225-a32e-ec51-387e" name="Tanks" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f27-6d1d-3123-6cd7" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab92-6b11-d137-d1b4" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="211c-8762-b840-932b" name="Hellhound" page="0" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="append" field="name" value="[Legends]">
-                  <conditions>
-                    <condition field="selections" scope="211c-8762-b840-932b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e00-e1fe-51b3-6546" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88b2-3f99-1a46-d589" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="a895-ae2e-7468-9864" name="Explodes (4+/6&quot;/D3)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                  <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If this model is reduced to 0 wounds, roll a D6 (adding 2 to the result in the case of a Hellhound) before removing it from the battlefield. On a 6+ it explodes, and each unit within 6&quot; suffers D3 mortal wounds.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="f0ec-7c99-8359-e810" name="Hellhound" hidden="false" targetId="bd48e6cb-2610-1525-abcc-200af38774a2" type="profile"/>
-                <infoLink id="9657-74ff-c8db-c25b" name="Vehicle Squadron" hidden="false" targetId="ed79-bdf5-75ca-f019" type="profile"/>
-                <infoLink id="ed02-8044-ca13-0756" name="Smoke Launchers" hidden="false" targetId="c883-3078-1367-cc2c" type="profile"/>
-                <infoLink id="a5d8-233f-4b44-3c15" name="Armour of Contempt" hidden="false" targetId="ab12-fdad-19bf-29d7" type="rule"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8944-d89a-ea15-aa95" name="Inferno Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="50e5-71e0-b2b3-77d6">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ac9-969e-0339-ef71" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b177-b73e-02fc-11ee" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="50e5-71e0-b2b3-77d6" name="Inferno Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="0643-533c-5d64-ea4e" name="Inferno Cannon" publicationId="53e9d88f--pubN88319" page="0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">16&quot;</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">This weapon automatically hits it&apos;s target.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="6e00-e1fe-51b3-6546" name="Artemia Inferno Cannon [Legends]" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="5d5c-4567-34db-cc59" name="Artemia Inferno Cannon" publicationId="b652-8bab-1453-da20" page="" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">16&quot;</characteristic>
-                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
-                            <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, that attack automatically hits the target.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="pts" typeId="points" value="20.0"/>
-                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="b46e-c2b7-52c8-d9cc" name="Hellhound Hull Weapon" hidden="false" collective="false" import="true" targetId="35c3-52e7-1ac4-04f2" type="selectionEntryGroup"/>
-                <entryLink id="b670-bb4c-98d2-04fe" name="Stat Damage (HS)" hidden="false" collective="false" import="true" targetId="da25-46a9-4472-2e07" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc28-9e1a-156b-6237" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f644-46ee-dea7-f6bb" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="87e8-acbf-4c50-8d51" name="Vehicle Equipment List" hidden="false" collective="false" import="true" targetId="d9f1-0505-984e-c749" type="selectionEntryGroup"/>
-                <entryLink id="e612-0b0a-90f2-e959" name="Pintle Mount" hidden="false" collective="false" import="true" targetId="ebb9-dadc-c98d-9b62" type="selectionEntryGroup"/>
-                <entryLink id="b12f-8a1f-c072-f599" name="Unit has battle honors?" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-                <entryLink id="778e-e4dd-301c-b583" name="Battle Honors" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="110.0"/>
-                <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ce85-96a7-d172-4cd4" name="Bane Wolf" page="0" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0a6-15da-b9b3-989f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f077-28ff-85df-f8c1" name="Hellhound" hidden="false" targetId="bd48e6cb-2610-1525-abcc-200af38774a2" type="profile"/>
-                <infoLink id="1310-8e5f-cd08-aa5c" name="Vehicle Squadron" hidden="false" targetId="ed79-bdf5-75ca-f019" type="profile"/>
-                <infoLink id="c3eb-9671-5c73-f220" name="Explodes (6+/6&quot;/D3)" hidden="false" targetId="9bde-7aa6-8e9a-0792" type="profile"/>
-                <infoLink id="407a-f100-5013-1900" name="Smoke Launchers" hidden="false" targetId="c883-3078-1367-cc2c" type="profile"/>
-                <infoLink id="febe-c426-816e-ecba" name="Armour of Contempt" hidden="false" targetId="ab12-fdad-19bf-29d7" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="d2ec-1a40-fbec-00a2" name="Chem Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="842f-f2c7-43a8-9530" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86cc-e470-898a-25d3" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="acc8-0c1c-5a61-54f4" name="Chem Cannon" publicationId="53e9d88f--pubN88319" page="0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">8&quot;</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">*</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">This weapon automatically hits it&apos;s target. In addition, it wounds on a 2+, unless it is targeting a VEHICLE, in which case it wounds on a 6+.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="3ab3-869e-ee7f-83a9" name="Hellhound Hull Weapon" hidden="false" collective="false" import="true" targetId="35c3-52e7-1ac4-04f2" type="selectionEntryGroup"/>
-                <entryLink id="cc61-9af8-0782-0fab" name="Stat Damage (HS)" hidden="false" collective="false" import="true" targetId="da25-46a9-4472-2e07" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1464-a512-d169-010b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d871-9467-ca79-1829" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="23a7-9686-d3ec-2a11" name="Vehicle Equipment List" hidden="false" collective="false" import="true" targetId="d9f1-0505-984e-c749" type="selectionEntryGroup"/>
-                <entryLink id="45e0-7df6-ded7-c261" name="Pintle Mount" hidden="false" collective="false" import="true" targetId="ebb9-dadc-c98d-9b62" type="selectionEntryGroup"/>
-                <entryLink id="6075-11f1-5775-5a3c" name="Unit has battle honors?" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-                <entryLink id="57fd-530e-7925-67c0" name="Battle Honors" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="100.0"/>
-                <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="233a-6d74-265e-9600" name="Devil Dog" page="0" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e631-be29-b2ad-eb05" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0c49-1bd6-62c3-a5f0" name="Hellhound" hidden="false" targetId="bd48e6cb-2610-1525-abcc-200af38774a2" type="profile"/>
-                <infoLink id="9f12-9de1-abbc-a105" name="Vehicle Squadron" hidden="false" targetId="ed79-bdf5-75ca-f019" type="profile"/>
-                <infoLink id="c573-42df-f356-0dc6" name="Explodes (6+/6&quot;/D3)" hidden="false" targetId="9bde-7aa6-8e9a-0792" type="profile"/>
-                <infoLink id="0c39-ee9f-3988-b4c4" name="Smoke Launchers" hidden="false" targetId="c883-3078-1367-cc2c" type="profile"/>
-                <infoLink id="0253-69b7-0a95-ad4e" name="Armour of Contempt" hidden="false" targetId="ab12-fdad-19bf-29d7" type="rule"/>
-              </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="f82f-0a53-1fd5-7328" name="Melta Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39b6-d2e9-9aed-d47f" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1406-4aa3-05d5-0d95" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="fc4c-6d73-e8f8-0f6c" name="Melta Cannon" publicationId="53e9d88f--pubN88319" page="0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D3</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.  Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="3b86-972f-4d93-e2c4" name="Hellhound Hull Weapon" hidden="false" collective="false" import="true" targetId="35c3-52e7-1ac4-04f2" type="selectionEntryGroup"/>
-                <entryLink id="8aaf-a0bd-5afc-002c" name="Stat Damage (HS)" hidden="false" collective="false" import="true" targetId="da25-46a9-4472-2e07" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ec-d389-4f18-1a21" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1a7-556c-14f0-8271" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="c1d4-0bfa-1d3b-55b6" name="Vehicle Equipment List" hidden="false" collective="false" import="true" targetId="d9f1-0505-984e-c749" type="selectionEntryGroup"/>
-                <entryLink id="23ed-588e-184f-bbaf" name="Pintle Mount" hidden="false" collective="false" import="true" targetId="ebb9-dadc-c98d-9b62" type="selectionEntryGroup"/>
-                <entryLink id="ffb5-130e-fc18-d80d" name="Unit has battle honors?" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-                <entryLink id="4e9d-2232-7331-e612" name="Battle Honors" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="110.0"/>
-                <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8170,6 +7947,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c5b7-cf00-7c5c-c77b" name="Bullgryns" publicationId="e831-8627-fbc7-5b35" page="98" hidden="false" collective="false" import="true" type="unit">
@@ -12856,6 +12634,11 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -12872,6 +12655,11 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d383-2606-2fd6-2e8b" name="Bolt Pistol, Preacher Shotgun and Chainsword" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
@@ -12892,6 +12680,11 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -12908,6 +12701,11 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c23d-bb7f-9ea4-ca12" name="Autogun, Autopistol and Chainsword" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -12930,6 +12728,11 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -17562,6 +17365,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -17627,6 +17431,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                       <costs>
                         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -17668,6 +17473,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2ec2-27de-727f-990f" name="Kasrkin Trooper" page="0" hidden="false" collective="false" import="true" type="model">
@@ -17706,6 +17512,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4121-07f7-c52d-f81f" name="Kasrkin Trooper w/ Vox-caster" page="0" hidden="false" collective="false" import="true" type="model">
@@ -17750,6 +17557,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2dbe-67df-c432-84e5" name="Kasrkin Trooper w/ Melta Mine" page="0" hidden="false" collective="false" import="true" type="model">
@@ -17785,6 +17593,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d278-bd5b-2521-1cba" name="Kasrkin Trooper w/ Hot-Shot Marksman Rifle" page="0" hidden="false" collective="false" import="true" type="model">
@@ -17827,6 +17636,11 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -17843,6 +17657,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -19762,6 +19577,7 @@ Note that this ability only affects the original target of that Order, and not a
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6f0a-9e72-bda0-4bd8" name="Taurox Missile Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -19793,6 +19609,7 @@ Note that this ability only affects the original target of that Order, and not a
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -19827,6 +19644,7 @@ Note that this ability only affects the original target of that Order, and not a
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -19876,6 +19694,277 @@ Note that this ability only affects the original target of that Order, and not a
       <costs>
         <cost name="pts" typeId="points" value="5.0"/>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf45-d01e-81a4-2024" name="Hellhound" page="0" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="append" field="name" value=" (Banewolf)">
+          <conditions>
+            <condition field="selections" scope="bf45-d01e-81a4-2024" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d60-08da-f36f-9936" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value=" (Devil Dog)">
+          <conditions>
+            <condition field="selections" scope="bf45-d01e-81a4-2024" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3317-9bc1-154e-2051" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="3f51-086a-2b37-7c4d" name="Explodes (5+/6&quot;/D3)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this model is destroyed, roll one D6 before removing it from play. On a 5+ it explodes, and each unit within 6&quot; suffers D3 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="56ce-41fe-fa90-cfae" name="Hellhound" hidden="false" targetId="bd48e6cb-2610-1525-abcc-200af38774a2" type="profile"/>
+        <infoLink id="c706-a180-90b0-1b64" name="Armour of Contempt" hidden="false" targetId="ab12-fdad-19bf-29d7" type="rule"/>
+        <infoLink id="fa24-b91f-4bff-bcb4" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ba20-375d-4b12-5783" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="0dcd-dc89-d48b-cc0a" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="ab0f-f611-29d0-c86c" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+        <categoryLink id="efda-a21a-7e33-f3d1" name="Smoke" hidden="false" targetId="bcf4-1bd8-9794-feaa" primary="false"/>
+        <categoryLink id="11af-91ee-e9f5-b26f" name="Regimental" hidden="false" targetId="54e0-767a-ea48-e51c" primary="false"/>
+        <categoryLink id="b47a-060a-4beb-c653" name="Squadron" hidden="false" targetId="eba3-3a9f-b907-d83a" primary="false"/>
+        <categoryLink id="d223-5782-b17e-b179" name="Hellhound" hidden="false" targetId="740d-96f7-3ca7-c336" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="556b-2c7c-9735-8341" name="Turret Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0364-b7ce-1ede-7aec">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e59-fb6d-f54d-d4c1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de8e-ac34-f0ac-0777" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1d60-08da-f36f-9936" name="Chem Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0c1b-6755-f19b-1d98" name="Chem Cannon" publicationId="e831-8627-fbc7-5b35" page="102" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">2</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon. Each time an attack is made with this weapon, that attack automatically hits the target, and, if the target does not have the VEHICLE or TITANIC keywords, an unmodified wound roll of 2+ is always successful.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="3317-9bc1-154e-2051" name="Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1f06-294a-18b3-1619" name="Melta Cannon" publicationId="e831-8627-fbc7-5b35" page="102" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon. Each time an attack made with this weapon targets a unit within half-range, that attack has a damage characteristic of D6+4.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="0364-b7ce-1ede-7aec" name="Inferno Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ef25-8dda-a29e-83bf" name="Inferno Cannon" publicationId="e831-8627-fbc7-5b35" page="102" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon. Each time an attack is made with this weapon, that attack automatically hits the target.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2bfb-eb0f-f377-fe50" name="Artemia Inferno Cannon [Legends]" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="append" field="name" value="[LEGENDS]"/>
+              </modifiers>
+              <profiles>
+                <profile id="0f31-e457-5827-de76" name="Artemia Inferno Cannon" publicationId="b652-8bab-1453-da20" page="" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">16&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, that attack automatically hits the target.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="423e-6cab-9f1e-f553" name="Hellhound Hull Weapon" hidden="false" collective="false" import="true" targetId="35c3-52e7-1ac4-04f2" type="selectionEntryGroup"/>
+        <entryLink id="b750-d59c-6aa2-3dc7" name="Stat Damage (HS)" hidden="false" collective="false" import="true" targetId="da25-46a9-4472-2e07" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a180-74c8-05bc-eac8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c1d-a9cd-2060-4a36" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0f20-239f-d82b-4f36" name="Vehicle Equipment List" hidden="false" collective="false" import="true" targetId="d9f1-0505-984e-c749" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="110.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17d2-e653-5b72-59bf" name="Sly Marbo" publicationId="e831-8627-fbc7-5b35" page="93" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b06-9eaf-0965-5e83" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="65cc-3d41-b083-8e7a" name="Sly Marbo" publicationId="e831-8627-fbc7-5b35" page="93" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">5</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6162-0b4c-bbd4-eab0" name="Loner" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model can never be your WARLORD.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4dca-f960-fa13-f42a" name="Ripper Pistol" publicationId="e831-8627-fbc7-5b35" page="93" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select a target for this weapon, you can ignore the Look Out, Sir rule. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cb76-2512-9970-93da" name="Hidden Ambush" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">During deployment, you can set up this model in ambush instead of setting it up on the battlefield. If you do so, then in the Reinforcements step of one of your Movement phases, you can set up this unit anywhere on the battlefield that is more than 9&quot; away from any enemy models. Until the end of that turn, you can re-roll charge rolls made for this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a16a-a260-2112-f779" name="Like Fighting a Shadow" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, at the end of the Fight phase, you can remove this unit from the battlefield. If you do so, in the Reinforcements step of your next Movement phase, set this model back up anywhere on the battlefield that is more than 9&quot; away from any enemy models. If the battle ends and this model is not on the Battlefield, it is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5941-5646-0871-382c" name="Envenomed blade" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon is allocated to a non-VEHICLE model, that attack has a Damage characteristic of 2.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="16e2-3dcd-189e-0915" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="14f8-a9a6-e927-6a64" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink id="3636-edfc-ebb7-c392" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="c409-4a60-e2e1-9dc5" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink id="4ed7-a919-28a8-0162" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="9db4-cbe0-3e7f-53a4" name="Faction: Catachan" hidden="false" targetId="6218-425e-33cf-6ec3" primary="false"/>
+        <categoryLink id="4518-b696-dce0-d5db" name="Platoon" hidden="false" targetId="717a-8f8b-caee-189d" primary="false"/>
+        <categoryLink id="285d-6d2a-5eec-62d4" name="Melta Mine" hidden="false" targetId="1436-fc28-06a8-1d8f" primary="false"/>
+        <categoryLink id="4787-a888-4b71-d6b3" name="Regimental" hidden="false" targetId="54e0-767a-ea48-e51c" primary="false"/>
+        <categoryLink id="d8ea-2b29-fe65-fe6a" name="Sly Marbo" hidden="false" targetId="9ef3-50ee-426d-597b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="50.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0705-6f49-57b2-7288" name="Sergeant Harker" publicationId="e831-8627-fbc7-5b35" page="95" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0e29-6b31-fdee-920c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="01fa-07cb-3731-50cc" name="Sergeant Harker" publicationId="e831-8627-fbc7-5b35" page="95" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="777d-94ac-6b43-8db2" name="Harker&apos;s Hellraisers" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Before deployment, you can select one CATACHAN JUNGLE FIGHTERS unit from your army. Until the end of the battle, each time a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c6a-24bb-22de-1c9c" name="Payback" publicationId="e831-8627-fbc7-5b35" page="95" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e1b-1f30-ce98-ff4e" name="Catachan Sergeant" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model can never be your WARLORD.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5092-f16f-e89a-5065" name="Stonetooth" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model would lose a wound, roll one D6: on a 5+ that wound is not lost.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ec6d-23c6-29bf-deee" name="Voice of Command" publicationId="e831-8627-fbc7-5b35" page="79" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Commanding Authority: This model knows Regimental Orders. In your Command phase, it can issue one Order. This model can only issue Orders to CATACHAN JUNGLE FIGHTERS units; when doing so, for the purposes of the Regimental Tactics ability, you can only select other friendly CATACHAN JUNGLE FIGHTERS units within 6&quot; of the unit originally selected for that Order to also be affected by that Order.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2192-1459-27e5-d725" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8e11-aeea-9af9-dab3" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink id="6cef-8392-318b-9b43" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="d347-3b53-2e52-b01c" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink id="e2c0-522f-5a93-7490" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="f3ce-0180-99bb-2be1" name="Faction: Catachan" hidden="false" targetId="6218-425e-33cf-6ec3" primary="false"/>
+        <categoryLink id="6471-2510-79f4-486e" name="Regimental" hidden="false" targetId="54e0-767a-ea48-e51c" primary="false"/>
+        <categoryLink id="ab19-2702-51ce-3c85" name="Officer" hidden="false" targetId="dd6e-7055-ca6b-b711" primary="false"/>
+        <categoryLink id="2cb1-d9e0-c30e-fbf2" name="Sergeant Harker" hidden="false" targetId="2aa8-ef0c-eae7-21bc" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -22023,11 +22112,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="078d-3b57-a663-33c8" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ef3-50ee-426d-597b" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7014-e6c3-eb98-a590" type="instanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="092e-5104-6d53-e1e1" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9145-1d3b-9057-7a17" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed50-206a-b564-921b" type="instanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24d2-da10-88cf-0c73" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
@@ -22871,7 +22956,7 @@ Spirit of the Martyr: One model in the unit recovers D3 lost wounds, or you can 
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="bd48e6cb-2610-1525-abcc-200af38774a2" name="Hellhound" publicationId="53e9d88f--pubN88319" page="54" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+    <profile id="bd48e6cb-2610-1525-abcc-200af38774a2" name="Hellhound" publicationId="e831-8627-fbc7-5b35" page="102" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">*</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
