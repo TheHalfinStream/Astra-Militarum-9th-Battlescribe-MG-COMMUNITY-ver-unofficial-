@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="319" battleScribeVersion="2.03" authorName="Denny &amp; Halfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.</readme>
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="324" battleScribeVersion="2.03" authorName="Denny &amp; TheHalfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
+
+This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th Edition battlescribe files, and all credit goes to them for the creation of the 8th edition version which laid the foundation to our project to bring over the 9th edition codex, and an additional thanks for answering some of our questions on the BSData discord, as well as allowing us to go forward with this project.</readme>
   <categoryEntries>
     <categoryEntry id="3795-a5f0-f1d7-9efd" name="No Force Org Slot (Commissar)" hidden="false">
       <modifiers>
@@ -98,7 +100,7 @@
         <categoryLink id="9391-b601-6e9e-89dc" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1788-aba7-90f8-bd2a" name="Sergeant Harker" hidden="false" collective="false" import="true" targetId="b16e59cf-cf9e-e4bd-ca74-2c197b354097" type="selectionEntry">
+    <entryLink id="1788-aba7-90f8-bd2a" name="Sergeant Harker" hidden="false" collective="false" import="true" targetId="0705-6f49-57b2-7288" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -342,7 +344,7 @@
         <categoryLink id="5828-8bcf-4183-42b1" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8fbc-fbd5-2683-b5c8" name="Sly Marbo" hidden="false" collective="false" import="true" targetId="627f-c230-9700-49a4" type="selectionEntry">
+    <entryLink id="8fbc-fbd5-2683-b5c8" name="Sly Marbo" hidden="false" collective="false" import="true" targetId="17d2-e653-5b72-59bf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -496,13 +498,6 @@
         <categoryLink id="e12a-9382-7579-754a" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
         <categoryLink id="8701-0c15-a2e2-1ddc" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
         <categoryLink id="3aa0-a3cb-6bea-f408" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="52d4-0d80-0dd4-73b9" name="Hellhounds" hidden="false" collective="false" import="true" targetId="2985-edd1-a2d6-618d" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="ab98-c275-13e6-6c66" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
-        <categoryLink id="2f88-d8a4-ebe7-4eaa" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
-        <categoryLink id="d2be-0a1f-e628-716c" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="45f3-e4a7-6119-946d" name="Hydra" hidden="false" collective="false" import="true" targetId="411a-f57a-9f2b-b9df" type="selectionEntry">
@@ -829,6 +824,15 @@
         <categoryLink id="3eb6-4e55-64c6-57ea" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="ba2c-6434-6e00-a7a8" name="Hellhound" publicationId="e831-8627-fbc7-5b35" page="102" hidden="false" collective="false" import="true" targetId="bf45-d01e-81a4-2024" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5402-0ace-1746-e3bd" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="110.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
+      </costs>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dcb74f5d-1308-fbaa-205f-3ad8fbde5b04" name="Lord Castellan Creed" publicationId="53e9d88f--pubN88319" page="56" hidden="false" collective="false" import="true" type="model">
@@ -938,7 +942,6 @@
         <categoryLink id="1676-c7d9-c3be-427f" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
         <categoryLink id="0aaa-3e81-4e0b-f720" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
         <categoryLink id="1329-eec2-2d3b-ba4d" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink id="0139-43f0-c63e-4b95" name="Sergeant Harker" hidden="false" targetId="7014-e6c3-eb98-a590" primary="false"/>
         <categoryLink id="eb6f-9430-e4f0-7193" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
       </categoryLinks>
       <selectionEntries>
