@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="324" battleScribeVersion="2.03" authorName="Denny &amp; TheHalfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="324" battleScribeVersion="2.03" authorName="3Komnenos3 &amp; TheHalfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th Edition battlescribe files, and all credit goes to them for the creation of the 8th edition version which laid the foundation to our project to bring over the 9th edition codex, and an additional thanks for answering some of our questions on the BSData discord, as well as allowing us to go forward with this project.</readme>
@@ -101,9 +101,6 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
       </categoryLinks>
     </entryLink>
     <entryLink id="1788-aba7-90f8-bd2a" name="Sergeant Harker" hidden="false" collective="false" import="true" targetId="0705-6f49-57b2-7288" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="e8d1-76f3-80f5-601b" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -162,6 +159,7 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
       </categoryLinks>
     </entryLink>
     <entryLink id="3024-d805-795b-c4c5" name="Militarum Tempestus Scions" hidden="false" collective="false" import="true" targetId="f67e-c223-b6fe-940f" type="selectionEntry">
+      <comment>Elites  version</comment>
       <modifierGroups>
         <modifierGroup>
           <conditions>
@@ -313,7 +311,7 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
         <categoryLink id="37a5-3fa3-4edb-e1ca" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="17ed-356d-9edb-4245" name="Ministorum Priest" hidden="false" collective="false" import="true" targetId="bcc5-dce5-11ef-7d79" type="selectionEntry">
+    <entryLink id="17ed-356d-9edb-4245" name="Regimental Preacher" hidden="false" collective="false" import="true" targetId="bcc5-dce5-11ef-7d79" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0344-5603-db17-6d2d" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -345,9 +343,6 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
       </categoryLinks>
     </entryLink>
     <entryLink id="8fbc-fbd5-2683-b5c8" name="Sly Marbo" hidden="false" collective="false" import="true" targetId="17d2-e653-5b72-59bf" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="5bc3-3c77-a8c2-a69d" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -752,6 +747,7 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
       </categoryLinks>
     </entryLink>
     <entryLink id="128a-4ee4-049a-61b3" name="Militarum Tempestus Scions" hidden="false" collective="false" import="true" targetId="f67e-c223-b6fe-940f" type="selectionEntry">
+      <comment>Troops version</comment>
       <modifierGroups>
         <modifierGroup>
           <comment>This hides the Troops version of Tempestus Scions</comment>
@@ -833,6 +829,11 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
       </costs>
     </entryLink>
+    <entryLink id="493e-a28c-f693-b155" name="Cadian Shock Troops" hidden="false" collective="false" import="true" targetId="83b0-3cc2-15cc-6d3a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fd32-7816-ff3c-b88e" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="dcb74f5d-1308-fbaa-205f-3ad8fbde5b04" name="Lord Castellan Creed" publicationId="53e9d88f--pubN88319" page="56" hidden="false" collective="false" import="true" type="model">
@@ -913,7 +914,7 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b16e59cf-cf9e-e4bd-ca74-2c197b354097" name="Sergeant Harker" publicationId="53e9d88f--pubN88319" page="38" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b16e59cf-cf9e-e4bd-ca74-2c197b354097" name="Sergeant Harker (OLD)" publicationId="53e9d88f--pubN88319" page="38" hidden="true" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -1289,7 +1290,7 @@ Use this Act of Faith at the start of the Morale phase. If successful, the selec
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="627f-c230-9700-49a4" name="Sly Marbo" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="627f-c230-9700-49a4" name="Sly Marbo (OLD)" hidden="true" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="5977-be1d-8ce7-6f24" type="max"/>
       </constraints>
