@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="119" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="120" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum"/>
@@ -1288,6 +1288,11 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -1310,6 +1315,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5591,23 +5597,35 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
       </costs>
     </selectionEntry>
     <selectionEntry id="25d0-9bd6-7b74-98f4" name="Relic: The Emperor&apos;s Benediction" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa52-8fb7-1c87-80e6" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f8-adfe-cbbd-2ab3" type="lessThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f38c-e29f-a7c7-02be" type="max"/>
       </constraints>
       <profiles>
         <profile id="4585-7d45-f0fc-3a60" name="The Emperor&apos;s Benediction" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">COMMISSAR or LORD COMMISSAR with a bolt pistol only. The Emperor’s Benediction replaces the model’s bolt pistol and has the following profile:</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This Relic replaces a bolt pistol.</characteristic>
           </characteristics>
         </profile>
         <profile id="8020-9343-770a-cf92" name="The Emperor&apos;s Benediction" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12</characteristic>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 3</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">This weapon can target a Character even if it is not the closest enemy unit, unless the bearer is within 1&quot; of an enemy unit.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time you select a target for this weapon, you can ignore the Look Out, Sir rule. Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5624,7 +5642,7 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
       <profiles>
         <profile id="76db-61bc-c066-8138" name="Kurov&apos;s Aquila" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">OFFICERS only. Whilst the bearer is on the battlefield, roll a D6 each time your opponent uses a Stratagem. On a 5+ you gain 1 Command Point.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, after your opponent uses a Stratagem (excluding Command Re-roll), the bearer can use this Relic. If it does so, until the end of the battle, the comand point cost your opponent must pay to use that Stratagem again is increased by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5635,13 +5653,24 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
       </costs>
     </selectionEntry>
     <selectionEntry id="ac59-27a4-14ff-220f" name="Relic: The Laurels of Command" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9fb3-52d5-9edd-f85b" type="max"/>
       </constraints>
       <profiles>
         <profile id="b67e-66cc-2315-ee62" name="The Laurels of Command" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">OFFICER with Voice of Command ability only. Roll a dice each time the bearer issues an order to a friendly &lt;REGIMENT&gt;unit within 6&quot; of them. On a 4+ the bearer can immediately issue another order to the same unit. This does not count towards the maximum number of orders this model may issue each turn.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, at the start of any phase in your opponent&apos;s turn, the bearer can issue one Order it knows from the following list, as if it were your Command phase (this cannot be an Order it has already issued this battle round): Fix Bayonets!; Take Cover!; At All Costs!; Show Them Steel, Show Them Contempt!; Remain Vigilant!; Shock and Awe!;</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5651,24 +5680,36 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b317-c165-a7d5-0388" name="Relic: The Blade of Conquest" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b317-c165-a7d5-0388" name="Relic: Claw of the Desert Tigers" publicationId="e831-8627-fbc7-5b35" page="73" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc9e-551d-9afb-78d5" type="lessThan"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d475-faf3-ef14-5ea5" type="lessThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c72e-bfdc-96a4-3d0a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="b0b2-6afd-26c8-e712" name="The Blade of Conquest" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="b0b2-6afd-26c8-e712" name="Claw of the Desert Tigers" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Model with power sword only. The Blade of Conquest replaces the model’s power sword and has the following profile:</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This Relic replaces a power sword or power sabre.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ad84-e73d-4e8b-b7b0" name="The Blade of Conquest" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile id="ad84-e73d-4e8b-b7b0" name="Claw of the Desert Tigers" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 2 additional attacks with this weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5679,13 +5720,24 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
       </costs>
     </selectionEntry>
     <selectionEntry id="8802-85b0-d3d3-6158" name="Relic: The Deathmask of Ollanius" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="74ca-f911-7447-e981" type="max"/>
       </constraints>
       <profiles>
         <profile id="50b2-c878-1380-fd9f" name="The Deathmask of Ollanius" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">INFANTRY model only. The bearer of this item has a 4+ invulnerable save. In addition, once per game, at the start of any of your turns, the bearer may immediately heal D3 wounds.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Models in the bearer&apos;s unit have a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5695,14 +5747,25 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a31-5371-2f9a-9234" name="Relic: The Dagger of Tu&apos;Sakh" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1a31-5371-2f9a-9234" name="Relic: The Barbicant&apos;s Key" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d875-2ca1-faff-f9fe" type="max"/>
       </constraints>
       <profiles>
-        <profile id="7c8d-1cb2-dbb7-2137" name="The Dagger of Tu&apos;Sakh" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="7c8d-1cb2-dbb7-2137" name="The Barbicant&apos;s Key" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">During deployment, you can set up the bearer and one ASTRA MILITARUM INFANTRY unit from your army behind enemy lines instead of placing them on the battlefield. The infantry unit must have the same &lt;REGIMENT&gt; keyword as the bearer if the bearer has one.At the end of any of your Movement phases these units can launch their daring attack – set them up within 3&quot; of each other, anywhere on the battlefield that is wholly within 6&quot; of any battlefield edge and more than 9&quot; away from any enemy models.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per battle, in your Movement phase, the bearer can use this Relic. If it does so, remove the bearer&apos;s unit from the battlefield and set it back up anywhere on the battlefield that is more than 9&quot; away from any enemy models. Until the end of that turn, you can re-roll charge rolls made for the bearer&apos;s unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5732,7 +5795,7 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9428-029e-4bcd-939b" name="WT (Armageddon): Ex-gang Leader" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9428-029e-4bcd-939b" name="WT (Armageddon): Ex-gang Leader" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c738-53b8-43e6-56e5" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1bc9-f5f8-91fa-d7f0" type="max"/>
@@ -5771,6 +5834,18 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
       </costs>
     </selectionEntry>
     <selectionEntry id="8d6d-9c06-8025-de58" name="WT: Superior Tactical Training" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3263-4233-4344-6228" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f94a-1d92-78a3-2de6" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a934-58b9-d7ed-00cc" type="max"/>
@@ -5843,6 +5918,17 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
       </costs>
     </selectionEntry>
     <selectionEntry id="1fff-d44f-98e9-609c" name="WT: Front-Line Combatant" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3263-4233-4344-6228" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d00c-f7d0-7729-a5b1" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f59c-8f3e-3bb6-02ac" type="max"/>
@@ -5862,7 +5948,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ee13-f7d3-c9f0-85ba" name="WT (Militarum Tempestus): Faithful Servant of the Throne" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ee13-f7d3-c9f0-85ba" name="WT (Militarum Tempestus): Faithful Servant of the Throne" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfe-35ee-19a3-a89f" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8329-d003-b472-3b9c" type="max"/>
@@ -5900,7 +5986,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bce4-d542-c8b2-5888" name="WT (Mordian): Iron Discipline" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bce4-d542-c8b2-5888" name="WT (Mordian): Iron Discipline" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5129-a141-aa5f-b8cb" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="57d7-d40e-47b5-1c65" type="max"/>
@@ -5938,7 +6024,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="99fd-53f3-33b1-7445" name="WT (Tallarn): Swift Attacker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="99fd-53f3-33b1-7445" name="WT (Tallarn): Swift Attacker" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d3c-2766-a6e8-69a4" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d2e5-8326-d992-3a05" type="max"/>
@@ -5976,7 +6062,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4a77-bae2-2ef4-d64c" name="WT (Vostroyan): Honoured Duellist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4a77-bae2-2ef4-d64c" name="WT (Vostroyan): Honoured Duellist" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac20-3110-ca97-6674" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ecd9-9ba0-4539-7d5d" type="max"/>
@@ -6014,7 +6100,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f09-30a5-bd83-638f" name="WT (Valhallan): Tenacious" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2f09-30a5-bd83-638f" name="WT (Valhallan): Tenacious" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b03-bca8-c3b3-0f6e" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1769-50d3-b683-44fb" type="max"/>
@@ -6078,7 +6164,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6fb6-1a82-b959-823c" name="WT (Emperor&apos;s Blade): Mechanized Commander" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6fb6-1a82-b959-823c" name="WT (Emperor&apos;s Blade): Mechanized Commander" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5b3-5bc2-1309-74ef" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d77e-5b2c-cf17-b074" type="max"/>
@@ -6096,7 +6182,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa6c-6df5-5da1-93d4" name="WT (Emperor&apos;s Wrath): Lord of Ordnance" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fa6c-6df5-5da1-93d4" name="WT (Emperor&apos;s Wrath): Lord of Ordnance" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="838d-6dea-f326-4e33" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="21d9-a511-7774-276c" type="max"/>
@@ -6114,7 +6200,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0221-1c21-bf8a-e8dd" name="WT (Emperor&apos;s Conclave): Fiery Denouncer" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0221-1c21-bf8a-e8dd" name="WT (Emperor&apos;s Conclave): Fiery Denouncer" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="610f-13ad-1154-81f4" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="68db-885a-ebd8-6667" type="max"/>
@@ -6132,7 +6218,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cced-89cd-11ea-e8ed" name="WT (Emperor&apos;s Fist): Unflinching Resolve" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cced-89cd-11ea-e8ed" name="WT (Emperor&apos;s Fist): Unflinching Resolve" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89a-e087-69d5-4daf" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5f4b-f22f-ac0b-c044" type="max"/>
@@ -6150,15 +6236,26 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0d9b-e4d2-5ec0-54dc" name="WT (Tempestus Drop Force): Grave-Chute Commando" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0d9b-e4d2-5ec0-54dc" name="WT: Drill Commander (Aura)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2020-8a55-9eb4-1c19" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2197-b9de-e870-4c74" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ef1f-2fbc-2812-3f2d" name="Grave-Chute Commando" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="ef1f-2fbc-2812-3f2d" name="Drill Commander (Aura)" publicationId="e831-8627-fbc7-5b35" page="69" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add 1 to hit rolls for attacks made by friendly TEMPESTUS DROP FORCE INFANTRY units that disembarked from a friendlyTEMPESTUS DROP FORCE VALKYRIE this turn while they are within 6&quot; of your Warlord.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly MILITARUM TEMPESTUS INFANTRY unit is within 6&quot; of this WARLORD, instead of following the normal rules for Rapid Fire weapons, models in that unit make double the number of attacks when shooting with such weapons (e.g. a Rapid Fire 1 weapon would make 2 attacks, at any range).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6168,7 +6265,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bb9f-f3d8-862a-d053" name="Relic (Emperor&apos;s Blade): The Shield of Mortwald" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bb9f-f3d8-862a-d053" name="Relic (Emperor&apos;s Blade): The Shield of Mortwald" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d95-a5d5-fe3b-9cd5" type="max"/>
       </constraints>
@@ -6185,7 +6282,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="019d-682c-d76f-346f" name="Relic (Emperor&apos;s Conclave): Litanies of The Holy Synod" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="019d-682c-d76f-346f" name="Relic (Emperor&apos;s Conclave): Litanies of The Holy Synod" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d07e-83cd-3c47-97a2" type="max"/>
       </constraints>
@@ -6202,7 +6299,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="54e4-97ab-e423-ab82" name="Relic (Emperor&apos;s Fist): Hammer of Sunderance" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="54e4-97ab-e423-ab82" name="Relic (Emperor&apos;s Fist): Hammer of Sunderance" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ba6b-ccd7-67b5-efdc" type="max"/>
       </constraints>
@@ -6229,7 +6326,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="efab-7f02-a7a0-223f" name="Relic (Emperor&apos;s Wrath): Agripinaa-Class Orbital Tracker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="efab-7f02-a7a0-223f" name="Relic (Emperor&apos;s Wrath): Agripinaa-Class Orbital Tracker" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4f30-baf4-36f0-d128" type="max"/>
       </constraints>
@@ -6246,14 +6343,27 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="69b3-1fc3-ca6d-4512" name="Relic (Tempestus Drop Force): Cypra Mundi Null-Emitter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="69b3-1fc3-ca6d-4512" name="Relic: Null Coat" publicationId="e831-8627-fbc7-5b35" page="73" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa52-8fb7-1c87-80e6" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aba-e4e7-1d91-1a77" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bbb4-cb03-3233-2cd6" type="max"/>
       </constraints>
       <profiles>
-        <profile id="20ef-0ebb-b2fd-45f3" name="Cypra Mundi Null-Emitter" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="20ef-0ebb-b2fd-45f3" name="Null Coat" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If the bearer is targeted or affected by a psychic power, roll a D6; on a 2+ the psychic power has no effect on the bearer.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- In your opponent&apos;s Psychic phase, the bearer can attempt to deny one psychic power as if it were a Psyker.
+- Add 1 to Deny the Witch tests taken for the bearer.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6296,24 +6406,28 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bed3-70b2-ff0b-8788" name="Relic (9th Iotan Gorgonnes): Blessed Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bed3-70b2-ff0b-8788" name="Relic: Finial of the Nemrodesh 1st" publicationId="e831-8627-fbc7-5b35" page="73" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="4c76-2538-8ab3-a595" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c76-2538-8ab3-a595" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33c0-8496-22d0-08e9" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b0c0-61b6-4141-54ef" type="max"/>
       </constraints>
       <profiles>
-        <profile id="02f3-7119-c8c3-d73b" name="Relic (9th Iotan Gorgonnes): Blessed Bolt Pistol" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="02f3-7119-c8c3-d73b" name="Relic: Finial of the Nemrodesh 1st" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">9TH IOTAN GORGONNES model equipped with a bolt pistol only. This Relic replaces a bolt pistol and has the following profile:</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7032-1e8f-5678-99d7" name="Relic (9th Iotan Gorgonnes): Blessed Bolt Pistol" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 2</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"> Each time you select a target for this weapon, you can ignore the Look Out, Sir rule. When resolving an attack made with this weapon against a PSYKER unit, this weapon has a Damage characteristic of 3 for that attack.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the following ability:
+
+Finial of the Nemrodesh 1st (Aura): While a friendly ASTRA MILITARUM CORE unit is within 6&quot; of this model&apos;s unit, each time a model in that unit makes a ranged attack, you can ignore any or all modifiers to that attack&apos;s hit roll roll and if that attack is allocated to an enemy model, that enemy model cannot use any rules to ignore the wounds it loses.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6323,14 +6437,14 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7024-0bc8-1395-0ce7" name="Relic (55th Kappic Eagles): Distraction Charges" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7024-0bc8-1395-0ce7" name="Relic: Clarion Proclamatus" publicationId="e831-8627-fbc7-5b35" page="72" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd1f-41ee-98cb-559e" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="086d-e3ba-a17b-01bd" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33c0-8496-22d0-08e9" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6340,9 +6454,9 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="70bb-43cd-49c5-1875" type="max"/>
       </constraints>
       <profiles>
-        <profile id="c670-76a8-4da6-0a56" name="Relic (55th Kappic Eagles): Distraction Charges" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="c670-76a8-4da6-0a56" name="Relic: Clarion Proclamatus" publicationId="e831-8627-fbc7-5b35" page="72" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">“55TH KAPPIC EAGLES model only. When resolving an Overwatch attack made by a friendly 55TH KAPPIC EAGLES model within 3&quot; of a model with this Relic, if that attack scores a hit, the target is slowed until the end of the phase. When a charge roll is made for a slowed unit, halve the result (rounding up)”</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an OFFICER in the bearer&apos;s unit issues an Order, when selecting a target for that Order, you can ignore the range restriction for that type of Order, but if you do so, you can only select a unit with the VOX-CASTER keyword as the target for that Order (all other rules for issuing Orders still apply).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6352,14 +6466,13 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eb13-2076-18e2-e4e7" name="Relic (43rd Iotan Dragons): Emperor&apos;s Fury" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="eb13-2076-18e2-e4e7" name="Relic: Legacy of Kalladius" publicationId="e831-8627-fbc7-5b35" page="72" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd1f-41ee-98cb-559e" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0dd1-2e2b-7dd1-5495" type="lessThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6369,29 +6482,19 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5ad0-369e-d230-357e" type="max"/>
       </constraints>
       <profiles>
-        <profile id="4ccd-9982-617d-56bc" name="Relic (43rd Iotan Dragons): Emperor&apos;s Fury" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="4ccd-9982-617d-56bc" name="Relic: Legacy of Kalladius" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">“43RD IOTAN DRAGONS model equipped with a plasma pistol only. This Relic replaces a plasma pistol and has the following profile:</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This relic replaces a chainsword.</characteristic>
           </characteristics>
         </profile>
-        <profile id="183f-3840-b537-6dc1" name="Relic (43rd Iotan Dragons): Emperor&apos;s Fury Standard" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile id="183f-3840-b537-6dc1" name="Legacy of Kalladius" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 3</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">“If any hit rolls of 1 are made for attacks with this weapon’s supercharge profile, the bearer is destroyed after shooting with this weapon.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c268-d93b-35ff-4a6a" name="Relic (43rd Iotan Dragons): Emperor&apos;s Fury Supercharge" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 3</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">“If any hit rolls of 1 are made for attacks with this weapon’s supercharge profile, the bearer is destroyed after shooting with this weapon.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 3 additional attacks with this weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6401,14 +6504,13 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="00cb-7dec-59f8-acfc" name="Relic (133rd Lambdan Lions): Refractor Field Generator" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="00cb-7dec-59f8-acfc" name="Relic: Refractor Field Generator" publicationId="e831-8627-fbc7-5b35" page="73" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd1f-41ee-98cb-559e" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aba-e4e7-1d91-1a77" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6420,7 +6522,9 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
       <profiles>
         <profile id="f755-eac3-3799-5361" name="Relic (133rd Lambdan Lions): Refractor Field Generator" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">“33RD LAMBDAN LIONS model only. Friendly 133RD LAMBDAN LIONS models have a 5+ invulnerable save whilst within 6&quot; of a model from your army with this Relic.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The bearer gains the following ability:
+
+Refractor Field Generator (Aura): While a friendly MILITARUM TEMPESTUS INFANTRY unit is within 6&quot; of this model, models in that unit have a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6430,14 +6534,13 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2698-2602-4337-6408" name="Relic (32nd Thetoid Eagles): Fire of Judgement" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2698-2602-4337-6408" name="Relic: Order of the Bastium Stellaris" publicationId="e831-8627-fbc7-5b35" page="72" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd1f-41ee-98cb-559e" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6447,19 +6550,9 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="afc2-889e-a901-4fbc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="731f-aa25-d1eb-9e2c" name="Relic (32nd Thetoid Eagles): Fire of Judgement" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="731f-aa25-d1eb-9e2c" name="Relic: Order of the Bastium Stellaris" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">“32ND THETOID EAGLES model equipped with a hot-shot laspistol only. This Relic replaces a hot-shot laspistol and has the following profile:</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="9de7-9f45-f63a-7d89" name="Relic (32nd Thetoid Eagles): Fire of Judgement" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 2</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">*</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">*</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">“When resolving an attack made with this weapon, a successful hit roll inflicts 1 mortal wound on the target and the attack sequence ends.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack is made against the bearer&apos;s unit, an unmodified wound roll of 1-3 always fails, irrespective of any abilities that the weapon or the model making the attack may have.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6469,14 +6562,13 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ea97-24cc-f581-8f62" name="Relic (54th Psian Jackals): The Hounds Teeth" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ea97-24cc-f581-8f62" name="Relic: Psy-Sigil of Sanction" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd1f-41ee-98cb-559e" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e691-aad7-d21c-1023" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6486,19 +6578,10 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7054-5e78-b6c2-895a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ce03-fd59-ed5a-047a" name="Relic (54th Psian Jackals): The Hounds Teeth" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="ce03-fd59-ed5a-047a" name="Relic: Psy-Sigil of Sanction" publicationId="e831-8627-fbc7-5b35" page="72" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">“54TH PSIAN JAKALS model equipped with a chainsword only. This Relic replaces a chainsword and has the following profile:</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bff2-fcbc-0898-a15c" name="Relic (54th Psian Jackals): The Hounds Teeth" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">“When the bearer fights, it makes 3 additional attacks with this weapon. When resolving an attack made with this weapon against an AELDARIunit, you can re-roll the wound roll.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- The bearer knows one additional psychic power from the Psykana discipline.
+- The bearer can attempt to manifest one additional psychic power in your Psychic phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6508,15 +6591,26 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2d3e-d413-b82d-809b" name="WT (43rd Iotan Dragons): Precision Targeting" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2d3e-d413-b82d-809b" name="WT: Precision Targeting (Aura)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea8b-a296-0ea7-3f3e" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3050-0b74-c07e-58dc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="7ead-0584-e7b2-06ae" name="Precision Targeting" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="7ead-0584-e7b2-06ae" name="Precision Targeting (Aura)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">“At the start of your Shooting phase, select one enemy unit within 18&quot; of this Warlord. Until the end of that phase, when resolving an attack made by a friendly 43RD IOTAN DRAGONS model whilst its unit is within 6&quot; of this Warlord, that enemy unit does not receive the benefit of cover.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly MILITARUM TEMPESTUS INFANTRY unit is within 6&quot; of this WARLORD, each time a model in that unit makes a ranged attack, the target does not recieve the benefits of cover against that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6526,7 +6620,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6b6e-285c-1e60-bc00" name="WT (9th Iotan Gorgonnes):  Sanctity of Spirit" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6b6e-285c-1e60-bc00" name="WT (9th Iotan Gorgonnes):  Sanctity of Spirit" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4f-32ee-8316-63e3" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4401-48e8-3e94-5971" type="max"/>
@@ -6544,7 +6638,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8e90-3ba5-3813-226b" name="WT (55th Kappic Eagles): Master Vox" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8e90-3ba5-3813-226b" name="WT (55th Kappic Eagles): Master Vox" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c886-e655-c2e7-8c20" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="75c3-32fb-3469-6616" type="max"/>
@@ -6562,7 +6656,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3dd0-abea-ea51-e9a2" name="WT (133rd Lambdan Lions): Keys to the Armoury" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3dd0-abea-ea51-e9a2" name="WT (133rd Lambdan Lions): Keys to the Armoury" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c76-e4f5-b494-0269" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b09c-7f2c-e65f-ddbd" type="max"/>
@@ -6580,15 +6674,26 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ce0c-087c-cdcd-7a32" name="WT (32nd Thetoid Eagles): Uncompromising Prosecution" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ce0c-087c-cdcd-7a32" name="WT: Uncompromising Prosecution (Aura)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56bf-c3e2-633b-b5a7" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d27-e95c-64b3-a2a0" type="max"/>
       </constraints>
       <profiles>
-        <profile id="91db-efbb-d248-3c20" name="Uncompromising Prosecution" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="91db-efbb-d248-3c20" name="Uncompromising Prosecution (Aura)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">“When resolving an attack made with a hot-shot lasgun, hot-shot laspistol or hot-shot volley gun by a friendly 32ND THETOID EAGLES model whilst within 6&quot; of this Warlord, on an unmodified wound roll of 6 that weapon has an Armour Penetration characteristic of -4 for that attack.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly MILITARUM TEMPESTUS INFANTRY unit is within 6&quot; of this WARLORD, each time a model in that unit makes a ranged attack that targets a unit within half range, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6598,7 +6703,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ea6f-f49b-18ea-d681" name="WT (54th Psian Jackals): Skilled Tracker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ea6f-f49b-18ea-d681" name="WT (54th Psian Jackals): Skilled Tracker" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cb7-98ff-c575-4506" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="318e-3ecd-b5a1-fafd" type="max"/>
@@ -6616,7 +6721,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0a30-6d27-4709-ca86" name="Relic (Tallarn): Claw of the Desert Tigers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0a30-6d27-4709-ca86" name="Relic: The Emperor&apos;s Fury" publicationId="e831-8627-fbc7-5b35" page="73" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -6634,19 +6739,19 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f36e-d1cd-5b3a-0c24" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ef54-ba88-e3ac-53c9" name="Claw of the Desert Tigers" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile id="ef54-ba88-e3ac-53c9" name="The Emperor&apos;s Fury" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it can make 2 additional attacks with this weapon.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"></characteristic>
           </characteristics>
         </profile>
-        <profile id="25fc-d604-2121-afd4" name="Claw of the Desert Tigers" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="25fc-d604-2121-afd4" name="The Emperor&apos;s Fury" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">TALLARN model with power sword only. Claw of the Desert Tigers replaces the model’s power sword and has the following profile:</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This Relic replaces a plasma pistol.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6656,15 +6761,13 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da66-a94e-d518-7f77" name="Relic (Catachan): Mamorth Tuskblade" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="da66-a94e-d518-7f77" name="Relic (Catachan): Mamorth Tuskblade" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35a8-2621-55f2-062d" type="lessThan"/>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc9e-551d-9afb-78d5" type="lessThan"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e01-e6cf-1353-96f4" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6696,7 +6799,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d7d8-3d43-2cbd-5051" name="Relic (Valhallan): Pietrov&apos;s Mk 45 " hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d7d8-3d43-2cbd-5051" name="Relic (Valhallan): Pietrov&apos;s Mk 45 " hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -6736,7 +6839,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="316a-1dbd-2185-a82f" name="Relic (Mordian): Order of the Iron Star of Mordian" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="316a-1dbd-2185-a82f" name="Relic (Mordian): Order of the Iron Star of Mordian" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -6766,12 +6869,16 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ae2-c4d2-05bc-a16f" name="Relic (Militarum Tempestus): The Tactical Auto-Reliquary of Tyberius" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5ae2-c4d2-05bc-a16f" name="Relic: The Tactical Auto-Reliquary of Tyberius" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3984-854b-4603-be64" type="notInstanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -6780,7 +6887,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
       <profiles>
         <profile id="63a0-2454-6c8d-0497" name="The Tactical Auto-Reliquary of Tyberius" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">MILITARUM TEMPESTUS model only. When using the Voice of Command ability, this model can issue one additional order per turn. Roll a dice before issuing this additional order. On a roll of 1, the Reliquary issues contradictory nonsense and nothing happens.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Command phase, the bearer can issue one additional Order that it knows.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6790,14 +6897,13 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0cbc-fba4-2e32-1813" name="Relic (Cadia): Relic of Lost Cadia" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0cbc-fba4-2e32-1813" name="Relic: Relic of Lost Cadia" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef96-6f0e-04be-8b2c" type="lessThan"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e01-e6cf-1353-96f4" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b332-b046-7171-5059" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6809,7 +6915,9 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
       <profiles>
         <profile id="f48a-94d7-a04d-28e9" name="Relic of Lost Cadia" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">CADIAN model only. Once per battle, the bearer can unveil this relic at the start of any turn. Until the end of that turn, you can re-roll hit and wound rolls of 1 for all CADIAN units within 12&quot; of the bearer. You can instead re-roll all failed hit and wound rolls for these units until the end of the turn if they are targeting a CHAOS unit.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Oncer per battle, in any Command phase, the bearer can use this Relic. If it does so, until the end of the turn, the bearer gains the following Ability:
+
+Relic of Lost Cadia (Aura): While a friendly CADIAN INFANTRY unit is within 6&quot; of this model, improve the Weapon Skill and Ballistics Skill characteristics of models in that unit by 1 and add 1 to the Attacks and Leadership characteristics of models in that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6819,7 +6927,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0bb8-8323-a997-109a" name="Relic (Armageddon): Skull Mask of Acheron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0bb8-8323-a997-109a" name="Relic (Armageddon): Skull Mask of Acheron" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -6848,15 +6956,13 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02d1-fdc2-288b-6781" name="Relic (Vostroyan): The Armour of Graf Toschenko" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="02d1-fdc2-288b-6781" name="Relic: The Armour of Graf Toschenko" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b6d-9d03-763e-4d41" type="lessThan"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e01-e6cf-1353-96f4" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6868,7 +6974,8 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
       <profiles>
         <profile id="df9d-6f9f-9a33-3c43" name="The Armour of Graf Toschenko" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">VOSTROYAN INFANTRY model only. Increase the model’s Toughness characteristic to 4 and Save characteristic to 2+.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">- Add 1 to the bearer&apos;s Wounds characteristic.
+- The bearer has a Save characteristic of 2+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6979,6 +7086,18 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
       </costs>
     </selectionEntry>
     <selectionEntry id="43d2-fba4-4e96-a8d3" name="WT: Old Grudges" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3263-4233-4344-6228" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98b0-d5e6-afa6-e10c" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f900-5700-fe5b-22ab" type="max"/>
@@ -6998,6 +7117,18 @@ Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is wit
       </costs>
     </selectionEntry>
     <selectionEntry id="4a25-7a1d-4442-3728" name="WT: Master of Command" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3263-4233-4344-6228" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0997-6971-6862-22a3" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7292-da4e-636d-56af" type="max"/>
@@ -7016,6 +7147,18 @@ Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is wit
       </costs>
     </selectionEntry>
     <selectionEntry id="75b8-5f2d-9f0c-fbb5" name="WT: Lead By Example" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3263-4233-4344-6228" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc0f-c871-c583-d851" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e775-b66a-4ee0-75c1" type="max"/>
@@ -7034,6 +7177,18 @@ Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is wit
       </costs>
     </selectionEntry>
     <selectionEntry id="9f7a-4c34-8d0c-e3c7" name="WT: Grand Strategist" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3263-4233-4344-6228" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e165-9f8e-cf45-fbe3" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc2-b2ce-503b-ce3d" type="max"/>
@@ -7052,6 +7207,18 @@ Old Grudges (Aura): While a friendly PLATOON or BATTLE TANK SQUADRON unit is wit
       </costs>
     </selectionEntry>
     <selectionEntry id="2b95-ca70-0ccd-7118" name="WT: Master Tactician" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3263-4233-4344-6228" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd6e-7055-ca6b-b711" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1962-14cb-49c5-20e2" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6071-14b3-ffcb-b11a" type="max"/>
@@ -8544,7 +8711,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b046-2007-97a3-e5ec" name="Turret Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b046-2007-97a3-e5ec" name="Turret Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="da4b-8f68-0613-1d9b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6774-cea8-1905-3627" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4418-e14b-cab4-48e7" type="max"/>
@@ -8644,7 +8811,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="bf38-7352-1cb9-3c63" name="Hull Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="bf38-7352-1cb9-3c63" name="Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6493-090f-9026-ab4a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2034-5507-8542-1641" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1842-b38b-f526-62a4" type="max"/>
@@ -9470,7 +9637,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
             </entryLink>
             <entryLink id="4a98-1f11-db09-bdcd" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="points" value="5"/>
+                <modifier type="set" field="points" value="5.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65af-8528-f4ca-5be1" type="max"/>
@@ -11182,6 +11349,11 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -11204,6 +11376,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13769,20 +13942,30 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
               </characteristics>
             </profile>
-            <profile id="31e8-3d5e-6f90-8a5a" name="Power Sabre" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon.</characteristic>
-              </characteristics>
-            </profile>
           </profiles>
           <infoLinks>
             <infoLink id="b587-672a-3cb7-f338" name="Frag grenades" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="d475-faf3-ef14-5ea5" name="Power Sabre" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8717-eab7-edfd-c253" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb44-2077-3bc5-76e9" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="8f74-9acb-63b7-eb0e" name="Power Sabre" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="7725-fcd0-b6b4-a41e" name="Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="6a6e-c23b-7449-c41d">
               <constraints>
@@ -15054,7 +15237,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="96e4-0a16-0d00-c15d" name="Wyrdvane Psykers" publicationId="53e9d88f--pubN88319" page="101" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="96e4-0a16-0d00-c15d" name="Wyrdvane Psykers" publicationId="53e9d88f--pubN88319" page="101" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="1.0">
           <conditions>
@@ -17011,7 +17194,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d146-2060-489c-c691" name="WT (Cadia): Steel Discipline" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d146-2060-489c-c691" name="WT (Cadia): Steel Discipline" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c8-53f5-adca-fcf6" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bf6b-d260-3680-c7bd" type="max"/>
@@ -17029,7 +17212,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cea4-ff99-972d-81fa" name="WT (Cadia): Gifted Commander" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cea4-ff99-972d-81fa" name="WT (Cadia): Gifted Commander" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f848-498e-2759-08e0" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bd7a-db49-9930-e4fe" type="max"/>
@@ -17047,7 +17230,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9719-1449-97f3-6621" name="WT (Cadia): Mind Like a Fortress" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9719-1449-97f3-6621" name="WT (Cadia): Mind Like a Fortress" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dfa-aed4-a7b8-ca3e" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9d73-4429-f425-2c53" type="max"/>
@@ -17065,7 +17248,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a76-a46f-bbdb-d14e" name="Relic (Cadia): Dekker&apos;s Auto-Vox Servo Skull" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1a76-a46f-bbdb-d14e" name="Relic (Cadia): Dekker&apos;s Auto-Vox Servo Skull" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -17097,15 +17280,14 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c723-aa80-a8e0-6a8d" name="Relic (Cadia): Gatekeeper" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c723-aa80-a8e0-6a8d" name="Relic: Gatekeeper" publicationId="e831-8627-fbc7-5b35" page="72" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef96-6f0e-04be-8b2c" type="lessThan"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e01-e6cf-1353-96f4" type="notInstanceOf"/>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="81e5-0f46-a4ab-4211" type="lessThan"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad5a-de7c-c237-821e" type="lessThan"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="935b-1502-0bb5-6fb7" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17117,17 +17299,17 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
       <profiles>
         <profile id="1352-3693-7958-cb6d" name="Gatekeeper" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Model with battle cannon only. This Relic replaces a battle cannon and has the following profile (it still counts as a battle cannon for all rules purposes):</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This Relic replaces a Leman Russ Battle Cannon.</characteristic>
           </characteristics>
         </profile>
         <profile id="f57e-c58a-8a5c-ca35" name="Gatekeeper" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon against a CHADS unit, add 1 to that attack&apos;s wound roll.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17137,7 +17319,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a4e1-e30f-95f1-34bd" name="Relic (Cadia): Bastonne&apos;s Sword" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a4e1-e30f-95f1-34bd" name="Relic (Cadia): Bastonne&apos;s Sword" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -17179,7 +17361,7 @@ This Relic has the following profile:</characteristic>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ce5-10ed-7d52-9857" name="Relic (Cadia): Tactica Pax Cadia" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9ce5-10ed-7d52-9857" name="Relic (Cadia): Tactica Pax Cadia" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -17379,7 +17561,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
       <profiles>
         <profile id="1786-9def-1400-548b" name="Warrior Elites" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When you add this unit to your army, you can select one doctrine from pages 60-601 that no other unit from your army has. This unit has that doctrine in addition to any others it has</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When you add this unit to your army, you can select one doctrine from pages 60-61 that no other unit from your army has. This unit has that doctrine in addition to any others it has</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -18348,17 +18530,16 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
           </characteristics>
         </profile>
-        <profile id="1d24-887f-c145-4fad" name="Commanding Authority" publicationId="e831-8627-fbc7-5b35" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="89a8-90a9-21a5-56ec" name="Voice of Command" publicationId="e831-8627-fbc7-5b35" page="75" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model knows Regimental Orders (pg 76). In your Command phase, it can issue up to two Orders.</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Commanding Authority: This model knows Regimental Orders (pg 76). In your Command phase, it can issue up to two Orders.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="3942-e0d2-2984-55f6" name="Voice of Command" hidden="false" targetId="2ff26b94-8048-d15d-c541-fd4da0f49571" type="profile"/>
         <infoLink id="4319-e6eb-77b0-770e" name="Refractor Field" hidden="false" targetId="783d-d067-2d7f-d2a1" type="profile"/>
         <infoLink id="e441-ce12-485c-e230" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
-        <infoLink id="8b40-6f09-4d8f-5c3c" name="Senior Officer" hidden="false" targetId="f34c8090-4e32-bd27-df37-1b714a4288d2" type="profile"/>
+        <infoLink id="8b40-6f09-4d8f-5c3c" name="Senior Officer (Aura)" hidden="false" targetId="f34c8090-4e32-bd27-df37-1b714a4288d2" type="profile"/>
         <infoLink id="cf5e-f47b-28ec-5259" name="Regimental Tactics" hidden="false" targetId="89ad-69f4-02bf-74b6" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -19239,7 +19420,7 @@ Note that this ability only affects the original target of that Order, and not a
           <selectionEntryGroups>
             <selectionEntryGroup id="5645-aa37-bdd3-c282" name="Death Korps Trooper with Special Weapon" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="62a3-399b-fd91-bae2" name="Trooper w/ Sniper Rifle" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="62a3-399b-fd91-bae2" name="Death Korps Trooper w/ Sniper Rifle" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d3a-5676-a9ab-dd99" type="max"/>
                   </constraints>
@@ -19260,7 +19441,7 @@ Note that this ability only affects the original target of that Order, and not a
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b004-b25d-9289-fec8" name="Trooper w/ Melta Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="b004-b25d-9289-fec8" name="Death Korps Trooper w/ Melta Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="946b-bb5b-e110-8bb4" type="max"/>
                   </constraints>
@@ -19341,7 +19522,7 @@ Note that this ability only affects the original target of that Order, and not a
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="0fc9-9acf-c4ed-67b2" name="Trooper w/ Flamer" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="0fc9-9acf-c4ed-67b2" name="Death Korps Trooper w/ Flamer" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c6c-4042-573a-2eb6" type="max"/>
                   </constraints>
@@ -20057,6 +20238,11 @@ Note that this ability only affects the original target of that Order, and not a
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -20145,6 +20331,11 @@ Note that this ability only affects the original target of that Order, and not a
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -20250,6 +20441,11 @@ Note that this ability only affects the original target of that Order, and not a
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="39b1-b162-5ee9-2776" name="Drum-Fed Autogun" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -20267,6 +20463,11 @@ Note that this ability only affects the original target of that Order, and not a
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -20707,6 +20908,11 @@ Note that this ability only affects the original target of that Order, and not a
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="ff2b-6ec3-e5a1-0ee5" name="Twin Heavy Flamers" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -20720,6 +20926,11 @@ Note that this ability only affects the original target of that Order, and not a
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -20761,6 +20972,11 @@ Note that this ability only affects the original target of that Order, and not a
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="a565-ff78-8f0e-12bc" name="Twin Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
                   <entryLinks>
@@ -20771,6 +20987,11 @@ Note that this ability only affects the original target of that Order, and not a
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
