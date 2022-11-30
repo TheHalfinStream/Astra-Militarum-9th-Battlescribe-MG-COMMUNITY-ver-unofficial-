@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="324" battleScribeVersion="2.03" authorName="3Komnenos3 &amp; TheHalfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="325" battleScribeVersion="2.03" authorName="3Komnenos3 &amp; TheHalfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th Edition battlescribe files, and all credit goes to them for the creation of the 8th edition version which laid the foundation to our project to bring over the 9th edition codex, and an additional thanks for answering some of our questions on the BSData discord, as well as allowing us to go forward with this project.</readme>
@@ -1278,11 +1278,11 @@ Use this Act of Faith at the start of the Morale phase. If successful, the selec
     </selectionEntry>
     <selectionEntry id="73fc-bc45-dbdd-417d" name="Regimental Doctrine" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f6d-f02b-517e-0537" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="629f-f418-774e-01f9" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f6d-f02b-517e-0537" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="629f-f418-774e-01f9" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="bca9-103d-9ff7-e000" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="1f55-4ee0-5c0e-5b35" type="selectionEntryGroup"/>
+        <entryLink id="bca9-103d-9ff7-e000" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="98f4-2191-c2da-8c7b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
