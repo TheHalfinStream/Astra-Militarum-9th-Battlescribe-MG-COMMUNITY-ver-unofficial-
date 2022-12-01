@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="123" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="124" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 
@@ -232,7 +232,11 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
     <categoryEntry id="60d7-cb82-ac4f-fb9b" name="Field Ordnance Battery" hidden="false"/>
     <categoryEntry id="9401-e2e7-bd2c-b3cf" name="Armoured" hidden="false"/>
     <categoryEntry id="15e6-b4e1-a0a6-1098" name="Dozer Blade" hidden="false"/>
-    <categoryEntry id="b0a3-c8e2-b036-6794" name="Commandant" publicationId="e831-8627-fbc7-5b35" hidden="false"/>
+    <categoryEntry id="b0a3-c8e2-b036-6794" name="Commandant" publicationId="e831-8627-fbc7-5b35" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63a7-763f-80d4-d3f1" type="max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="4c76-2538-8ab3-a595" name="Regimental Standard" hidden="false"/>
     <categoryEntry id="fbb7-9dac-2467-aa9a" name="Attaché" hidden="false"/>
     <categoryEntry id="086d-e3ba-a17b-01bd" name="Vox-Caster" hidden="false"/>
@@ -6378,11 +6382,6 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fad2-035f-88a7-60c0" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8ed7-7588-0f06-9b0d" type="lessThan"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12c4-7182-af91-c83d" type="max"/>
@@ -6438,9 +6437,9 @@ Alternatively, you can use this Stratagem to give one COMMAND SQUAD model from y
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd0-52a2-c2f2-306f" type="notInstanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a14-c953-72c9-5b46" type="notInstanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7b7-b474-c07a-101f" type="notInstanceOf"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd0-52a2-c2f2-306f" type="notInstanceOf"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a14-c953-72c9-5b46" type="notInstanceOf"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7b7-b474-c07a-101f" type="notInstanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6518,6 +6517,7 @@ Alternatively, you can use this Stratagem to give one COMMAND SQUAD model from y
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef18-746a-369f-43a4" type="notInstanceOf"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -6544,7 +6544,7 @@ Alternatively, you can use this Stratagem to give one COMMAND SQUAD model from y
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2296-5bae-f412-afa5" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="7612-c77d-a008-3b91" name="Relic (Tallarn): Claw of the Desert Tigers" hidden="false" collective="false" import="true" targetId="0a30-6d27-4709-ca86" type="selectionEntry">
+                <entryLink id="7612-c77d-a008-3b91" name="Relic: The Emperor&apos;s Fury" hidden="false" collective="false" import="true" targetId="0a30-6d27-4709-ca86" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bb-2e60-bdc0-03db" type="max"/>
                   </constraints>
@@ -6921,8 +6921,15 @@ Alternatively, you can use this Stratagem to give one COMMAND SQUAD model from y
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="4c76-2538-8ab3-a595" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c76-2538-8ab3-a595" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c76-2538-8ab3-a595" type="lessThan"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33c0-8496-22d0-08e9" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd0-52a2-c2f2-306f" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a14-c953-72c9-5b46" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7b7-b474-c07a-101f" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17106,6 +17113,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e8-f0ed-de00-8db8" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="0932-eafa-6024-e409" name="Stratagem: Imperial Commander&apos;s Armoury" hidden="false" collective="false" import="true" targetId="d7be-7049-0cc9-dcf3" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
@@ -18099,6 +18107,17 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
             <entryLink id="5e65-9f99-fe29-1f63" name="Display Regimental Orders" hidden="false" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry"/>
             <entryLink id="4daf-70de-3473-a5c6" name="Warlord Traits (Named)" hidden="false" collective="false" import="true" targetId="6871-2805-7938-980c" type="selectionEntryGroup"/>
             <entryLink id="d5f3-db7e-4b0b-d7a4" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0a3-c8e2-b036-6794" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a860-567a-2539-61bd" type="max"/>
               </constraints>
@@ -18588,6 +18607,12 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         <entryLink id="6711-2876-2277-c45c" name="Warlord Traits (Named)" hidden="false" collective="false" import="true" targetId="6871-2805-7938-980c" type="selectionEntryGroup"/>
         <entryLink id="36f1-de1f-d97e-d294" name="Character Stratagems (Named)" hidden="false" collective="false" import="true" targetId="ed7a-3deb-4d62-b2a9" type="selectionEntryGroup"/>
         <entryLink id="e8be-dc1f-05f7-fb61" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
+        <entryLink id="6cf9-f2d9-b419-0766" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d63b-9f07-1a69-3e0c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e015-a09e-f802-fc61" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="9.0"/>
@@ -20346,25 +20371,29 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         </entryLink>
         <entryLink id="3351-85cc-2cbb-08db" name="Display Regimental Orders" hidden="false" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry"/>
         <entryLink id="ddcb-270f-43ad-c225" name="Heirlooms of Conquest" hidden="false" collective="false" import="true" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup"/>
-        <entryLink id="afe6-a9ac-8833-646c" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0a3-c8e2-b036-6794" type="lessThan"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b0a3-c8e2-b036-6794" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink id="7910-af97-02fc-8a0d" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup"/>
         <entryLink id="fc25-d4fc-9720-9c0a" name="Field Commander" hidden="false" collective="false" import="true" targetId="c7d5-e7b4-87d5-c29a" type="selectionEntry"/>
         <entryLink id="b550-7ce0-7d28-fce1" name="Character Stratagems" hidden="false" collective="false" import="true" targetId="2527-4b0c-1e18-38b3" type="selectionEntryGroup"/>
         <entryLink id="7e50-65ef-d113-fd64" name="Bodyguard" hidden="false" collective="false" import="true" targetId="3cd9-53fc-5ffb-5f60" type="selectionEntryGroup"/>
         <entryLink id="49bf-7f0e-bdcc-4430" name="Regimental Doctrines" hidden="false" collective="true" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
+        <entryLink id="9462-c7c1-522c-9f44" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="8751-58b5-9cc2-c904" value="0.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fcd-d6ee-231e-920e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fcd-d6ee-231e-920e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8751-58b5-9cc2-c904" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5f6-0e50-a928-bbbb" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
@@ -20677,7 +20706,24 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
           </constraints>
         </entryLink>
         <entryLink id="71a2-db7e-627c-917d" name="Display Regimental Orders" publicationId="e831-8627-fbc7-5b35" page="76" hidden="false" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry"/>
-        <entryLink id="2a3a-142e-760f-f4fd" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry"/>
+        <entryLink id="2a3a-142e-760f-f4fd" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="6bf3-db58-0f8e-20bc" value="0.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fcd-d6ee-231e-920e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fcd-d6ee-231e-920e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bf3-db58-0f8e-20bc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="005c-e046-0197-7ba1" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="c1e0-780f-1a19-71c5" name="Character Stratagems (Named)" publicationId="e831-8627-fbc7-5b35" page="63-64" hidden="false" collective="false" import="true" targetId="ed7a-3deb-4d62-b2a9" type="selectionEntryGroup"/>
         <entryLink id="e9c0-7d37-4265-5ba8" name="Warlord Traits (Named)" publicationId="e831-8627-fbc7-5b35" page="68-69" hidden="false" collective="false" import="true" targetId="6871-2805-7938-980c" type="selectionEntryGroup"/>
         <entryLink id="0e50-0fcf-640c-4e26" name="Regimental Doctrines" publicationId="e831-8627-fbc7-5b35" page="60-61" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
@@ -20851,10 +20897,27 @@ Note that this ability only affects the original target of that Order, and not a
           </constraints>
         </entryLink>
         <entryLink id="d967-7a62-056f-98ab" name="Display Regimental Orders" hidden="false" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry"/>
-        <entryLink id="060d-83fa-fb63-6226" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry"/>
         <entryLink id="61d9-5f7e-8d4a-79b2" name="Character Stratagems (Named)" hidden="false" collective="false" import="true" targetId="ed7a-3deb-4d62-b2a9" type="selectionEntryGroup"/>
         <entryLink id="9826-2c99-59aa-27af" name="Warlord Traits (Named)" hidden="false" collective="false" import="true" targetId="6871-2805-7938-980c" type="selectionEntryGroup"/>
         <entryLink id="842c-f0da-109c-7f5b" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
+        <entryLink id="70bb-3870-e4dc-3966" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="8c06-81ee-277c-a942" value="0.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fcd-d6ee-231e-920e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fcd-d6ee-231e-920e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c06-81ee-277c-a942" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bb5-9623-e536-2055" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="80.0"/>
@@ -24984,13 +25047,6 @@ receive the benefits of cover against that attack.&quot;</characteristic>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c470-54ac-0863-8848" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c470-54ac-0863-8848" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7be-7049-0cc9-dcf3" type="equalTo"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1f07-a468-bda8-fd3f" type="lessThan"/>
-                  </conditions>
-                </conditionGroup>
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
@@ -25061,6 +25117,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef18-746a-369f-43a4" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -25097,7 +25154,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd0f-7650-e927-457e" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2cf5-48cb-e469-142b" name="Relic (Vostroyan): The Armour of Graf Toschenko" hidden="false" collective="false" import="true" targetId="02d1-fdc2-288b-6781" type="selectionEntry">
+        <entryLink id="2cf5-48cb-e469-142b" name="Relic: The Armour of Graf Toschenko" hidden="false" collective="false" import="true" targetId="02d1-fdc2-288b-6781" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e0e-9309-3fe7-ddb9" type="max"/>
           </constraints>
@@ -25264,51 +25321,14 @@ receive the benefits of cover against that attack.&quot;</characteristic>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="2527-4b0c-1e18-38b3" name="Character Stratagems" publicationId="e831-8627-fbc7-5b35" page="63-64" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae09-117e-a6fa-316b" type="equalTo"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae09-117e-a6fa-316b" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ef18-746a-369f-43a4" type="lessThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink id="3f13-48f6-efc1-cf44" name="Stratagem: Relic" hidden="false" collective="false" import="true" targetId="c470-54ac-0863-8848" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e10e-b44e-7eda-41d8" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e10e-b44e-7eda-41d8" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ef18-746a-369f-43a4" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -25316,8 +25336,32 @@ receive the benefits of cover against that attack.&quot;</characteristic>
           </modifiers>
         </entryLink>
         <entryLink id="d0d7-60a5-28b0-678a" name="Stratagem: Warlord Trait" hidden="false" collective="false" import="true" targetId="6771-6ab3-1672-6a39" type="selectionEntry"/>
-        <entryLink id="b260-a1b0-e411-e14d" name="Stratagem: Officer Cadre" publicationId="e831-8627-fbc7-5b35" page="63" hidden="false" collective="false" import="true" targetId="ba4b-6ae1-ffb8-76aa" type="selectionEntry"/>
-        <entryLink id="f2ee-41e3-618f-08db" name="Stratagem: Imperial Commander&apos;s Armoury" publicationId="e831-8627-fbc7-5b35" page="64" hidden="false" collective="false" import="true" targetId="d7be-7049-0cc9-dcf3" type="selectionEntry"/>
+        <entryLink id="b260-a1b0-e411-e14d" name="Stratagem: Officer Cadre" publicationId="e831-8627-fbc7-5b35" page="63" hidden="false" collective="false" import="true" targetId="ba4b-6ae1-ffb8-76aa" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d0d7-60a5-28b0-678a" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="f2ee-41e3-618f-08db" name="Stratagem: Imperial Commander&apos;s Armoury" publicationId="e831-8627-fbc7-5b35" page="64" hidden="false" collective="false" import="true" targetId="d7be-7049-0cc9-dcf3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8ed7-7588-0f06-9b0d" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ed7a-3deb-4d62-b2a9" name="Character Stratagems (Named)" hidden="false" collective="false" import="true">
