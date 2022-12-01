@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="122" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="123" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 
@@ -5802,7 +5802,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="61ed-ee78-e2e8-556c" name="Display Mechanised Orders" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="61ed-ee78-e2e8-556c" name="Display Mechanised Orders" publicationId="e831-8627-fbc7-5b35" page="78" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a6-a683-7634-add6" type="max"/>
       </constraints>
@@ -8454,14 +8454,14 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ccf7-ace2-9b05-80da" name="Banehammer" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ccf7-ace2-9b05-80da" name="Banehammer" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="2fa9-9041-dc92-dfff" name="Transport: Banehammer" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
+        <profile id="2fa9-9041-dc92-dfff" name="Transport: Banehammer" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">This model can transport 25 ASTRA MILITARUM INFANTRY models.  Each Heavy Weapons Team or Veteran Heavy Weapons Team takes the place of 2 models. Each OGRYNS and BULLGRYNS model takes up the space of 3 models.</characteristic>
           </characteristics>
         </profile>
-        <profile id="4c24-2ae4-9a95-9131" name="Banehammer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4c24-2ae4-9a95-9131" name="Banehammer" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">*</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
@@ -8476,8 +8476,8 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0c80-f4d9-ab4e-c671" name="Explodes (6+/2D6&quot;/D6)" hidden="false" targetId="f505-bfe1-b238-0c41" type="profile"/>
-        <infoLink id="8223-df33-c87a-e87b" name="Firing Deck" hidden="false" targetId="9981-5fb9-57f6-7930" type="profile"/>
+        <infoLink id="0c80-f4d9-ab4e-c671" name="Explodes (6+/2D6&quot;/D6)" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" targetId="f505-bfe1-b238-0c41" type="profile"/>
+        <infoLink id="8223-df33-c87a-e87b" name="Firing Deck" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" targetId="9981-5fb9-57f6-7930" type="profile"/>
         <infoLink id="b154-5203-9ee7-7de8" name="Armour of Contempt" hidden="false" targetId="ab12-fdad-19bf-29d7" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8493,13 +8493,13 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         <categoryLink id="2a9b-272a-4e89-7b28" name="Super-Heavy" hidden="false" targetId="ab99-87a7-c0d6-b038" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="c60c-73e6-1b75-9ae5" name="Tremor Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c60c-73e6-1b75-9ae5" name="Tremor Cannon" publicationId="e831-8627-fbc7-5b35" page="147" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c7e-0342-14cb-7b51" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ab6-7d13-9f15-058a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f296-9a7a-0d14-23f7" name="Tremor Cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="f296-9a7a-0d14-23f7" name="Tremor Cannon" publicationId="e831-8627-fbc7-5b35" page="147" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6+3</characteristic>
@@ -8518,29 +8518,27 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="e266-a3b5-e8a3-fa26" name="Twin heavy bolter" hidden="false" collective="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
+        <entryLink id="e266-a3b5-e8a3-fa26" name="Twin heavy bolter" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" collective="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb5d-53a4-2919-443f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4adf-c47b-70b3-3209" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="6ab8-4932-8799-1224" name="Adamantine Tracks" hidden="false" collective="false" import="true" targetId="7c20-256a-b607-245d" type="selectionEntry">
+        <entryLink id="6ab8-4932-8799-1224" name="Adamantine Tracks" publicationId="e831-8627-fbc7-5b35" page="144" hidden="false" collective="false" import="true" targetId="7c20-256a-b607-245d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9776-b6ba-7116-96f8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de00-420e-7b6b-d222" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="0d96-0f86-1725-ba48" name="Stat Damage (Banehammer)" hidden="false" collective="false" import="true" targetId="2f89-1409-f584-dc03" type="selectionEntry">
+        <entryLink id="0d96-0f86-1725-ba48" name="Stat Damage (Banehammer)" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" collective="false" import="true" targetId="2f89-1409-f584-dc03" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21cb-91c3-b445-bc8c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b17e-11dc-89ad-919a" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="062c-7a99-733f-a234" name="Baneblade Sponsons" hidden="false" collective="false" import="true" targetId="be51-49ae-9966-cfc5" type="selectionEntryGroup"/>
-        <entryLink id="41df-eb7a-1b64-94d3" name="Has Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-        <entryLink id="9cdd-ccbd-dd08-8ada" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-        <entryLink id="07cd-3ebe-b630-2741" name="Super Heavy Aces" hidden="false" collective="false" import="true" targetId="f14f-06c3-76c0-2c4a" type="selectionEntryGroup"/>
-        <entryLink id="729b-cd3a-3f77-e166" name="Armoured Tracks" hidden="false" collective="false" import="true" targetId="1fd9-a5e2-ad93-3a21" type="selectionEntry">
+        <entryLink id="062c-7a99-733f-a234" name="Baneblade Sponsons" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" collective="false" import="true" targetId="be51-49ae-9966-cfc5" type="selectionEntryGroup"/>
+        <entryLink id="07cd-3ebe-b630-2741" name="Super Heavy Aces" publicationId="e831-8627-fbc7-5b35" page="66" hidden="false" collective="false" import="true" targetId="f14f-06c3-76c0-2c4a" type="selectionEntryGroup"/>
+        <entryLink id="729b-cd3a-3f77-e166" name="Armoured Tracks" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" collective="false" import="true" targetId="1fd9-a5e2-ad93-3a21" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="points" value="0.0"/>
           </modifiers>
@@ -8549,7 +8547,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd0a-3345-1418-23c8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="cf2a-a9e6-ca2e-109e" name="Unit Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
+        <entryLink id="cf2a-a9e6-ca2e-109e" name="Regimental Doctrines" publicationId="e831-8627-fbc7-5b35" page="60-61" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="400.0"/>
@@ -10313,7 +10311,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="af30-711d-1707-fcdc" name="Display Regimental Orders" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="af30-711d-1707-fcdc" name="Display Regimental Orders" publicationId="e831-8627-fbc7-5b35" page="76" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baba-23c2-9e22-4d86" type="max"/>
       </constraints>
@@ -20546,12 +20544,12 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="53ba-61e3-806e-9f94" name="&apos;Iron Hand&apos; Straken" publicationId="53e9d88f--pubN88319" page="57" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="53ba-61e3-806e-9f94" name="&apos;Iron Hand&apos; Straken" publicationId="e831-8627-fbc7-5b35" page="85" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e50d-bb2b-bae4-ec71" type="max"/>
       </constraints>
       <profiles>
-        <profile id="4e96-41f4-2d32-b97a" name="&apos;Iron Hand&apos; Straken" publicationId="53e9d88f--pubN88319" page="57" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="4e96-41f4-2d32-b97a" name="&apos;Iron Hand&apos; Straken" publicationId="e831-8627-fbc7-5b35" page="85" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
@@ -20564,31 +20562,31 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="f471-2b7c-8c56-ddec" name="Been There, Seen It, Killed It" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="f471-2b7c-8c56-ddec" name="Been There, Seen It, Killed It" publicationId="e831-8627-fbc7-5b35" page="85" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a melee attack against  an enemy MONSTER unit, you can re-roll the wound roll.</characteristic>
           </characteristics>
         </profile>
-        <profile id="6700-510a-bd7c-41f7" name="Cold Steel and Courage" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="6700-510a-bd7c-41f7" name="Cold Steel and Courage" publicationId="e831-8627-fbc7-5b35" page="85" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model issues an Order to a unit, until the start of your next Command phase, each time a model in that unit makes a melee attack, unless the target of that attack is a VEHICLE unit, an unmodified hit roll of 6 automatically wounds the target. Note that this ability only affects the original target of that Order, and not any additional units that are affected by that Order using the Regimental Tactics ability.</characteristic>
           </characteristics>
         </profile>
-        <profile id="9845-993a-ee3a-6a13" name="Extensive Bionics" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="9845-993a-ee3a-6a13" name="Extensive Bionics" publicationId="e831-8627-fbc7-5b35" page="85" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2059-d184-10f6-51e8" name="Voice of Command" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="2059-d184-10f6-51e8" name="Voice of Command" publicationId="e831-8627-fbc7-5b35" page="85" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Commanding Authority: This model knows Regimental Orders. In your Command phase, it can issue up to two Orders</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8654-9afa-0409-880a" name="Senior Officer (Aura)" hidden="false" targetId="f34c8090-4e32-bd27-df37-1b714a4288d2" type="profile"/>
+        <infoLink id="8654-9afa-0409-880a" name="Senior Officer (Aura)" publicationId="e831-8627-fbc7-5b35" page="85" hidden="false" targetId="f34c8090-4e32-bd27-df37-1b714a4288d2" type="profile"/>
         <infoLink id="6ab5-ced6-74f9-3026" name="Regimental Tactics" hidden="false" targetId="89ad-69f4-02bf-74b6" type="rule"/>
-        <infoLink id="09a5-dad4-a7d7-d077" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
+        <infoLink id="09a5-dad4-a7d7-d077" name="Regimental Tactics" publicationId="e831-8627-fbc7-5b35" page="75" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
         <infoLink id="e2c2-1a2f-bc4b-6847" name="Born Soldiers (Aura)" hidden="false" targetId="ea70-4965-e2ad-a96f" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -20615,13 +20613,13 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         <categoryLink id="30b8-1957-3395-6b8f" name="Commandant" hidden="false" targetId="b0a3-c8e2-b036-6794" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b86e-b011-fe4c-67b0" name="Bionic Arm with Devil&apos;s Claw" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b86e-b011-fe4c-67b0" name="Bionic Arm with Devil&apos;s Claw" publicationId="e831-8627-fbc7-5b35" page="144" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c658-3411-528e-4cdb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9541-ab15-5a66-dd90" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f858-ce15-7618-a05f" name="Bionic Arm with Devil&apos;s Claw" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="f858-ce15-7618-a05f" name="Bionic Arm with Devil&apos;s Claw" publicationId="e831-8627-fbc7-5b35" page="144" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
@@ -20638,13 +20636,13 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="279f-ccea-94d1-2eac" name="Auto Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="279f-ccea-94d1-2eac" name="Auto Shotgun" publicationId="e831-8627-fbc7-5b35" page="145" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="badf-1787-46b4-18dd" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec44-cf47-35a8-c4d7" type="min"/>
           </constraints>
           <profiles>
-            <profile id="c433-6107-9a94-3f83" name="Auto Shotgun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="c433-6107-9a94-3f83" name="Auto Shotgun" publicationId="e831-8627-fbc7-5b35" page="145" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
@@ -20663,7 +20661,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="e0c6-ab7b-2a82-693d" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+        <entryLink id="e0c6-ab7b-2a82-693d" name="Plasma pistol" publicationId="e831-8627-fbc7-5b35" page="146" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="points" value="0.0"/>
           </modifiers>
@@ -20672,17 +20670,17 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f6f-c409-2363-fa40" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="9126-af7d-9fbf-9d08" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry">
+        <entryLink id="9126-af7d-9fbf-9d08" name="Frag &amp; Krak grenades" publicationId="e831-8627-fbc7-5b35" page="145-146" hidden="false" collective="false" import="true" targetId="bb78-534a-7b77-edbc" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c19-0fef-35ae-2411" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1db2-5ea9-0d85-2a0b" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="71a2-db7e-627c-917d" name="Display Regimental Orders" hidden="false" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry"/>
+        <entryLink id="71a2-db7e-627c-917d" name="Display Regimental Orders" publicationId="e831-8627-fbc7-5b35" page="76" hidden="false" collective="false" import="true" targetId="af30-711d-1707-fcdc" type="selectionEntry"/>
         <entryLink id="2a3a-142e-760f-f4fd" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry"/>
-        <entryLink id="c1e0-780f-1a19-71c5" name="Character Stratagems (Named)" hidden="false" collective="false" import="true" targetId="ed7a-3deb-4d62-b2a9" type="selectionEntryGroup"/>
-        <entryLink id="e9c0-7d37-4265-5ba8" name="Warlord Traits (Named)" hidden="false" collective="false" import="true" targetId="6871-2805-7938-980c" type="selectionEntryGroup"/>
-        <entryLink id="0e50-0fcf-640c-4e26" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
+        <entryLink id="c1e0-780f-1a19-71c5" name="Character Stratagems (Named)" publicationId="e831-8627-fbc7-5b35" page="63-64" hidden="false" collective="false" import="true" targetId="ed7a-3deb-4d62-b2a9" type="selectionEntryGroup"/>
+        <entryLink id="e9c0-7d37-4265-5ba8" name="Warlord Traits (Named)" publicationId="e831-8627-fbc7-5b35" page="68-69" hidden="false" collective="false" import="true" targetId="6871-2805-7938-980c" type="selectionEntryGroup"/>
+        <entryLink id="0e50-0fcf-640c-4e26" name="Regimental Doctrines" publicationId="e831-8627-fbc7-5b35" page="60-61" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="75.0"/>
@@ -20864,7 +20862,7 @@ Note that this ability only affects the original target of that Order, and not a
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="18d0-904b-dff4-a149" name="Display Prefectus Orders" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="18d0-904b-dff4-a149" name="Display Prefectus Orders" publicationId="e831-8627-fbc7-5b35" page="77" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b8f-55f9-f645-5257" type="max"/>
       </constraints>
@@ -22801,13 +22799,13 @@ Note that this ability only affects the original target of that Order, and not a
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f89-1409-f584-dc03" name="Stat Damage (Banehammer)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2f89-1409-f584-dc03" name="Stat Damage (Banehammer)" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c609-09d7-6d2a-9091" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c63-66d8-d09e-b27e" type="min"/>
       </constraints>
       <profiles>
-        <profile id="43c6-0285-fcec-c977" name="Banehammer 1" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
+        <profile id="43c6-0285-fcec-c977" name="Banehammer 1" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
           <characteristics>
             <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">15-28+</characteristic>
             <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">10&quot;</characteristic>
@@ -22815,7 +22813,7 @@ Note that this ability only affects the original target of that Order, and not a
             <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">9</characteristic>
           </characteristics>
         </profile>
-        <profile id="8c46-b022-ec1b-3cab" name="Banehammer 2" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
+        <profile id="8c46-b022-ec1b-3cab" name="Banehammer 2" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
           <characteristics>
             <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">8-14</characteristic>
             <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">8&quot;</characteristic>
@@ -22823,7 +22821,7 @@ Note that this ability only affects the original target of that Order, and not a
             <characteristic name="Attacks" typeId="2e64-2e5c-f4d1-52d3">6</characteristic>
           </characteristics>
         </profile>
-        <profile id="3cc2-e0da-d0e9-211c" name="Banehammer 3" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
+        <profile id="3cc2-e0da-d0e9-211c" name="Banehammer 3" publicationId="e831-8627-fbc7-5b35" page="116" hidden="false" typeId="e6d5-85c5-7b01-a3c4" typeName="Stat Damage - M/BS/A">
           <characteristics>
             <characteristic name="Remaining W" typeId="233c-fa78-4641-68d9">1-7</characteristic>
             <characteristic name="Movement" typeId="fc73-9b3f-5e4b-86b9">6&quot;</characteristic>
@@ -23241,7 +23239,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07de-b5a9-877a-19dc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="4f4c-b7a1-895b-7c08" name="Veteran Guerrillas" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+        <profile id="4f4c-b7a1-895b-7c08" name="Veteran Guerrillas" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">• Units with this doctrine gain the VETERAN GUERRILLAS keyword.
 • Each time an INFANTRY or SENTINEL model with this doctrine makes an attack that targets a unit within 18&quot;, the target does not receive the benefits of cover against that attack.</characteristic>
@@ -23254,7 +23252,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="71c4-b0c4-a7b5-4f1d" name="Regimental Doctrines" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="71c4-b0c4-a7b5-4f1d" name="Regimental Doctrines" publicationId="e831-8627-fbc7-5b35" page="60-61" hidden="false" collective="false" import="true" type="upgrade">
       <comment>Doctrines per unit. Add these to every REGIMENTAL unit</comment>
       <modifierGroups>
         <modifierGroup>
@@ -23272,7 +23270,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="753e-35a5-7445-4056" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="7f26-4f48-57d9-fd5b" name="Doctrine: Armoured Superiority" hidden="false" targetId="b2fd-4733-bddc-4233" type="profile">
+        <infoLink id="7f26-4f48-57d9-fd5b" name="Doctrine: Armoured Superiority" publicationId="e831-8627-fbc7-5b35" page="60" hidden="false" targetId="b2fd-4733-bddc-4233" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23281,7 +23279,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="2f0c-ec0e-69ba-3314" name="Doctrine: Blitz Division" hidden="false" targetId="37a7-97cb-9112-c56b" type="profile">
+        <infoLink id="2f0c-ec0e-69ba-3314" name="Doctrine: Blitz Division" publicationId="e831-8627-fbc7-5b35" page="60" hidden="false" targetId="37a7-97cb-9112-c56b" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23290,7 +23288,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="bda7-d381-eed7-ba0d" name="Doctrine: Born Soldiers" hidden="false" targetId="7af2-d39f-af65-c235" type="profile">
+        <infoLink id="bda7-d381-eed7-ba0d" name="Doctrine: Born Soldiers" publicationId="e831-8627-fbc7-5b35" page="59" hidden="false" targetId="7af2-d39f-af65-c235" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23299,7 +23297,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="3b74-1221-32fb-42e5" name="Doctrine: Brutal Strength" hidden="false" targetId="5438-3a38-60d0-d189" type="profile">
+        <infoLink id="3b74-1221-32fb-42e5" name="Doctrine: Brutal Strength" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="5438-3a38-60d0-d189" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23308,7 +23306,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="59da-8520-de83-0200" name="Doctrine: Cult of Sacrifice" hidden="false" targetId="0017-0c4f-66b5-690f" type="profile">
+        <infoLink id="59da-8520-de83-0200" name="Doctrine: Cult of Sacrifice" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="0017-0c4f-66b5-690f" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23317,7 +23315,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="3223-90c5-3b51-67b4" name="Doctrine: Elite Sharpshooters" hidden="false" targetId="e2e9-e670-c5f5-0618" type="profile">
+        <infoLink id="3223-90c5-3b51-67b4" name="Doctrine: Elite Sharpshooters" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="e2e9-e670-c5f5-0618" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23326,7 +23324,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="1336-acd0-147c-c67e" name="Doctrine: Expert Bombardiers" hidden="false" targetId="1b1a-e9c8-6fe5-d3e5" type="profile">
+        <infoLink id="1336-acd0-147c-c67e" name="Doctrine: Expert Bombardiers" publicationId="e831-8627-fbc7-5b35" page="60" hidden="false" targetId="1b1a-e9c8-6fe5-d3e5" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23335,7 +23333,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="2291-0378-d658-fffa" name="Doctrine: Grim Demeanor" hidden="false" targetId="a3d2-2bad-44ee-c917" type="profile">
+        <infoLink id="2291-0378-d658-fffa" name="Doctrine: Grim Demeanor" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="a3d2-2bad-44ee-c917" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23344,7 +23342,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="8c5c-5e25-76d1-c717" name="Doctrine: Heirloom Weapons" hidden="false" targetId="32d3-9063-2029-d45b" type="profile">
+        <infoLink id="8c5c-5e25-76d1-c717" name="Doctrine: Heirloom Weapons" publicationId="e831-8627-fbc7-5b35" page="60" hidden="false" targetId="32d3-9063-2029-d45b" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23353,7 +23351,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="f3c6-8ebd-7d0d-6306" name="Doctrine: Industrial Efficiency" hidden="false" targetId="1b8b-bd08-8f89-0848" type="profile">
+        <infoLink id="f3c6-8ebd-7d0d-6306" name="Doctrine: Industrial Efficiency" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="1b8b-bd08-8f89-0848" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23362,7 +23360,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="8ead-ee94-c38f-a64b" name="Doctrine: Mechanised Infantry" hidden="false" targetId="ea1c-06da-438a-cf51" type="profile">
+        <infoLink id="8ead-ee94-c38f-a64b" name="Doctrine: Mechanised Infantry" publicationId="e831-8627-fbc7-5b35" page="60" hidden="false" targetId="ea1c-06da-438a-cf51" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23371,7 +23369,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="3814-c25c-1533-771b" name="Doctrine: Parade Drill" hidden="false" targetId="a9f4-2ae1-1447-0d82" type="profile">
+        <infoLink id="3814-c25c-1533-771b" name="Doctrine: Parade Drill" publicationId="e831-8627-fbc7-5b35" page="60" hidden="false" targetId="a9f4-2ae1-1447-0d82" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23380,7 +23378,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="122b-bd8f-dc80-7d21" name="Doctrine: Recon Operators" hidden="false" targetId="3594-f562-2ecf-c607" type="profile">
+        <infoLink id="122b-bd8f-dc80-7d21" name="Doctrine: Recon Operators" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="3594-f562-2ecf-c607" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23389,7 +23387,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="7534-3d5c-d932-6c3b" name="Doctrine: Swift as the Wind" hidden="false" targetId="32fd-39a5-3099-65ea" type="profile">
+        <infoLink id="7534-3d5c-d932-6c3b" name="Doctrine: Swift as the Wind" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="32fd-39a5-3099-65ea" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23398,7 +23396,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="b26c-7459-4ab6-c6ee" name="Doctrine: Trophy Hunters" hidden="false" targetId="17c9-0a0c-c8db-76da" type="profile">
+        <infoLink id="b26c-7459-4ab6-c6ee" name="Doctrine: Trophy Hunters" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="17c9-0a0c-c8db-76da" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -23407,7 +23405,7 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="13a6-ca08-931f-9d53" name="Doctrine: Veteran Guerillas" hidden="false" targetId="73e1-d2e0-cbc7-e405" type="profile">
+        <infoLink id="13a6-ca08-931f-9d53" name="Doctrine: Veteran Guerrillas" publicationId="e831-8627-fbc7-5b35" page="61" hidden="false" targetId="73e1-d2e0-cbc7-e405" type="profile">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -25265,7 +25263,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
         <entryLink id="633a-19d8-c6b8-9411" name="Brood Brothers" hidden="false" collective="false" import="true" targetId="cff6-a8e7-27ea-0776" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2527-4b0c-1e18-38b3" name="Character Stratagems" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="2527-4b0c-1e18-38b3" name="Character Stratagems" publicationId="e831-8627-fbc7-5b35" page="63-64" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -25318,8 +25316,8 @@ receive the benefits of cover against that attack.&quot;</characteristic>
           </modifiers>
         </entryLink>
         <entryLink id="d0d7-60a5-28b0-678a" name="Stratagem: Warlord Trait" hidden="false" collective="false" import="true" targetId="6771-6ab3-1672-6a39" type="selectionEntry"/>
-        <entryLink id="b260-a1b0-e411-e14d" name="Stratagem: Officer Cadre" hidden="false" collective="false" import="true" targetId="ba4b-6ae1-ffb8-76aa" type="selectionEntry"/>
-        <entryLink id="f2ee-41e3-618f-08db" name="Stratagem: Imperial Commander&apos;s Armoury" hidden="false" collective="false" import="true" targetId="d7be-7049-0cc9-dcf3" type="selectionEntry"/>
+        <entryLink id="b260-a1b0-e411-e14d" name="Stratagem: Officer Cadre" publicationId="e831-8627-fbc7-5b35" page="63" hidden="false" collective="false" import="true" targetId="ba4b-6ae1-ffb8-76aa" type="selectionEntry"/>
+        <entryLink id="f2ee-41e3-618f-08db" name="Stratagem: Imperial Commander&apos;s Armoury" publicationId="e831-8627-fbc7-5b35" page="64" hidden="false" collective="false" import="true" targetId="d7be-7049-0cc9-dcf3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ed7a-3deb-4d62-b2a9" name="Character Stratagems (Named)" hidden="false" collective="false" import="true">
@@ -25371,7 +25369,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6871-2805-7938-980c" name="Warlord Traits (Named)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="6871-2805-7938-980c" name="Warlord Traits (Named)" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -25399,7 +25397,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink id="3755-c8b6-08fe-659c" name="WT: Front-Line Combatant" hidden="false" collective="false" import="true" targetId="1fff-d44f-98e9-609c" type="selectionEntry">
+        <entryLink id="3755-c8b6-08fe-659c" name="WT: Front-Line Combatant" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="1fff-d44f-98e9-609c" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="2ef0-4c34-37c7-bffe" value="1.0">
               <conditions>
@@ -25446,7 +25444,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ad-e909-145a-9eae" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="56dc-f6c4-2b0e-2882" name="WT: Lead By Example" hidden="false" collective="false" import="true" targetId="75b8-5f2d-9f0c-fbb5" type="selectionEntry">
+        <entryLink id="56dc-f6c4-2b0e-2882" name="WT: Lead By Example" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="75b8-5f2d-9f0c-fbb5" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="edf5-1696-29a5-3b48" value="1.0">
               <conditions>
@@ -25493,7 +25491,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defa-eb77-108d-a119" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="d61c-2975-22bb-e803" name="WT: Master Tactician" hidden="false" collective="false" import="true" targetId="2b95-ca70-0ccd-7118" type="selectionEntry">
+        <entryLink id="d61c-2975-22bb-e803" name="WT: Master Tactician" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="2b95-ca70-0ccd-7118" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="e9f0-0b7e-7fd9-8815" value="1.0">
               <conditions>
@@ -25542,52 +25540,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d6-72c6-e477-0d73" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="10ab-9ca6-d85f-fae2" name="Inspiring Leader" hidden="false" collective="false" import="true" targetId="bad4-7cc1-6b79-0e18" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="ea00-935e-6f54-7fc3" value="1.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8a48-22fc-3bf4-43d4" type="notInstanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="871a-0c5d-8d92-cd67" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6771-6ab3-1672-6a39" type="equalTo"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1f07-a468-bda8-fd3f" type="equalTo"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1f07-a468-bda8-fd3f" type="greaterThan"/>
-                                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="greaterThan"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea00-935e-6f54-7fc3" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7316-a025-7397-40e1" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="beef-c3c3-7220-3794" name="WT: Grand Strategist" hidden="false" collective="false" import="true" targetId="9f7a-4c34-8d0c-e3c7" type="selectionEntry">
+        <entryLink id="beef-c3c3-7220-3794" name="WT: Grand Strategist" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="9f7a-4c34-8d0c-e3c7" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="245a-bd23-be96-5afd" value="1.0">
               <conditions>
@@ -26385,7 +26338,7 @@ Spirit of the Martyr: One model in the unit recovers D3 lost wounds, or you can 
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 5+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f34c8090-4e32-bd27-df37-1b714a4288d2" name="Senior Officer (Aura)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+    <profile id="f34c8090-4e32-bd27-df37-1b714a4288d2" name="Senior Officer (Aura)" publicationId="e831-8627-fbc7-5b35" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While a friendly ASTRA MILITARUM CORE unit is within 6&quot; of this model, each time a model in that unit makes an attack, re-roll a hit roll of 1.</characteristic>
       </characteristics>
