@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="325" battleScribeVersion="2.03" authorName="3Komnenos3 &amp; TheHalfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="326" battleScribeVersion="2.03" authorName="3Komnenos3 &amp; TheHalfinstream" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th Edition battlescribe files, and all credit goes to them for the creation of the 8th edition version which laid the foundation to our project to bring over the 9th edition codex, and an additional thanks for answering some of our questions on the BSData discord, as well as allowing us to go forward with this project.</readme>
@@ -498,18 +498,6 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
     <entryLink id="45f3-e4a7-6119-946d" name="Hydra" hidden="false" collective="false" import="true" targetId="411a-f57a-9f2b-b9df" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="033d-a136-5a02-2b45" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="b8ea-a591-9039-6173" name="Imperial Commander&apos;s Armoury" hidden="false" collective="false" import="true" targetId="d7be-7049-0cc9-dcf3" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cff6-a8e7-27ea-0776" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="375e-c02d-9925-13fa" name="New CategoryLink" hidden="false" targetId="c845-c72c-6afe-3fc2" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8cb0-121e-770d-b5b4" name="Macharius" hidden="false" collective="false" import="true" targetId="eaaf-e58c-f7ba-6f81" type="selectionEntry">
