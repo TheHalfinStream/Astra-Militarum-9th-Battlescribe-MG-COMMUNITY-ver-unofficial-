@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="125" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="129" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 
@@ -10183,9 +10183,10 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         <categoryLink id="589e-0f1e-dc8f-0161" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7a72-561b-f5fe-10ed" name="Melee Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7a72-561b-f5fe-10ed" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9db4-9465-253b-f021">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f60-543d-ea0b-b90d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e8-2350-a261-8ffd" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="6064-7155-3f94-96dd" name="Power maul" hidden="false" collective="false" import="true" targetId="6ea7-1195-7144-438e" type="selectionEntry"/>
@@ -10202,6 +10203,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </entryLink>
+            <entryLink id="9db4-9465-253b-f021" name="Chainsword" hidden="false" collective="false" import="true" targetId="0dd1-2e2b-7dd1-5495" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="f401-e8e9-ce0f-79e3" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0f8-adfe-cbbd-2ab3">
@@ -23858,6 +23860,49 @@ You can only use this Stratagem once, unless you are playing a Strike Force batt
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6686-a69f-e614-2258" name="Aegis Defence Line" publicationId="e831-8627-fbc7-5b35" page="114" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6163-a49f-d394-e3e5" name="Aegis Defence Line" publicationId="e831-8627-fbc7-5b35" page="114" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">-</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">-</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">-</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">-</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">-</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">-</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">-</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">-</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="399d-86a3-e64c-7303" name="Reinforced Construction" publicationId="e831-8627-fbc7-5b35" page="114" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a ranged attack is allocated to a model while it is receiving the benefits of cover from this terrain feature, worsen the Armour Penetration characteristic of that attack by 1 (to a minimum of 0).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ceb8-fe06-a1c7-8c55" name="Terrain Feature" publicationId="e831-8627-fbc7-5b35" page="114" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After this model is set up, it is treated as an Area Terrain feature with the following terrain traits, as described in the Warhammer 40,000 Core Book:
+- Defence Line
+- Light Cover
+- Heavy Cover
+- Defensible</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ee91-775f-4b7b-8deb" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="1815-3610-475a-0de6" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="54ea-5d79-f8b8-80d7" name="Terrain" hidden="false" targetId="c901-fe8a-a156-f3fa" primary="false"/>
+        <categoryLink id="8a71-519a-0cd3-e673" name="Obstacle" hidden="false" targetId="7d4c-822b-b174-1e96" primary="false"/>
+        <categoryLink id="e6dc-c61b-dcd4-79d1" name="Aegis Defence Line" hidden="false" targetId="2c69-bba7-d2ac-2698" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
+        <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

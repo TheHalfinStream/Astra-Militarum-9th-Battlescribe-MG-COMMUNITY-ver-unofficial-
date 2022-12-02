@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="327" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="329" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th Edition battlescribe files, and all credit goes to them for the creation of the 8th edition version which laid the foundation to our project to bring over the 9th edition codex, and an additional thanks for answering some of our questions on the BSData discord, as well as allowing us to go forward with this project.</readme>
@@ -820,6 +820,11 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
     <entryLink id="493e-a28c-f693-b155" name="Cadian Shock Troops" hidden="false" collective="false" import="true" targetId="83b0-3cc2-15cc-6d3a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fd32-7816-ff3c-b88e" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e527-aa9d-129a-3541" name="Aegis Defence Line" publicationId="e831-8627-fbc7-5b35" page="114" hidden="false" collective="false" import="true" targetId="6686-a69f-e614-2258" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8d3b-0998-5a04-32f2" name="Fortification" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
