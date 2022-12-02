@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="129" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="132" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 
@@ -1598,7 +1598,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3cce-1a63-6bc5-563d" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3cce-1a63-6bc5-563d" name="Avenger Strike Fighter" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="8e73-4663-9555-46de" name="Avenger Strike Fighter [1] (8-14+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="66" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -1709,7 +1709,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf5a-3932-75bf-df92" name="Cyclops Demolition Vehicle" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="bf5a-3932-75bf-df92" name="Cyclops Demolition Vehicle" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="aea2-c153-ac04-da96" name="Demoltion Vehicle" publicationId="7573-8d1b-acdf-2de8" page="59" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -1782,7 +1782,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8334-4726-0084-b6fc" name="Tarantula Battery" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8334-4726-0084-b6fc" name="Tarantula Battery" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1628-9718-1033-a7c2" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="f5cd-321b-bcea-ba21" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
@@ -1884,7 +1884,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26bd-4dc8-d2d2-6769" name="Tauros Assault Vehicles [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="26bd-4dc8-d2d2-6769" name="Tauros Assault Vehicles [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="ff4b-4a17-377b-2845" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
         <categoryLink id="be8d-c799-1f5a-bbeb" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -2000,7 +2000,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0474-4cc1-8d7e-0f69" name="Tauros Venators [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0474-4cc1-8d7e-0f69" name="Tauros Venators [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4370-3077-74c7-eed0" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
         <categoryLink id="f8fb-1de6-7d08-140f" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -2102,7 +2102,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a948-b0a9-7b99-749d" name="Thunderbolt" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a948-b0a9-7b99-749d" name="Thunderbolt" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="e68c-38ea-47eb-e6bd" name="Thunderbolt [1] (8-15+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="68" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -2240,7 +2240,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6999-2f33-1d88-fd91" name="Vendetta Gunship" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6999-2f33-1d88-fd91" name="Vendetta Gunship" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="6da0-9489-d5d4-197a" name="Vendetta Gunship [1] (8-14+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="69" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -2385,7 +2385,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8f32-1f47-0dc1-85ec" name="Vulture Gunship" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8f32-1f47-0dc1-85ec" name="Vulture Gunship" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="6feb-805f-4274-56d3" name="Vulture Gunship [1] (8-14+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="68" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -2682,7 +2682,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05af-872f-e4ab-aba9" name="Colossus Bombard" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="05af-872f-e4ab-aba9" name="Colossus Bombard" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0967-4e28-dcb6-637c" name="Colossus Bombard" hidden="false" targetId="6ce3-2fc4-051c-cce1" primary="false"/>
         <categoryLink id="ab5b-b6c8-c30d-ef8e" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -2792,7 +2792,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5e41-bbe4-121d-7ac3" name="Hades Breaching Drill" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5e41-bbe4-121d-7ac3" name="Hades Breaching Drill" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="increment" field="5fd5-6cd9-6f53-694c" value="1.0">
           <repeats>
@@ -2880,7 +2880,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5990-c95f-2668-64a8" name="Heavy Mortar Battery" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5990-c95f-2668-64a8" name="Heavy Mortar Battery" hidden="true" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="5328-ac51-1560-0e13" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="9242-20d6-2eb8-829d" name="Heavy Mortar" hidden="false" targetId="619c-ca86-7c84-6d52" primary="false"/>
@@ -2982,7 +2982,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8884-5a39-1c40-190a" name="Heavy Quad Launcher Battery" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8884-5a39-1c40-190a" name="Heavy Quad Launcher Battery" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="10f0-01ba-a3aa-2da7" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="9c16-bed2-0d90-f1c9" name="Heavy Quad Launcher" hidden="false" targetId="4281-ca6f-1ab1-7b2e" primary="false"/>
@@ -3151,7 +3151,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="887f-86e7-69d4-fc5c" name="Salamander Scout Tanks [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="887f-86e7-69d4-fc5c" name="Salamander Scout Tanks [Legends]" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="3.0">
           <conditions>
@@ -3264,7 +3264,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="17b0-32eb-49b5-41c4" name="Thunderers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="17b0-32eb-49b5-41c4" name="Thunderers" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0635-1a8b-c81f-c46f" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
         <categoryLink id="a67f-0cbe-7180-00f6" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -3357,7 +3357,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dd1b-faed-2f1c-c9ba" name="Stormblade" page="0" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="dd1b-faed-2f1c-c9ba" name="Stormblade" page="0" hidden="true" collective="false" import="true" type="model">
       <modifierGroups>
         <modifierGroup>
           <comment>This modifier adds Regimental Doctrine-derived keywords</comment>
@@ -3618,7 +3618,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e172-910d-aae4-d668" name="Atlas Recovery Tank [Legends]" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e172-910d-aae4-d668" name="Atlas Recovery Tank [Legends]" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="54dd-ea9d-26ef-676e" name="Recovery Vehicle" publicationId="b652-8bab-1453-da20" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -3705,7 +3705,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf72-f767-adb8-0447" name="Centaur Light Carrier [Legends]" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="bf72-f767-adb8-0447" name="Centaur Light Carrier [Legends]" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="e137-6121-b2cc-33a0" name="Centaur Light Carrier" publicationId="b652-8bab-1453-da20" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -3767,7 +3767,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="635b-6d42-0315-e7f5" name="Earthshaker Carriage Battery" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="635b-6d42-0315-e7f5" name="Earthshaker Carriage Battery" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="8118-0879-aaec-d33c" name="Artillery and Crew (Earthshaker Carriage)" publicationId="7573-8d1b-acdf-2de8" page="59" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -3853,7 +3853,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="066c-5ca9-3a9a-1c60" name="Gorgon Heavy Transport [Legends]" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="066c-5ca9-3a9a-1c60" name="Gorgon Heavy Transport [Legends]" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="4e96-c897-9718-3d51" name="Heavy Armored Prow" publicationId="b652-8bab-1453-da20" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -4037,7 +4037,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fcb4-8468-4b88-cdbd" name="Griffon Mortar Carrier [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="fcb4-8468-4b88-cdbd" name="Griffon Mortar Carrier [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="aa6f-185c-675f-4670" name="Griffon Mortar Carrier" hidden="false" targetId="6c14-3b59-de8c-6c93" primary="false"/>
         <categoryLink id="8234-59bf-70f8-32a7" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -4140,7 +4140,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eaaf-e58c-f7ba-6f81" name="Macharius" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="eaaf-e58c-f7ba-6f81" name="Macharius" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="2af1-392e-4891-d3bc" name="Macharius [1] (12-22+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="71" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -4461,7 +4461,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="084a-38b8-08d0-f2d6" name="Macharius Vanquisher" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="084a-38b8-08d0-f2d6" name="Macharius Vanquisher" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="9d21-36f1-c692-ee76" name="Macharius Vanquisher [1] (12-22+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="71" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -4625,7 +4625,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f54c-7343-16cd-4be5" name="Macharius Vulcan" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f54c-7343-16cd-4be5" name="Macharius Vulcan" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="f326-f1f2-1003-d5fc" name="Macharius Vulcan [1] (12-22+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="72" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -4789,7 +4789,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="89ac-4e4c-2377-45f0" name="Malcador Annihilator" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="89ac-4e4c-2377-45f0" name="Malcador Annihilator" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="00e8-2274-d269-f7fe" name="Malcador Annihilator [1] (10-18+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="61" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -4941,7 +4941,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e1d7-0ed5-988f-7439" name="Malcador Defender" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e1d7-0ed5-988f-7439" name="Malcador Defender" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="c39e-2352-38c7-8d7b" name="Malcador Defender [1] (10-18+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="62" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -5077,7 +5077,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="86a7-45f9-d8e3-42b2" name="Malcador" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="86a7-45f9-d8e3-42b2" name="Malcador" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="4083-eb9f-05c0-13a2" name="Malcador [1] (10-18+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="61" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -5240,7 +5240,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a4e4-00cf-afd1-be77" name="Malcador Infernus" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a4e4-00cf-afd1-be77" name="Malcador Infernus" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="51f4-3ffc-6d6d-9b39" name="Malcador Infernus [1] (10-18+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="64" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -5414,7 +5414,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="206c-e447-9219-49ac" name="Medusa Carriage Battery" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="206c-e447-9219-49ac" name="Medusa Carriage Battery" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="104b-60ea-bf98-4e55" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="050e-8ca1-eae2-606f" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -5622,7 +5622,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="366c-cdc1-20e0-4209" name="Trojan Support Vehicle" publicationId="53e9d88f--pubN88319" page="40" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="366c-cdc1-20e0-4209" name="Trojan Support Vehicle" publicationId="53e9d88f--pubN88319" page="40" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="4099-d965-22c9-6bee" name="Support Vehicle" publicationId="7573-8d1b-acdf-2de8" page="70" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -6032,7 +6032,7 @@ If this unit scores 5 or more hits against that enemy unit, then until the end o
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9acf-f7e0-036c-45d7" name="Regiment: Armageddon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9acf-f7e0-036c-45d7" name="Regiment: Armageddon" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -6223,7 +6223,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="712b-372f-76c3-ebe8" name="Regiment: Mordian" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="712b-372f-76c3-ebe8" name="Regiment: Mordian" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -6261,7 +6261,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6e6d-3f5b-3aac-ac75" name="Regiment: Tallarn" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6e6d-3f5b-3aac-ac75" name="Regiment: Tallarn" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -6299,7 +6299,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b6d-9d03-763e-4d41" name="Regiment: Vostroyan" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7b6d-9d03-763e-4d41" name="Regiment: Vostroyan" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -6337,7 +6337,7 @@ This WARLORD knows those Orders in addition to any others it knows.</characteris
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a8ba-5296-cc59-3ab6" name="Regiment: Valhallan" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a8ba-5296-cc59-3ab6" name="Regiment: Valhallan" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true"/>
       </modifiers>
@@ -6879,13 +6879,13 @@ Alternatively, you can use this Stratagem to give one COMMAND SQUAD model from y
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7d5-e7b4-87d5-c29a" name="Field Commander" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c7d5-e7b4-87d5-c29a" name="Field Commander" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c644-629b-c18d-e7f2" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="51c3-dace-82b6-112c" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="72b4-08ad-fdb3-1782" name="Stratagem: Field Commander" hidden="false" collective="false" import="true" targetId="d043-3847-e963-fb5d" type="selectionEntry">
+        <entryLink id="72b4-08ad-fdb3-1782" name="Stratagem: Field Commander" hidden="true" collective="false" import="true" targetId="d043-3847-e963-fb5d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc92-f8c6-c517-05c7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b5-4392-f2de-ce15" type="min"/>
@@ -7432,7 +7432,7 @@ Relic of Lost Cadia (Aura): While a friendly CADIAN INFANTRY unit is within 6&qu
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6953-dac8-ed09-e7ce" name="Minotaur" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6953-dac8-ed09-e7ce" name="Minotaur" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="c2ec-21a7-a422-add5" name="Minotaur [1] (12-22+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="73" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -8170,14 +8170,7 @@ If the mission you are playing uses the Strategic Reserves rules, you can place 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="729b-b40b-55ed-ab68" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="604e-da14-d07a-dd5a" name="Has Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-            <entryLink id="8afc-811e-6f72-c4fa" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-            <entryLink id="a5f8-2c1b-7d26-7a81" name="Unit Regimental Doctrines" hidden="false" collective="true" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d7e-e21e-f918-0822" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b126-7dab-0f4c-2b57" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="9bdd-e00f-b048-5273" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
@@ -8211,7 +8204,7 @@ If the mission you are playing uses the Strategic Reserves rules, you can place 
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="524d-4d10-843a-3bd3" name="Arvus Lighter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="524d-4d10-843a-3bd3" name="Arvus Lighter" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="ee05-f644-500a-62b4" name="Arvus Lighter" publicationId="7573-8d1b-acdf-2de8" page="67" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <modifiers>
@@ -8795,7 +8788,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="58af-c7a1-b4a6-3e90" name="Carnodon" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="58af-c7a1-b4a6-3e90" name="Carnodon" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="fcae-268e-2cdd-f48c" name="Carnodon [1] (7-12+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="58" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -10122,6 +10115,7 @@ Divination (Psychic Action - Warp Charge 7): In your Psychic phase, one ASTROPAT
       <entryLinks>
         <entryLink id="3451-5278-97f0-3b6b" name="Attaché" hidden="false" collective="false" import="true" targetId="698f-df58-b9ae-9ece" type="selectionEntryGroup"/>
         <entryLink id="63ed-f1c0-0f17-758c" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
+        <entryLink id="3cbc-72c4-d38f-3eb2" name="Bodyguard" hidden="false" collective="false" import="true" targetId="3cd9-53fc-5ffb-5f60" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
@@ -11077,7 +11071,7 @@ While a unit is suppressed, each time a model in that unit makes an attack, subt
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1cb2-d5d7-da19-9dc9" name="Crassus" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1cb2-d5d7-da19-9dc9" name="Crassus" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="adec-27fe-aa00-80a0" name="Crassus [1] (11-20+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="73" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -11166,7 +11160,7 @@ While a unit is suppressed, each time a model in that unit makes an attack, subt
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed99-a7df-1daa-4a73" name="Crusaders" publicationId="53e9d88f--pubN88319" page="99" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ed99-a7df-1daa-4a73" name="Crusaders" publicationId="53e9d88f--pubN88319" page="99" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="5818-f19f-efbe-e566" name="Crusaders" hidden="false" targetId="c46c-38fc-a485-e1c5" primary="false"/>
         <categoryLink id="34d1-ba3e-d0ab-8d75" name="Faction: Adeptus Ministorum" hidden="false" targetId="2009-635c-b08f-f825" primary="false"/>
@@ -11360,14 +11354,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <entryLink id="aaa3-082d-7429-1d0d" name="Stat Damage (HS)" hidden="false" collective="false" import="true" targetId="da25-46a9-4472-2e07" type="selectionEntry"/>
         <entryLink id="6891-6aa3-c888-5fd1" name="Hull Weapon" hidden="false" collective="false" import="true" targetId="846f-095f-3967-92af" type="selectionEntryGroup"/>
         <entryLink id="f0ff-12f3-b18f-09ca" name="Vehicle Equipment List" hidden="false" collective="false" import="true" targetId="d9f1-0505-984e-c749" type="selectionEntryGroup"/>
-        <entryLink id="efc0-8c6d-2152-f932" name="Has Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-        <entryLink id="33f4-f274-554a-dc2e" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-        <entryLink id="edc6-ba5e-7e76-8662" name="Unit Regimental Doctrines" hidden="false" collective="true" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54da-597a-6017-dab6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6bdb-6225-81ad-c933" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="686b-6738-a113-7a56" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="160.0"/>
@@ -11375,7 +11362,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="becb-2b03-419e-59fc" name="Dominus Armoured Siege Bombard [Legends]" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="becb-2b03-419e-59fc" name="Dominus Armoured Siege Bombard [Legends]" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="9dcb-36d7-9799-2df9" name="Dominus Armoured Siege Bombard [1] (11-20+ wounds remaining)" publicationId="b652-8bab-1453-da20" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -11687,7 +11674,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c5ab-986a-84ea-2562" name="Earthshaker Battery [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c5ab-986a-84ea-2562" name="Earthshaker Battery [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="09cf-e289-ad78-47fd" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="2984-146f-7259-7565" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
@@ -12406,7 +12393,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9e27-39c8-4731-dc6a" name="Hydra Battery [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9e27-39c8-4731-dc6a" name="Hydra Battery [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0308-d88b-322f-4d8f" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="a704-95c0-ad4a-d609" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
@@ -13266,12 +13253,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <entryLink id="d84f-a45c-36b1-a44b" name="Vehicle Equipment List" hidden="false" collective="false" import="true" targetId="d9f1-0505-984e-c749" type="selectionEntryGroup"/>
         <entryLink id="8d76-562a-17ec-8f8b" name="Has Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
         <entryLink id="61fd-d9b5-f43a-14cf" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-        <entryLink id="9967-e68b-7db3-7948" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f395-3c2b-be91-219b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08ee-7c5a-ae5c-0800" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="d578-5e30-4806-62f5" name="Regimental Doctrines" hidden="false" collective="false" import="true" targetId="71c4-b0c4-a7b5-4f1d" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="140.0"/>
@@ -13279,7 +13261,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5977-4fef-b3c9-5e29" name="Manticore Battery [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5977-4fef-b3c9-5e29" name="Manticore Battery [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4a2a-000c-c0bc-1b1f" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="b8ae-9085-17a2-1256" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
@@ -13332,7 +13314,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3c71-b040-03d6-238b" name="Marauder Bomber" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3c71-b040-03d6-238b" name="Marauder Bomber" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="8cd4-541b-7352-5902" name="Marauder Bomber [1] (11-20+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="74" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -13494,7 +13476,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e1cc-c436-c715-5e00" name="Marauder Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e1cc-c436-c715-5e00" name="Marauder Destroyer" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="c00e-012c-93c1-6a0f" name="Marauder Destroyer [1] (11-20+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="75" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -14236,7 +14218,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6180-83df-5874-095a" name="Praetor" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6180-83df-5874-095a" name="Praetor" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="98b7-2ea4-885c-e219" name="Praetor [1] (11-20+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="72" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -14477,6 +14459,9 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
       </costs>
     </selectionEntry>
     <selectionEntry id="07db-6dd0-c6bf-13c2" name="Ratlings" publicationId="e831-8627-fbc7-5b35" page="98" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="decrement" field="points" value="10.0"/>
+      </modifiers>
       <profiles>
         <profile id="5844-552a-84de-7e0e" name="Find the Best Spot" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -15007,7 +14992,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="986b-3521-bb98-46f8" name="Sabre Weapons Battery [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="986b-3521-bb98-46f8" name="Sabre Weapons Battery [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="2487-15a8-963c-2f3e" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="16ab-7e30-aa0e-d494" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
@@ -15124,7 +15109,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a152-0b14-b280-e96a" name="Salamander Command Vehicle [Legends]" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a152-0b14-b280-e96a" name="Salamander Command Vehicle [Legends]" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="c9e2-93b7-e27d-5193" name="Auspex Surveyor" publicationId="b652-8bab-1453-da20" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
@@ -15352,7 +15337,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6d3-8dbd-de04-9187" name="Sentinel Powerlifters [Legends]" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e6d3-8dbd-de04-9187" name="Sentinel Powerlifters [Legends]" hidden="true" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="bb7e-17a4-c489-2bb7" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
         <categoryLink id="fdda-191f-ba96-b644" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
@@ -16113,7 +16098,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4666-f0c7-caf2-2eb3" name="Valdor Tank Hunter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4666-f0c7-caf2-2eb3" name="Valdor Tank Hunter" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="9146-037f-2a4f-a61c" name="Valdor Tank Hunter [1] (11-20+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="66" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -16661,7 +16646,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="526b-10c7-dbd4-8961" name="Voss-pattern Lightning" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="526b-10c7-dbd4-8961" name="Voss-pattern Lightning" hidden="true" collective="false" import="true" type="model">
       <profiles>
         <profile id="64eb-9f83-3323-087c" name="Voss-pattern Lightning [1] (8-14+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="67" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -16779,7 +16764,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a8cf-9401-5518-9dc6" name="Breacher Charge [Legends]" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a8cf-9401-5518-9dc6" name="Breacher Charge [Legends]" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -17750,10 +17735,6 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="48c2-00e2-4df9-9539" name="Has Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="4763-757f-499f-d998" type="selectionEntry"/>
-        <entryLink id="a4ce-1dad-d6b0-2557" name="Battle Honours (Chapter Approved 2018)" hidden="false" collective="false" import="true" targetId="5518-d0f5-a880-d71c" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
         <cost name="pts" typeId="points" value="0.0"/>
