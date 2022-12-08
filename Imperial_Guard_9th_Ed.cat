@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="333" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Imperial Guard 9th Ed" revision="334" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th Edition battlescribe files, and all credit goes to them for the creation of the 8th edition version which laid the foundation to our project to bring over the 9th edition codex, and an additional thanks for answering some of our questions on the BSData discord, as well as allowing us to go forward with this project.</readme>
@@ -685,12 +685,6 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
         <categoryLink id="4f8d-0695-9e4a-6653" name="New CategoryLink" hidden="false" targetId="c845-c72c-6afe-3fc2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1ba8-4e15-0911-8927" name="Lord Solar Leontus" hidden="false" collective="false" import="true" targetId="0fcd-d6ee-231e-920e" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="be03-0a1d-00ff-5774" name="Supreme Commander" hidden="false" targetId="5750-de0a-589d-eacf" primary="false"/>
-        <categoryLink id="3415-be8a-3f00-d8da" name="Primarch | Daemon Primarch | Supreme Commander" hidden="false" targetId="26b0-4bb9-73aa-d3d7" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="ba6f-7219-826c-7a15" name="Kasrkin" hidden="false" collective="false" import="true" targetId="0609-08fb-cd8a-8b1e" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e1fa-6329-3a3a-822a" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
@@ -826,6 +820,15 @@ This is a heavily modified version of the BSData team&apos;s Astra Militarum 8th
     <entryLink id="e527-aa9d-129a-3541" name="Aegis Defence Line" publicationId="e831-8627-fbc7-5b35" page="114" hidden="false" collective="false" import="true" targetId="6686-a69f-e614-2258" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8d3b-0998-5a04-32f2" name="Fortification" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="84bb-a5f8-77e5-3084" name="Lord Solar Leontus" hidden="false" collective="false" import="true" targetId="0fcd-d6ee-231e-920e" type="selectionEntry">
+      <comment>Supreme Commander Version</comment>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5f3e-ab6d-fe05-9051" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a137-8260-4f87-f37f" name="Primarch | Daemon Primarch | Supreme Commander" hidden="false" targetId="26b0-4bb9-73aa-d3d7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
