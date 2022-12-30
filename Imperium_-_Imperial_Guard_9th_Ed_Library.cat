@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="138" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Imperial Guard - 9th Ed - Library" revision="139" battleScribeVersion="2.03" authorName="3Komnenos3, TheHalfinStream, Nerdylicious (reference servitor) , based on files originally developed by Jon K, Joe B, Wil" authorContact="" authorUrl="" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>The BSData team is not responsible for these 9th edition updates and should not be contacted for support. Find us on the Mordian Glory Discord.
 
 
@@ -13369,7 +13369,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
             <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">A model may only attack with this weapon on a turn in which it has charged-</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -28681,7 +28681,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
       <entryLinks>
         <entryLink id="2640-36b2-4bed-6a40" name="Stratagem: Warlord Trait" hidden="false" collective="false" import="true" targetId="6771-6ab3-1672-6a39" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="30b5-4da5-9f5d-6af9" value="1.0">
+            <modifier type="set" field="30b5-4da5-9f5d-6af9" value="0.0">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -28737,7 +28737,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
       <entryLinks>
         <entryLink id="3755-c8b6-08fe-659c" name="WT: Front-Line Combatant" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="1fff-d44f-98e9-609c" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="2ef0-4c34-37c7-bffe" value="1.0">
+            <modifier type="set" field="2ef0-4c34-37c7-bffe" value="0.0">
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
               </conditions>
@@ -28784,7 +28784,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
         </entryLink>
         <entryLink id="56dc-f6c4-2b0e-2882" name="WT: Lead By Example" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="75b8-5f2d-9f0c-fbb5" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="edf5-1696-29a5-3b48" value="1.0">
+            <modifier type="set" field="edf5-1696-29a5-3b48" value="0.0">
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
               </conditions>
@@ -28831,7 +28831,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
         </entryLink>
         <entryLink id="d61c-2975-22bb-e803" name="WT: Master Tactician" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="2b95-ca70-0ccd-7118" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="e9f0-0b7e-7fd9-8815" value="1.0">
+            <modifier type="set" field="e9f0-0b7e-7fd9-8815" value="0.0">
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
               </conditions>
@@ -28880,7 +28880,7 @@ receive the benefits of cover against that attack.&quot;</characteristic>
         </entryLink>
         <entryLink id="beef-c3c3-7220-3794" name="WT: Grand Strategist" publicationId="e831-8627-fbc7-5b35" page="68" hidden="false" collective="false" import="true" targetId="9f7a-4c34-8d0c-e3c7" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="245a-bd23-be96-5afd" value="1.0">
+            <modifier type="set" field="245a-bd23-be96-5afd" value="0.0">
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e77a-cc54-efcf-a09a" type="equalTo"/>
               </conditions>
