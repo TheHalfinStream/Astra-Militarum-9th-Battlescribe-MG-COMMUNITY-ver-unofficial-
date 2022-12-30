@@ -1472,7 +1472,7 @@ An ASTRA MILITARUM Detachment is one that only includes models with the ASTRA MI
                 <profile id="7bb8-b6f7-1f7b-fc2f" name="Co-Axial Autocannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">heavy 2</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
@@ -13194,7 +13194,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <categoryLink id="d34e-2c82-1626-943f" name="Super-Heavy" hidden="false" targetId="ab99-87a7-c0d6-b038" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6999-87aa-f8f7-f050" name="Turret-mounted Hellhammer Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6999-87aa-f8f7-f050" name="Hellhammer Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9587-27ad-ec03-b021" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae0f-85e7-db98-0e51" type="max"/>
@@ -13221,7 +13221,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
                 <profile id="35df-d9e6-bf26-002a" name="Co-Axial Autocannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">heavy 2</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
                     <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
@@ -18806,6 +18806,7 @@ On a 4+ do not remove that marker from the battlefield, but that marker cannot b
         <infoLink id="37a9-2720-356a-3538" name="Aerial Drop" hidden="false" targetId="0a6c-a8e0-8fd8-b3f0" type="profile"/>
         <infoLink id="ee21-c407-5267-fe68" name="Regimental Tactics" hidden="false" targetId="175c-fee4-4229-5628" type="profile"/>
         <infoLink id="356a-0ea8-8b25-0964" name="Regimental Tactics" hidden="false" targetId="89ad-69f4-02bf-74b6" type="rule"/>
+        <infoLink id="344e-c703-1151-f65b" name="Storm Troopers" hidden="false" targetId="4406-f18f-b2df-5f01" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="25fd-b542-b5bb-9ca2" name="Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
@@ -20588,7 +20589,7 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e16-98ef-c7ed-e88e" type="min"/>
                       </constraints>
                       <profiles>
-                        <profile id="d35c-2443-c681-7a79" name="Hot-Shot Volley Gun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                        <profile id="d35c-2443-c681-7a79" name="Flamer" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                           <characteristics>
                             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
                             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D6</characteristic>
@@ -21282,6 +21283,19 @@ If that Detachment contains two or fewer CONSCRIPTS units, this Stratagem costs 
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
             <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca97-4192-0886-fc04" name="Rogal Dorn Battle Tank" publicationId="e831-8627-fbc7-5b35" page="105" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">*</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">*</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">9</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">17</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">*</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
